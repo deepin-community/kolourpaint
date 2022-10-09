@@ -1,0 +1,42 @@
+Source: kolourpaint
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.10.0~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.67.0~),
+               gettext,
+               libkf5doctools-dev (>= 5.67.0~),
+               libkf5guiaddons-dev (>= 5.67.0~),
+               libkf5i18n-dev (>= 5.67.0~),
+               libkf5jobwidgets-dev (>= 5.67.0~),
+               libkf5kio-dev (>= 5.67.0~),
+               libkf5sane-dev,
+               libkf5textwidgets-dev (>= 5.67.0~),
+               libkf5widgetsaddons-dev (>= 5.67.0~),
+               libkf5xmlgui-dev (>= 5.67.0~),
+               pkg-config,
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.11.0~),
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://apps.kde.org/en/kolourpaint
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kolourpaint
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kolourpaint.git
+
+Package: kolourpaint
+Section: graphics
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: kolourpaint4 (<< 4:17.04)
+Replaces: kolourpaint4 (<< 4:17.04)
+Description: simple image editor and drawing application
+ KolourPaint is a simple drawing and image editing application for KDE.
+ It aims to be easy to use, providing a level of functionality targeted towards
+ the average user. It is ideal for common tasks such as drawing simple graphics
+ and touching-up photos.
+ .
+ This package is part of the KDE graphics module.
