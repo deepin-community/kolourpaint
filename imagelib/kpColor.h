@@ -1,40 +1,16 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #ifndef KP_COLOR_H
 #define KP_COLOR_H
 
-
 #include <QColor>
 
-
 class QDataStream;
-
 
 //
 // kpColor is an object-oriented abstraction of QRgb, for document image data.
@@ -54,36 +30,33 @@ class QDataStream;
 class kpColor
 {
 public:
-    kpColor ();
-    kpColor (int red, int green, int blue, bool isTransparent = false);
-    kpColor (const QRgb &rgba);
-    kpColor (const kpColor &rhs);
-    friend QDataStream &operator<< (QDataStream &stream, const kpColor &color);
-    friend QDataStream &operator>> (QDataStream &stream, kpColor &color);
-    kpColor &operator= (const kpColor &rhs);
-    bool operator== (const kpColor &rhs) const;
-    bool operator!= (const kpColor &rhs) const;
+    kpColor();
+    kpColor(int red, int green, int blue, bool isTransparent = false);
+    explicit kpColor(const QRgb &rgba);
+    kpColor(const kpColor &rhs);
+    friend QDataStream &operator<<(QDataStream &stream, const kpColor &color);
+    friend QDataStream &operator>>(QDataStream &stream, kpColor &color);
+    kpColor &operator=(const kpColor &rhs);
+    bool operator==(const kpColor &rhs) const;
+    bool operator!=(const kpColor &rhs) const;
 
-
-//
-// Constants
-//
+    //
+    // Constants
+    //
 public:
     // "lhs.isSimilarTo (rhs, kpColor::Exact)" is exactly the same as calling
     // "lhs == rhs".
     static const int Exact;
-  
+
     static const kpColor Invalid;
     static const kpColor Transparent;
-
 
     //
     // Primary Colors + B&W
     //
-    
+
     static const kpColor Red, Green, Blue;
     static const kpColor Black, White;
-
 
     //
     // Full-brightness Colors
@@ -91,13 +64,11 @@ public:
 
     static const kpColor Yellow, Purple, Aqua;
 
-
     //
     // Mixed Colors
     //
-    
+
     static const kpColor Gray, LightGray, Orange;
-     
 
     //
     // Pastel Colors
@@ -105,46 +76,43 @@ public:
 
     static const kpColor Pink, LightGreen, LightBlue, Tan;
 
-
     //
     // Dark Colors
     //
-    
+
     static const kpColor DarkRed;
 
     // (identical)
     static const kpColor DarkOrange, Brown;
 
-    static const kpColor DarkYellow, DarkGreen, DarkAqua, DarkBlue,
-        DarkPurple, DarkGray;
-
+    static const kpColor DarkYellow, DarkGreen, DarkAqua, DarkBlue, DarkPurple, DarkGray;
 
 public:
-    static int processSimilarity (double colorSimilarity);
+    static int processSimilarity(double colorSimilarity);
     // Usage: isSimilarTo (rhs, kpColor::processSimilarity (.1)) checks for
     //        Color Similarity within 10%
-    bool isSimilarTo (const kpColor &rhs, int processedSimilarity) const;
+    bool isSimilarTo(const kpColor &rhs, int processedSimilarity) const;
 
-    bool isValid () const;
+    bool isValid() const;
 
-    int red () const;
-    int green () const;
-    int blue () const;
-    int alpha () const;
-    bool isTransparent () const;
+    int red() const;
+    int green() const;
+    int blue() const;
+    int alpha() const;
+    bool isTransparent() const;
 
     // Cast operators will most likely result in careless conversions so
     // use explicit functions instead:
-    QRgb toQRgb () const;
+    QRgb toQRgb() const;
 
-    QColor toQColor () const;
+    QColor toQColor() const;
 
 private:
     // Catch accidental call to "const QRgb &rgba" (unsigned int) ctor
     // by e.g. "kpColor(Qt::black)" (Qt::black is an enum element that can cast
     // to "unsigned int").
-    kpColor (Qt::GlobalColor color);
-    
+    kpColor(Qt::GlobalColor color);
+
     bool m_rgbaIsValid;
     QRgb m_rgba;
 
@@ -152,5 +120,4 @@ private:
     mutable QColor m_colorCache;
 };
 
-
-#endif  // KP_COLOR_H
+#endif // KP_COLOR_H

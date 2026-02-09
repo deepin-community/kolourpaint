@@ -1,39 +1,17 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   Copyright (c) 2005 Kazuki Ohta <mover@hct.zaq.ne.jp>
-   Copyright (c) 2010 Tasuku Suzuki <stasuku@gmail.com>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
+   SPDX-FileCopyrightText: 2005 Kazuki Ohta <mover@hct.zaq.ne.jp>
+   SPDX-FileCopyrightText: 2010 Tasuku Suzuki <stasuku@gmail.com>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #define DEBUG_KP_VIEW 0
 #define DEBUG_KP_VIEW_RENDERER ((DEBUG_KP_VIEW && 1) || 0)
 
-
-#include "views/kpView.h"
 #include "kpViewPrivate.h"
+#include "views/kpView.h"
 
 #if DEBUG_KP_VIEW
 #include "kpLogCategories.h"
@@ -47,170 +25,161 @@
 //---------------------------------------------------------------------
 
 // protected virtual [base QWidget]
-void kpView::mouseMoveEvent (QMouseEvent *e)
+void kpView::mouseMoveEvent(QMouseEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::mouseMoveEvent ("
-               << e->x () << "," << e->y () << ")"
-               << endl;
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::mouseMoveEvent (" << e->x() << "," << e->y() << ")" << endl;
 #endif
 
     // TODO: This is wrong if you leaveEvent the mainView by mouseMoving on the
     //       mainView, landing on top of the thumbnailView cleverly put on top
     //       of the mainView.
-    setHasMouse (rect ().contains (e->pos ()));
+    setHasMouse(rect().contains(e->pos()));
 
-    if (tool ()) {
-        tool ()->mouseMoveEvent (e);
+    if (tool()) {
+        tool()->mouseMoveEvent(e);
     }
 
-    e->accept ();
+    e->accept();
 }
 
 // protected virtual [base QWidget]
-void kpView::mousePressEvent (QMouseEvent *e)
+void kpView::mousePressEvent(QMouseEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::mousePressEvent ("
-               << e->x () << "," << e->y () << ")"
-               << endl;
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::mousePressEvent (" << e->x() << "," << e->y() << ")" << endl;
 #endif
 
-    setHasMouse (true);
+    setHasMouse(true);
 
-    if (tool ()) {
-        tool ()->mousePressEvent (e);
+    if (tool()) {
+        tool()->mousePressEvent(e);
     }
 
-    e->accept ();
+    e->accept();
 }
 
 //---------------------------------------------------------------------
 
 // protected virtual [base QWidget]
-void kpView::mouseReleaseEvent (QMouseEvent *e)
+void kpView::mouseReleaseEvent(QMouseEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::mouseReleaseEvent ("
-               << e->x () << "," << e->y () << ")"
-               << endl;
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::mouseReleaseEvent (" << e->x() << "," << e->y() << ")" << endl;
 #endif
 
-    setHasMouse (rect ().contains (e->pos ()));
+    setHasMouse(rect().contains(e->pos()));
 
-    if (tool ()) {
-        tool ()->mouseReleaseEvent (e);
+    if (tool()) {
+        tool()->mouseReleaseEvent(e);
     }
 
-    e->accept ();
+    e->accept();
 }
 
 //---------------------------------------------------------------------
 
 // public virtual [base QWidget]
-void kpView::wheelEvent (QWheelEvent *e)
+void kpView::wheelEvent(QWheelEvent *e)
 {
-    if (tool ()) {
-        tool ()->wheelEvent (e);
+    if (tool()) {
+        tool()->wheelEvent(e);
     }
 }
 
 //---------------------------------------------------------------------
 
 // protected virtual [base QWidget]
-void kpView::keyPressEvent (QKeyEvent *e)
+void kpView::keyPressEvent(QKeyEvent *e)
 {
 #if DEBUG_KP_VIEW
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::keyPressEvent()" << e->text();
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::keyPressEvent()" << e->text();
 #endif
 
-    if (tool ()) {
-        tool ()->keyPressEvent (e);
+    if (tool()) {
+        tool()->keyPressEvent(e);
     }
 
-    e->accept ();
+    e->accept();
 }
 
 //---------------------------------------------------------------------
 
 // protected virtual [base QWidget]
-void kpView::keyReleaseEvent (QKeyEvent *e)
+void kpView::keyReleaseEvent(QKeyEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::keyReleaseEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::keyReleaseEvent()";
 #endif
 
-    if (tool ()) {
-        tool ()->keyReleaseEvent (e);
+    if (tool()) {
+        tool()->keyReleaseEvent(e);
     }
 
-    e->accept ();
+    e->accept();
 }
 
 //---------------------------------------------------------------------
 
 // protected virtual [base QWidget]
-void kpView::inputMethodEvent (QInputMethodEvent *e)
+void kpView::inputMethodEvent(QInputMethodEvent *e)
 {
 #if DEBUG_KP_VIEW && 1
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::inputMethodEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::inputMethodEvent()";
 #endif
 
-    if (tool ()) {
-        tool ()->inputMethodEvent (e);
+    if (tool()) {
+        tool()->inputMethodEvent(e);
     }
-    e->accept ();
+    e->accept();
 }
 
 // protected virtual [base QWidget]
-bool kpView::event (QEvent *e)
+bool kpView::event(QEvent *e)
 {
 #if DEBUG_KP_VIEW
     qCDebug(kpLogViews) << "kpView::event() invoking kpTool::event()";
 #endif
-    if (tool () && tool ()->viewEvent (e))
-    {
-    #if DEBUG_KP_VIEW
+    if (tool() && tool()->viewEvent(e)) {
+#if DEBUG_KP_VIEW
         qCDebug(kpLogViews) << "\tkpView::event() - tool said eat event, ret true";
-    #endif
+#endif
         return true;
     }
 
 #if DEBUG_KP_VIEW
     qCDebug(kpLogViews) << "\tkpView::event() - no tool or said false, call QWidget::event()";
 #endif
-    return QWidget::event (e);
+    return QWidget::event(e);
 }
 
-
 // protected virtual [base QWidget]
-void kpView::focusInEvent (QFocusEvent *e)
+void kpView::focusInEvent(QFocusEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::focusInEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::focusInEvent()";
 #endif
-    if (tool ()) {
-        tool ()->focusInEvent (e);
+    if (tool()) {
+        tool()->focusInEvent(e);
     }
 }
 
 // protected virtual [base QWidget]
-void kpView::focusOutEvent (QFocusEvent *e)
+void kpView::focusOutEvent(QFocusEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::focusOutEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::focusOutEvent()";
 #endif
-    if (tool ()) {
-        tool ()->focusOutEvent (e);
+    if (tool()) {
+        tool()->focusOutEvent(e);
     }
 }
 
-
 // protected virtual [base QWidget]
-void kpView::enterEvent (QEvent *e)
+void kpView::enterEvent(QEnterEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::enterEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::enterEvent()";
 #endif
 
     // Don't call setHasMouse(true) as it displays the brush cursor (if
@@ -222,60 +191,55 @@ void kpView::enterEvent (QEvent *e)
     // box and Esc.  We have no other reliable way to determine if the
     // mouse is still above the view (user could have moved mouse out
     // while RMB menu was up) and hence the cursor is not updated.
-    setHasMouse (true);
+    setHasMouse(true);
 
-    if (tool ()) {
-        tool ()->enterEvent (e);
+    if (tool()) {
+        tool()->enterEvent(e);
     }
 }
 
 // protected virtual [base QWidget]
-void kpView::leaveEvent (QEvent *e)
+void kpView::leaveEvent(QEvent *e)
 {
 #if DEBUG_KP_VIEW && 0
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::leaveEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::leaveEvent()";
 #endif
 
-    setHasMouse (false);
-    if (tool ()) {
-        tool ()->leaveEvent (e);
+    setHasMouse(false);
+    if (tool()) {
+        tool()->leaveEvent(e);
     }
 }
 
-
 // protected virtual [base QWidget]
-void kpView::dragEnterEvent (QDragEnterEvent *)
+void kpView::dragEnterEvent(QDragEnterEvent *)
 {
 #if DEBUG_KP_VIEW && 1
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::dragEnterEvent()";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::dragEnterEvent()";
 #endif
 
-    setHasMouse (true);
+    setHasMouse(true);
 }
 
 // protected virtual [base QWidget]
-void kpView::dragLeaveEvent (QDragLeaveEvent *)
+void kpView::dragLeaveEvent(QDragLeaveEvent *)
 {
 #if DEBUG_KP_VIEW && 1
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::dragLeaveEvent";
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::dragLeaveEvent";
 #endif
 
-    setHasMouse (false);
+    setHasMouse(false);
 }
 
-
 // protected virtual [base QWidget]
-void kpView::resizeEvent (QResizeEvent *e)
+void kpView::resizeEvent(QResizeEvent *e)
 {
 #if DEBUG_KP_VIEW && 1
-    qCDebug(kpLogViews) << "kpView(" << objectName () << ")::resizeEvent("
-               << e->size ()
-               << " vs actual=" << size ()
-               << ") old=" << e->oldSize () << endl;
+    qCDebug(kpLogViews) << "kpView(" << objectName() << ")::resizeEvent(" << e->size() << " vs actual=" << size() << ") old=" << e->oldSize() << endl;
 #endif
 
-    QWidget::resizeEvent (e);
+    QWidget::resizeEvent(e);
 
-    emit sizeChanged (width (), height ());
-    emit sizeChanged (size ());
+    Q_EMIT sizeChanged(width(), height());
+    Q_EMIT sizeChanged(size());
 }

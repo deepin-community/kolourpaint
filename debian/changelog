@@ -1,3 +1,101 @@
+kolourpaint (4:25.04.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (25.04.0).
+  * Bump Standards-Version to 4.7.2, no change required.
+  * Update project homepage.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Thu, 17 Apr 2025 22:45:30 +0200
+
+kolourpaint (4:24.12.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Team upload
+
+ -- Salvo 'LtWorf' Tomaselli <ltworf@debian.org>  Fri, 07 Mar 2025 15:54:36 +0100
+
+kolourpaint (4:24.12.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Team upload
+
+ -- Salvo 'LtWorf' Tomaselli <ltworf@debian.org>  Sun, 02 Mar 2025 19:02:00 +0100
+
+kolourpaint (4:24.12.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Salvo 'LtWorf' Tomaselli <ltworf@debian.org>  Thu, 16 Jan 2025 10:02:42 +0100
+
+kolourpaint (4:24.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (24.12.0).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.7.0, no change required.
+  * Drop obsolete Breaks/Replaces.
+  * Switch away from transitional pkg-config build dependency.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Tue, 24 Dec 2024 00:17:45 +0100
+
+kolourpaint (4:22.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 01 Mar 2023 11:58:27 +0100
+
+kolourpaint (4:22.12.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Remove inactive Uploaders.
+  * Modernize building:
+    - add the dh-sequence-kf5 build dependency to use the kf5 addon
+      automatically, removing pkg-kde-tools
+    - drop all the manually specified addons and buildsystem for dh
+  * CI: enable again blhc, as it works fine now with blhc 0.13.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 05 Feb 2023 09:47:11 +0100
+
+kolourpaint (4:22.12.1-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.1).
+  * Bump Standards-Version to 4.6.2, no change required.
+  * Add/update Albert Astals Cid’s master key in upstream signing keys.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 07 Jan 2023 00:07:32 +0100
+
+kolourpaint (4:22.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.6.1, no change required.
+  * New upstream release (22.11.90).
+  * Update build-deps and deps with the info from cmake.
+  * New upstream release (22.12.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 11 Dec 2022 23:14:50 +0100
+
+kolourpaint (4:21.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (21.12.3).
+  * As were’re building with KF5Sane, add versioned build dependency matching
+    cmake to ensure it is really used.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 06 Mar 2022 14:13:48 +0100
+
+kolourpaint (4:21.12.2-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (21.12.2).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 02 Mar 2022 23:43:15 +0100
+
 kolourpaint (4:21.08.2-1) unstable; urgency=medium
 
   * Team upload.

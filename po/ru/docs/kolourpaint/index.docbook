@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-  <!ENTITY kappname "&kolourpaint;">
   <!ENTITY Clarence.Dang
 "<personname
 ><firstname
@@ -23,7 +22,6 @@
   <!ENTITY Thurston.Dang.mail "<email
 >thurston_dang@users.sourceforge.net</email
 >">
-  <!ENTITY package "kdegraphics">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % Russian "INCLUDE">
 ]>
@@ -32,7 +30,7 @@
 
 <bookinfo>
 <title
->Руководство &kolourpaint;</title>
+>Руководство пользователя &kolourpaint;</title>
 
 <authorgroup>
 <author
@@ -127,13 +125,13 @@
 &FDLNotice;
 </legalnotice>
 <date
->3 апреля 2011 г.</date>
+>23 марта 2018 г.</date>
 <releaseinfo
->&kde; 4.7</releaseinfo>
+>Приложения KDE 18.04</releaseinfo>
 
 <abstract>
 <para
->&kolourpaint; &mdash; это свободно распространяемое, простое в использовании графическое приложение для &kde;. </para>
+>&kolourpaint; &mdash; это свободно распространяемое, простое в использовании графическое приложение от &kde;. </para>
 </abstract>
 
 <keywordset>
@@ -149,7 +147,7 @@
 <title
 >Введение</title>
 <para
->&kolourpaint; &mdash; это свободно распространяемое графическое приложение для &kde;. &kolourpaint; идеально подходит для решения таких повседневных задач,  как:</para>
+>&kolourpaint; &mdash; это свободно распространяемое графическое приложение от &kde;. &kolourpaint; идеально подходит для решения таких повседневных задач, как:</para>
 
 <itemizedlist>
 <listitem>
@@ -219,6 +217,11 @@
 <chapter id="tools-chapter">
 <title
 >Инструменты</title>
+
+<para
+>Дополнительный параметр в меню <guimenu
+>Настройка</guimenu
+> позволяет указать, следует ли использовать сглаживание при рисовании (по умолчанию этот параметр включён). </para>
 
 <sect1 id="acquiring-screenshots">
 <title
@@ -905,6 +908,17 @@ format="PNG"/>
 >Можно применять различные эффекты к выделенной области &mdash; см. секцию <link linkend="image-effects-section"
 >Эффекты изображения</link
 > для получения дополнительной информации.</para>
+
+<para
+>Возможно сохранить выделение в файл: выберите в контекстном меню выделения пункт <guimenuitem
+>Копировать в файл...</guimenuitem
+> или воспользуйтесь пунктом главного меню <menuchoice
+><guimenu
+>Правка</guimenu
+><guimenuitem
+>Копировать в файл...</guimenuitem
+></menuchoice
+>. </para>
 </sect1>
 
 <sect1 id="tool-spraycan">
@@ -1767,66 +1781,44 @@ user selects the next page, the next page should be Autocrop / Remove Internal B
 >Обновление русского перевода 2014: Алексей Баранов <email
 >aleksei.ee@gmail.com</email
 ></para
-> 
-&underFDL; <para
+> &underFDL; <para
 >Условия лицензии программы:</para>
 
 <para
 >Программа &copy; 2003, 2004, 2005 &Clarence.Dang; &Clarence.Dang.mail;</para>
 
 <literallayout
->All rights reserved.
+>Все права защищены.
 
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
+Разрешается повторное распространение и использование
+как в виде исходного кода, так и в двоичной форме,
+с изменениями или без, при соблюдении следующих условий:
 
-1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
+1. При повторном распространении исходного кода должны оставаться
+    указанное выше уведомление об авторском праве, этот список условий
+    и последующий отказ от гарантий.
 
-2. Redistributions in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in the
-   documentation and/or other materials provided with the distribution.
+2. При повторном распространении двоичного кода указанное выше
+    уведомление об авторском праве, этот список условий и последующий
+    отказ от гарантий должны оставаться в документации и/или в других
+    материалах, поставляемых при распространении.
 
 
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&apos;&apos; AND ANY EXPRESS OR
-IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ЭТА ПРОГРАММА ПРЕДОСТАВЛЯЕТСЯ АВТОРОМ «КАК ЕСТЬ» БЕЗ КАКИХ-ЛИБО
+ЯВНЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ ГАРАНТИЙ, В ТОМ ЧИСЛЕ ПОДРАЗУМЕВАЕМЫХ
+ГАРАНТИЙ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.
+АВТОР НИ В КОЕМ СЛУЧАЕ НЕ НЕСЁТ ОТВЕТСТВЕННОСТИ ЗА ЛЮБЫЕ ПРЯМЫЕ,
+КОСВЕННЫЕ, СЛУЧАЙНЫЕ, ФАКТИЧЕСКИЕ, ШТРАФНЫЕ ИЛИ ПОСЛЕДОВАВШИЕ
+УБЫТКИ (ВКЛЮЧАЯ, СРЕДИ ПРОЧЕГО, ПРИОБРЕТЕНИЕ ЗАМЕНЯЮЩИХ ТОВАРОВ
+ИЛИ УСЛУГ; УТРАТУ ЭКСПЛУАТАЦИОННЫХ КАЧЕСТВ, ДАННЫХ ИЛИ ДОХОДОВ;
+ИЛИ ПЕРЕРЫВ В КОММЕРЧЕСКОЙ ДЕЯТЕЛЬНОСТИ), НЕЗАВИСИМО ОТ ОБРАЗА И
+ПРИЧИНЫ ИХ ВОЗНИКНОВЕНИЯ, БУДЬ ТО В СИЛУ ДОГОВОРА, ПРЯМОЙ
+ОТВЕТСТВЕННОСТИ ИЛИ ПРАВОНАРУШЕНИЯ (ВКЛЮЧАЯ ХАЛАТНОСТЬ ИЛИ
+ИНОЕ), ВОЗНИКШИЕ ВСЛЕДСТВИЕ ИСПОЛЬЗОВАНИЯ ЭТОГО ПРОГРАММНОГО
+ОБЕСПЕЧЕНИЯ, ДАЖЕ ЕСЛИ БЫЛ ИЗВЕЩЁН О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ.
 </literallayout>
 </chapter>
-
-<appendix id="installation">
-<title
->Установка</title>
-<sect1 id="getting-kapp">
-<title
->Где взять &kolourpaint;</title>
-&install.intro.documentation; <para
->Более частые изменённые версии с поддержкой предыдущих версий &kde; доступны на <ulink url="http://kolourpaint.sourceforge.net/"
->http://kolourpaint.sourceforge.net/</ulink
->.</para>
-
-</sect1>
-
-<sect1 id="compilation">
-<title
->Сборка и установка</title>
-
-<note>
-<para
->Если вы читаете этот файл справки в &khelpcenter;, то &kolourpaint; уже установлен в вашей системе, и вам не нужно следовать этим инструкциям. </para>
-</note
-> &install.compile.documentation; </sect1>
-
-</appendix>
 
 &documentation.index;
 </book>

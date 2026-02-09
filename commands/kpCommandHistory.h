@@ -1,40 +1,17 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #ifndef kpCommandHistory_H
 #define kpCommandHistory_H
-
 
 #include "kpCommandHistoryBase.h"
 
 class kpMainWindow;
 class kpToolSelectionCreateCommand;
-
 
 //
 // KolourPaint-specific command history functionality.
@@ -59,11 +36,11 @@ class kpToolSelectionCreateCommand;
 //
 class kpCommandHistory : public kpCommandHistoryBase
 {
-Q_OBJECT
+    Q_OBJECT
 
 public:
-    kpCommandHistory (bool doReadConfig, kpMainWindow *mainWindow);
-    ~kpCommandHistory () override;
+    kpCommandHistory(bool doReadConfig, kpMainWindow *mainWindow);
+    ~kpCommandHistory() override;
 
 public:
     // Same as addCommand(), except that this has a more desirable behavior
@@ -90,16 +67,14 @@ public:
     //
     // REFACTOR: Why not just override addCommand() and test if it was given a
     //           kpToolSelectionCreateCommand?
-    void addCreateSelectionCommand (kpToolSelectionCreateCommand *cmd,
-        bool execute = true);
+    void addCreateSelectionCommand(kpToolSelectionCreateCommand *cmd, bool execute = true);
 
-public slots:
-    void undo () override;
-    void redo () override;
+public Q_SLOTS:
+    void undo() override;
+    void redo() override;
 
 protected:
     kpMainWindow *m_mainWindow;
 };
 
-
-#endif  // kpCommandHistory_H
+#endif // kpCommandHistory_H

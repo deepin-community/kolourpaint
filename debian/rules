@@ -3,7 +3,7 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
-	dh $@ --with kf5
+	dh $@
 
 execute_after_dh_auto_install:
 	# remove shlib symlink as this isn't a dev package
