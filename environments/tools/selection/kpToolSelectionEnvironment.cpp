@@ -1,96 +1,70 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #include "kpToolSelectionEnvironment.h"
 
-#include "mainWindow/kpMainWindow.h"
 #include "layers/selections/image/kpImageSelectionTransparency.h"
 #include "layers/selections/text/kpTextStyle.h"
+#include "mainWindow/kpMainWindow.h"
 
-
-struct kpToolSelectionEnvironmentPrivate
-{
+struct kpToolSelectionEnvironmentPrivate {
 };
 
-kpToolSelectionEnvironment::kpToolSelectionEnvironment (kpMainWindow *mainWindow)
-    : kpToolEnvironment (mainWindow),
-      d (new kpToolSelectionEnvironmentPrivate ())
+kpToolSelectionEnvironment::kpToolSelectionEnvironment(kpMainWindow *mainWindow)
+    : kpToolEnvironment(mainWindow)
+    , d(new kpToolSelectionEnvironmentPrivate())
 {
 }
 
-kpToolSelectionEnvironment::~kpToolSelectionEnvironment ()
+kpToolSelectionEnvironment::~kpToolSelectionEnvironment()
 {
     delete d;
 }
 
-
 // public
-kpImageSelectionTransparency kpToolSelectionEnvironment::imageSelectionTransparency () const
+kpImageSelectionTransparency kpToolSelectionEnvironment::imageSelectionTransparency() const
 {
-    return mainWindow ()->imageSelectionTransparency ();
+    return mainWindow()->imageSelectionTransparency();
 }
 
 // public
-int kpToolSelectionEnvironment::settingImageSelectionTransparency () const
+int kpToolSelectionEnvironment::settingImageSelectionTransparency() const
 {
-    return mainWindow ()->settingImageSelectionTransparency ();
-}
-
-
-// public
-void kpToolSelectionEnvironment::deselectSelection () const
-{
-    mainWindow ()->slotDeselect ();
+    return mainWindow()->settingImageSelectionTransparency();
 }
 
 // public
-QMenu *kpToolSelectionEnvironment::selectionToolRMBMenu () const
+void kpToolSelectionEnvironment::deselectSelection() const
 {
-    return mainWindow ()->selectionToolRMBMenu ();
-}
-
-
-// public
-void kpToolSelectionEnvironment::enableTextToolBarActions (bool enable) const
-{
-    mainWindow ()->enableTextToolBarActions (enable);
+    mainWindow()->slotDeselect();
 }
 
 // public
-kpTextStyle kpToolSelectionEnvironment::textStyle () const
+QMenu *kpToolSelectionEnvironment::selectionToolRMBMenu() const
 {
-    return mainWindow ()->textStyle ();
+    return mainWindow()->selectionToolRMBMenu();
 }
 
 // public
-int kpToolSelectionEnvironment::settingTextStyle () const
+void kpToolSelectionEnvironment::enableTextToolBarActions(bool enable) const
 {
-    return mainWindow ()->settingTextStyle ();
+    mainWindow()->enableTextToolBarActions(enable);
 }
 
+// public
+kpTextStyle kpToolSelectionEnvironment::textStyle() const
+{
+    return mainWindow()->textStyle();
+}
 
+// public
+int kpToolSelectionEnvironment::settingTextStyle() const
+{
+    return mainWindow()->settingTextStyle();
+}
+
+#include "moc_kpToolSelectionEnvironment.cpp"

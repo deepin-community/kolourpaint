@@ -96,9 +96,7 @@
 <itemizedlist>
 <listitem>
 <para
->Pintura: dibuixar diagrames i <quote
->pintar amb els dits</quote
->.</para>
+>Pintura: dibuixar diagrames i «pintar amb els dits».</para>
 </listitem>
 <listitem>
 <para
@@ -128,7 +126,7 @@
 >Ús del &kolourpaint;</title>
 
 <para
->Feu clic als següents enllaços per explorar les capacitats del &kolourpaint;:</para>
+>Feu clic als següents enllaços per a explorar les capacitats del &kolourpaint;:</para>
 
 <itemizedlist>
 <listitem>
@@ -172,11 +170,9 @@
 >Obtenir captures de pantalla</title>
 
 <para
->Una <quote
->captura de pantalla</quote
-> és una instantània del que hi ha a la pantalla del vostre ordinador. Pot ser útil per explicar algunes de les accions que s'han de realitzar per obtenir el resultat, o per mostrar el problema que heu trobat. </para>
+>Una «captura de pantalla» és una instantània del que hi ha a la pantalla del vostre ordinador. Pot ser útil per a explicar algunes de les accions que s'han de realitzar per a obtenir el resultat, o per a mostrar el problema que heu trobat. </para>
 <para
->Per crear una captura de pantalla llesta per a la seva edició a la finestra del &kolourpaint; podeu utilitzar l'element <menuchoice
+>Per a crear una captura de pantalla llesta per a la seva edició a la finestra del &kolourpaint; podeu utilitzar l'element <menuchoice
 ><guimenu
 >Fitxer</guimenu
 > <guimenuitem
@@ -195,7 +191,7 @@
 >Retard de la captura de pantalla</guilabel
 > (en segons), i escollir <guilabel
 >Oculta la finestra principal</guilabel
-> durant la captura. Una vegada esteu llest per prendre una captura de pantalla, simplement feu clic a <guibutton
+> durant la captura. Una vegada esteu llest per a prendre una captura de pantalla, simplement feu clic a <guibutton
 >D'acord</guibutton
 >. La captura de pantalla presa es col·locarà directament a l'àrea d'edició del &kolourpaint;. </para>
 </sect1>
@@ -306,7 +302,7 @@
 > </guiicon
 > </link
 > <link linkend="tool-eraser-std"
->Goma</link
+>Goma d'esborrar</link
 > (A) </member>
 
 <member
@@ -451,6 +447,19 @@
 > <link linkend="tool-text"
 >Text</link
 > (T) </member>
+
+<member
+><link linkend="tool-zoom"
+> <guiicon
+> <inlinemediaobject
+> <imageobject
+> <imagedata fileref="tool_zoom.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> </guiicon
+> </link
+> <link linkend="tool-zoom"
+>Zoom</link
+> (Z) </member>
 </simplelist>
 
 </sect1>
@@ -501,9 +510,9 @@
 </title>
 
 <para
->Per establir el color de primer pla, feu clic <mousebutton
+>Per a establir el color de primer pla, feu clic <mousebutton
 >esquerre</mousebutton
-> sobre un píxel. Per establir el color de fons, feu clic <mousebutton
+> sobre un píxel. Per a establir el color de fons, feu clic <mousebutton
 >dret</mousebutton
 > sobre un píxel. El &kolourpaint; després retornarà a l'eina seleccionada prèviament.</para>
 
@@ -519,7 +528,7 @@
 </title>
 
 <para
->Feu clic i arrossegueu per a dibuixar línies connectades. L'eina de polígon s'utilitza de la mateixa manera, però, els punts d'inici i de final es connectaran automàticament per formar un polígon.</para>
+>Feu clic i arrossegueu per a dibuixar línies connectades. L'eina de polígon s'utilitza de la mateixa manera, però, els punts d'inici i de final es connectaran automàticament per a formar un polígon.</para>
 
 <para
 >El &BER; dibuixarà en el color de primer pla. El &BDR; dibuixarà en el color de fons. i també invertirà el color d'ompliment per als polígons.</para>
@@ -543,7 +552,7 @@
 </title>
 
 <para
->Feu clic i arrossegueu per a dibuixar una línia -això establirà els punts d'inici i final-. Podeu establir fins a dos punts de control per arrossegar. Per acabar la corba sense utilitzar ambdós o cap dels punts de control, feu clic amb l'altra botó del ratolí. L'eina de corba dibuixarà un Bezier cúbic.</para>
+>Feu clic i arrossegueu per a dibuixar una línia -això establirà els punts d'inici i final-. Podeu establir fins a dos punts de control per a arrossegar. Per a acabar la corba sense utilitzar ambdós o cap dels punts de control, feu clic amb l'altra botó del ratolí. L'eina de corba dibuixarà una Bézier cúbica.</para>
 
 <para
 >El &BER; dibuixarà en el color de primer pla. El &BDR; dibuixarà en el color de fons.</para>
@@ -602,7 +611,7 @@ sections; c.f. Connected Lines and Polygon, Rectangles and Selections. -->
 
 <sect2 id="tool-eraser-std">
 <title
->Goma <inlinemediaobject
+>Goma d'esborrar <inlinemediaobject
 > <imageobject>
 <imagedata fileref="tool_eraser.png" format="PNG"/>
 </imageobject>
@@ -610,7 +619,7 @@ sections; c.f. Connected Lines and Polygon, Rectangles and Selections. -->
 </title>
 
 <para
->Feu clic i arrossegueu amb la goma per esborrar els errors.</para>
+>Feu clic i arrossegueu amb la goma d'esborrar per a esborrar els errors.</para>
 
 <note>
 <para
@@ -618,7 +627,7 @@ sections; c.f. Connected Lines and Polygon, Rectangles and Selections. -->
 </note>
 
 <para
->La goma només té <link linkend="tool-options"
+>La goma d'esborrar només té <link linkend="tool-options"
 >formes quadrades</link
 >. Per a dibuixar amb altres formes com ara cercles utilitzeu el <link linkend="tool-brush"
 >Pinzell</link
@@ -626,7 +635,7 @@ sections; c.f. Connected Lines and Polygon, Rectangles and Selections. -->
 
 <tip>
 <para
->Feu doble clic sobre la icona «Goma» per esborrar tota la imatge. Això és equivalent a fer servir l'opció <link linkend="image-clear"
+>Feu doble clic sobre la icona «Goma d'esborrar» per a esborrar tota la imatge. Això és equivalent a fer servir l'opció <link linkend="image-clear"
 >Neteja</link
 > al menú «Imatge».</para>
 </tip>
@@ -654,12 +663,12 @@ sections; c.f. Connected Lines and Polygon, Rectangles and Selections. -->
 
 <para
 >Podeu configurar la <link linkend="tool-options"
->mida de la goma</link
+>mida de la goma d'esborrar</link
 >.</para>
 
 <tip>
 <para
->Feu doble clic sobre la icona «Eliminador del color» per aplicar-ho a tota la imatge.</para>
+>Feu doble clic sobre la icona «Eliminador del color» per a aplicar-ho a tota la imatge.</para>
 </tip>
 </sect2>
 
@@ -675,7 +684,7 @@ sections; c.f. Connected Lines and Polygon, Rectangles and Selections. -->
 </title>
 
 <para
->Feu clic per omplir una regió. Per omplir una regió difuminada, utilitzeu una opció per a <link linkend="color-box"
+>Feu clic per a omplir una regió. Per a omplir una regió difuminada, utilitzeu una opció per a <link linkend="color-box"
 >Similitud del color</link
 > que no sigui «Exacte».</para>
 
@@ -843,7 +852,7 @@ format="PNG"/>
 </entry>
 <entry>
 <para
->Hi ha dos modes de selecció: Opac (per omissió) i Transparent. Si utilitzeu el mode de selecció transparent, tots els píxels del color de fons seran transparents (sostracció del fons). Això permet enganxar una selecció sense el fons. Per dur a terme la sostracció del fons en una imatge difuminada, utilitzeu una opció per a <link linkend="color-box"
+>Hi ha dos modes de selecció: Opac (per omissió) i Transparent. Si utilitzeu el mode de selecció transparent, tots els píxels del color de fons seran transparents (sostracció del fons). Això permet enganxar una selecció sense el fons. Per a dur a terme la sostracció del fons en una imatge difuminada, utilitzeu una opció per a <link linkend="color-box"
 >Similitud del color</link
 > que no sigui «Exacte».</para>
 </entry>
@@ -855,7 +864,7 @@ format="PNG"/>
 <para
 >Podeu aplicar efectes de la imatge a una selecció -vegeu la secció <link linkend="image-effects-section"
 >Efectes de la imatge</link
-> per obtenir més informació-.</para>
+> per a obtenir més informació-.</para>
 
 <para
 >És possible desar la selecció al fitxer emprant l'element <guimenuitem
@@ -924,7 +933,7 @@ format="PNG"/>
 <para
 >Si heu desseleccionat un quadre de text, podreu utilitzar el botó <guimenuitem
 >Desfés</guimenuitem
-> per editar el text de nou.</para>
+> per a editar el text de nou.</para>
 </tip>
 
 <sect2 id="tool-text-transparent">
@@ -954,6 +963,27 @@ format="PNG"/>
 </sect2>
 </sect1>
 
+<sect1 id="tool-zoom">
+<title
+>Zoom <inlinemediaobject
+> <imageobject>
+<imagedata fileref="tool_zoom.png" format="PNG"/>
+</imageobject>
+</inlinemediaobject>
+</title>
+
+<para
+>El &BER; apropa. The &BDR; allunya.</para>
+<para
+>Arrossegueu amb el &BER; per a apropar una àrea específica.</para>
+
+<tip>
+<para
+>Feu doble clic sobre la icona de l'eina de zoom per a establir el zoom a «Ajusta a la pàgina».</para>
+</tip>
+
+</sect1>
+
 <sect1 id="tool-options">
 <title
 >Opcions comunes de l'eina</title>
@@ -971,11 +1001,11 @@ format="PNG"/>
 </entry>
 <entry>
 <para
->Feu clic sobre un dels quadrats per a seleccionar la mida de la goma. Podeu seleccionar entre quadrats amb longitud lateral de 2, 3, 5, 9, 17 i 29 píxels.</para>
+>Feu clic sobre un dels quadrats per a seleccionar la mida de la goma d'esborrar. Podeu seleccionar entre quadrats amb longitud lateral de 2, 3, 5, 9, 17 i 29 píxels.</para>
 
 <para
->L'ajust de la mida de la goma afectarà les <link linkend="tool-erasers"
->Gomes</link
+>L'ajust de la mida de la goma d'esborrar afectarà les <link linkend="tool-erasers"
+>Gomes d'esborrar</link
 >.</para>
 </entry>
 </row>
@@ -1065,23 +1095,21 @@ format="PNG"/>
 <para
 >La tauleta de colors mostra el color de primer pla actual com un quadrat sobre d'un altre que representa el color de fons actual. En dibuixar amb el &BER;, s'utilitzarà el color de primer pla, i quan es dibuixi amb el &BDR; s'utilitzarà el color de fons (a excepció de les <link linkend="tool-erasers"
 >Gomes</link
->). Podeu fer clic a la fletxa de doble punta per intercanviar els colors de primer pla i de fons. </para>
+>). Podeu fer clic a la fletxa de doble punta per a intercanviar els colors de primer pla i de fons. </para>
 
 <para
->La paleta de colors mostra una selecció de colors perquè escolliu. La piràmide translúcida representa el color transparent. Feu clic esquerre sobre un color per establir el color de primer pla i feu clic esquerre sobre un color per establir el color de fons. També podeu arrossegar i deixar anar qualsevol color opac als quadrats de la tauleta de colors. Per editar un color a la tauleta o la paleta de colors, feu-hi doble clic. L'eina <link linkend="tool-color-picker"
+>La paleta de colors mostra una selecció de colors perquè escolliu. La piràmide translúcida representa el color transparent. Feu clic esquerre sobre un color per a establir el color de primer pla i feu clic esquerre sobre un color per a establir el color de fons. També podeu arrossegar i deixar anar qualsevol color opac als quadrats de la tauleta de colors. Per a editar un color a la tauleta o la paleta de colors, feu-hi doble clic. L'eina <link linkend="tool-color-picker"
 >Selector de colors</link
 > permet seleccionar un color de la imatge. </para>
 
 <para
->La similitud dels colors permet treballar de manera més eficaç amb imatges i fotografies difuminades, de manera comparable a la característica <quote
->Vareta màgica</quote
-> d'altres programes de pintura. S'aplica a les seleccions transparents, així com les eines <link linkend="tool-flood-fill"
+>La similitud dels colors permet treballar de manera més eficaç amb imatges i fotografies difuminades, de manera comparable a la característica «Vareta màgica» d'altres programes de pintura. S'aplica a les seleccions transparents, així com les eines <link linkend="tool-flood-fill"
 >Omple</link
 >, <link linkend="tool-eraser-clr"
 >Eliminador del color</link
 > i <link linkend="image-autocrop"
 >Escapça / Elimina la vora interna</link
->. Feu doble clic sobre el selector de colors per escollir com hauran de ser de similars per a considerar-los idèntics. En utilitzar les seleccions en el mode transparent, qualsevol color en la selecció que sigui similar al color de fons també es tornarà transparent.</para>
+>. Feu doble clic sobre el selector de colors per a escollir com hauran de ser de similars per a considerar-los idèntics. En utilitzar les seleccions en el mode transparent, qualsevol color en la selecció que sigui similar al color de fons també es tornarà transparent.</para>
 
 <para>
 <inlinemediaobject>
@@ -1122,17 +1150,17 @@ format="PNG"/>
 <title
 >El zoom i la graella</title>
 <para
->Incrementeu el nivell de zoom per editar les imatges amb més precisió, o reduïu-lo per a veure-les més bé.</para>
+>Incrementeu el nivell de zoom per a editar les imatges amb més precisió, o reduïu-lo per a veure-les més bé.</para>
 
 <important>
 <para
->En els nivells de zoom que no siguin múltiples de 100%, en moure'l poden aparèixer parts de la imatge quan l'usuari interactua amb aquesta. També poden ocórrer altres errors menors com a conseqüència dels nivells de zoom. </para>
+>En els nivells de zoom que no siguin múltiples de 100%, en moure'l poden aparèixer parts de la imatge quan l'usuari interactua amb aquesta. També poden ocórrer altres errors menors a conseqüència dels nivells de zoom. </para>
 </important>
 
 <para
 >En els nivells de zoom de 400% o superiors que també siguin múltiples de 100%, podreu fer <guimenuitem
 >Mostra la graella</guimenuitem
-> per editar amb major precisió els píxels individuals.</para>
+> per a editar amb major precisió els píxels individuals.</para>
 
 <para>
 <inlinemediaobject>
@@ -1175,7 +1203,7 @@ format="PNG"/>
 <para
 >Si el <guimenuitem
 >Mode de miniatura ampliada</guimenuitem
-> està seleccionat, es mostrarà tota la imatge, en una escala segons sigui necessari per ajustar-la a la finestra de miniatures (imatge superior dreta). </para>
+> està seleccionat, es mostrarà tota la imatge, en una escala segons sigui necessari per a ajustar-la a la finestra de miniatures (imatge superior dreta). </para>
 <para
 >En cas contrari, la miniatura mostrarà la imatge fins on sigui possible, començant per la part superior esquerra de la vista principal (imatge inferior dreta). </para>
 </sect1>
@@ -1268,7 +1296,7 @@ format="PNG"/>
 >Escapça / Elimina la vora interna</title>
 
 <para
->Això eliminarà automàticament la vora d'una imatge o selecció. Utilitzeu l'escapçat si teniu una figura que no omple tota la imatge o la selecció i voleu eliminar l'excés d'espai en blanc. Per utilitzar aquesta característica amb una vora de la imatge difuminada, també haureu d'utilitzar <link linkend="color-box"
+>Això eliminarà automàticament la vora d'una imatge o selecció. Utilitzeu l'escapçat si teniu una figura que no omple tota la imatge o la selecció i voleu eliminar l'excés d'espai en blanc. Per a utilitzar aquesta característica amb una vora de la imatge difuminada, també haureu d'utilitzar <link linkend="color-box"
 >Similitud del color</link
 >.</para>
 
@@ -1313,8 +1341,8 @@ format="PNG"/>
 <tip>
 <para
 >Feu doble clic sobre la icona <link linkend="tool-eraser-std"
->Goma</link
-> per esborrar tota la imatge.</para>
+>Goma d'esborrar</link
+> per a esborrar tota la imatge.</para>
 </tip>
 
 </sect1>
@@ -1338,9 +1366,7 @@ format="PNG"/>
 <para
 >Marqueu <guilabel
 >Habilita</guilabel
-> per aplicar l'efecte de relleu. Això posarà en relleu les vores i donarà a la imatge o la selecció un <quote
->aspecte de gravat</quote
->. </para>
+> per a aplicar l'efecte de relleu. Això posarà en relleu les vores i donarà a la imatge o la selecció un «aspecte de gravat». </para>
 </sect1>
 
 <sect1 id="image-flatten">
@@ -1368,7 +1394,7 @@ format="PNG"/>
 >Inverteix (capgirada)</title>
 
 <para
->Això dóna la volta verticalment a tota la imatge o a la selecció.</para>
+>Això dona la volta verticalment a tota la imatge o a la selecció.</para>
 
 </sect1>
 
@@ -1395,7 +1421,7 @@ format="PNG"/>
 
 <tip>
 <para
->Per invertir ràpidament tots els canals, no cal utilitzar aquest diàleg. En el seu lloc podeu accedir a l'element <guimenuitem
+>Per a invertir ràpidament tots els canals, no cal utilitzar aquest diàleg. En el seu lloc podeu accedir a l'element <guimenuitem
 >Inverteix els colors</guimenuitem
 > en els menús <guimenu
 >Imatge</guimenu
@@ -1452,7 +1478,7 @@ format="PNG"/>
 
 <tip>
 <para
->Per obtenir un difuminat monocrom de forma ràpida d'una imatge o selecció, utilitzeu l'element <link linkend="image-monochrome"
+>Per a obtenir un difuminat monocrom de forma ràpida d'una imatge o selecció, utilitzeu l'element <link linkend="image-monochrome"
 >Redueix a monocrom (tramat)</link
 > des dels menús <guimenu
 >Imatge</guimenu
@@ -1465,7 +1491,7 @@ format="PNG"/>
 
 <note>
 <para
->Canviar el nombre de colors aquí no afectarà sobre la profunditat del color del format de fitxer. Per a canviar la profunditat del color, haureu de seleccionar-la en els diàlegs per desar el fitxer. Tingueu en compte que, confusament, canviant la profunditat del color també canviareu el nombre de colors. </para>
+>Canviar el nombre de colors aquí no afectarà sobre la profunditat del color del format de fitxer. Per a canviar la profunditat del color, haureu de seleccionar-la en els diàlegs per a desar el fitxer. Tingueu en compte que, confusament, canviant la profunditat del color també canviareu el nombre de colors. </para>
 </note>
 </sect1>
 
@@ -1506,12 +1532,12 @@ format="PNG"/>
 </para>
 
 <para
->Canviar la mida de la imatge canviarà les dimensions d'aquesta sense aplicar una transformació als continguts existents. Escalar la imatge estirarà el contingut existent a les noves dimensions. Un <guibutton
+>Canviar la mida de la imatge canviarà les dimensions d'aquesta sense aplicar una transformació als continguts existents. Escalar la imatge estirarà el contingut existent a les dimensions noves. Un <guibutton
 >Escalat suau</guibutton
 > generalment proporciona millors resultats de qualitat que l'escalat normal, mitjançant la barreja dels colors veïns.</para>
 
 <para
->Podeu expressar les noves dimensions en píxels, o com un percentatge de la mida original. Si seleccioneu <guilabel
+>Podeu expressar les dimensions noves en píxels, o com un percentatge de la mida original. Si seleccioneu <guilabel
 >Mantén la relació d'aspecte</guilabel
 >, l'amplada i l'alçada s'ampliaran en el mateix percentatge.</para>
 
@@ -1556,7 +1582,7 @@ format="PNG"/>
 <para
 >Vegeu <link linkend="image-notes"
 >Notes</link
-> per obtenir detalls sobre l'aplicació d'aquest efecte a una selecció. </para>
+> per a obtenir detalls sobre l'aplicació d'aquest efecte a una selecció. </para>
 </note>
 </sect1>
 
@@ -1592,7 +1618,7 @@ format="PNG"/>
 <para
 >Vegeu <link linkend="image-notes"
 >Notes</link
-> per obtenir detalls sobre l'aplicació d'aquest efecte a una selecció.</para>
+> per a obtenir detalls sobre l'aplicació d'aquest efecte a una selecció.</para>
 </note>
 </sect1>
 
@@ -1649,7 +1675,7 @@ user selects the next page, the next page should be Autocrop / Remove Internal B
 >Gira</link
 > i <link linkend="image-skew"
 >Esbiaixa</link
-> poden canviar les dimensions de la imatge. Podreu veure les noves dimensions en el diàleg.</para>
+> poden canviar les dimensions de la imatge. Podreu veure les dimensions noves en el diàleg.</para>
 
 <para
 >Si apliqueu aquests efectes a una imatge, aquesta es canviarà de mida si cal. Tanmateix, si apliqueu aquests efectes a una selecció, la imatge no es podrà canviar de mida, fins i tot quan la selecció transformada no encaixi.</para>
@@ -1663,7 +1689,7 @@ user selects the next page, the next page should be Autocrop / Remove Internal B
 </para>
 
 <para
->La imatge de l'esquerra ha estat girada 30 graus cap a la dreta per formar la imatge de la dreta. El &kolourpaint; ha ampliat la imatge automàticament per acomodar-la al contingut més gran. </para>
+>La imatge de l'esquerra ha estat girada 30 graus cap a la dreta per a formar la imatge de la dreta. El &kolourpaint; ha ampliat la imatge automàticament per a acomodar-la al contingut més gran. </para>
 
 <para>
 <inlinemediaobject>
@@ -1676,7 +1702,7 @@ user selects the next page, the next page should be Autocrop / Remove Internal B
 <para
 >La <emphasis
 >selecció</emphasis
-> de l'esquerra s'ha girat 30 graus cap a la dreta per formar la selecció de la dreta. La mida de la imatge segueix sent la mateixa, per tant, les parts de la selecció no seran visibles sense fer un <link linkend="image-resize-scale"
+> de l'esquerra s'ha girat 30 graus cap a la dreta per a formar la selecció de la dreta. La mida de la imatge segueix sent la mateixa, per tant, les parts de la selecció no seran visibles sense fer un <link linkend="image-resize-scale"
 >Redimensiona</link
 > sobre la <emphasis
 >imatge</emphasis

@@ -17,12 +17,12 @@ add_library(kolourpaint_lgpl SHARED ${kolourpaint_lgpl_SRCS})
 set(kolourpaint_lgpl_version 5)
 
 target_link_libraries(kolourpaint_lgpl
-    KF5::I18n
-    KF5::GuiAddons
-    KF5::WidgetsAddons
-    KF5::KIOCore
-    KF5::JobWidgets
-    Qt5::Widgets
+    KF6::I18n
+    KF6::GuiAddons
+    KF6::WidgetsAddons
+    KF6::KIOCore
+    KF6::JobWidgets
+    Qt6::Widgets
 )
 
 set_target_properties(kolourpaint_lgpl

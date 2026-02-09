@@ -1,17 +1,20 @@
-# KDE Application Version, managed by release script
-set(RELEASE_SERVICE_VERSION_MAJOR "21")
-set(RELEASE_SERVICE_VERSION_MINOR "08")
-set(RELEASE_SERVICE_VERSION_MICRO "2")
-set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
+cmake_minimum_required(VERSION 3.16.0 FATAL_ERROR)
 
-cmake_minimum_required(VERSION 3.10.0 FATAL_ERROR)
+# KDE Application Version, managed by release script
+set(RELEASE_SERVICE_VERSION_MAJOR "25")
+set(RELEASE_SERVICE_VERSION_MINOR "04")
+set(RELEASE_SERVICE_VERSION_MICRO "0")
+set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
 
 project(kolourpaint VERSION ${RELEASE_SERVICE_VERSION})
 
-set(QT_MIN_VERSION "5.11.0")
-set(KF5_MIN_VERSION "5.67.0")
+set(QT_MIN_VERSION "6.6.0")
+set(KF_MIN_VERSION "6.5.0")
+set(KSANEWIDGETS6_MIN_VERSION "24.02")
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+option(BUILD_DOC "Whether to build the documentation" ON)
+
+find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 add_definitions(-DTRANSLATION_DOMAIN="kolourpaint")
@@ -23,15 +26,16 @@ include(ECMInstallIcons)
 include(ECMAddAppIcon)
 include(ECMSetupVersion)
 include(FeatureSummary)
+include(KDEClangFormat)
+include(KDEGitCommitHooks)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
     Widgets
     PrintSupport
 )
 
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
-    DocTools
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     GuiAddons
     WidgetsAddons
@@ -39,24 +43,29 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
     TextWidgets
     JobWidgets
+    Crash
 )
 
 add_definitions(-DQT_USE_QSTRINGBUILDER)
 
-find_package(KF5Sane)
-
-if(KF5Sane_FOUND)
+find_package(KSaneWidgets6 ${KSANEWIDGETS6_MIN_VERSION})
+if(KSaneWidgets6_FOUND)
     add_definitions(-DHAVE_KSANE=1)
-    set(KSANE_LIBRARIES KF5::Sane)
-else(KF5Sane_FOUND)
+else()
     add_definitions(-DHAVE_KSANE=0)
-endif(KF5Sane_FOUND)
+endif()
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
- 
+if(BUILD_DOC)
+    find_package(KF6DocTools ${KF_MIN_VERSION})
+    set_package_properties(KF6DocTools PROPERTIES
+        DESCRIPTION "Tools to generate documentation"
+        TYPE REQUIRED
+    )
+endif()
  
 ## Generate header with version number
 ecm_setup_version(${RELEASE_SERVICE_VERSION}
@@ -66,7 +75,6 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION}
 
 
 add_subdirectory( pics )
-add_subdirectory( doc )
 
 
 ########### next target ###############
@@ -214,7 +222,6 @@ set(kolourpaint_lib2_SRCS
     ${CMAKE_CURRENT_SOURCE_DIR}/tools/flow/kpToolFlowPixmapBase.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/tools/flow/kpToolPen.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/tools/flow/kpToolSpraycan.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/tools/kpToolAction.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/tools/kpToolColorPicker.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/tools/kpTool.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/tools/kpTool_Drawing.cpp
@@ -259,12 +266,12 @@ set(kolourpaint_lib2_SRCS
 )  # kolourpaint_lib2_SRCS
 
 
-if(KF5Sane_FOUND)
+if(TARGET KSaneWidgets6)
     set(kolourpaint_lib2_SRCS
         ${kolourpaint_lib2_SRCS}
         ${CMAKE_CURRENT_SOURCE_DIR}/scan/sanedialog.cpp
     )
-endif(KF5Sane_FOUND)
+endif()
 
 set(kolourpaint_app_SRCS
     ${CMAKE_CURRENT_SOURCE_DIR}/views/kpThumbnailView.cpp
@@ -334,32 +341,46 @@ ecm_add_app_icon(kolourpaint_SRCS ICONS
 add_executable(kolourpaint ${kolourpaint_SRCS})
 
 target_link_libraries(kolourpaint
-    KF5::XmlGui
-    KF5::KIOFileWidgets
-    KF5::TextWidgets
-    Qt5::PrintSupport
-    ${KSANE_LIBRARIES}
+    KF6::XmlGui
+    KF6::KIOFileWidgets
+    KF6::Crash
+    Qt6::PrintSupport
     kolourpaint_lgpl
 )
 
-if(KSANE_FOUND)
-    target_link_libraries(kolourpaint
-        ${KSANE_LIBRARY}
-    )
-endif(KSANE_FOUND)
-
+if(TARGET KSaneWidgets6)
+    target_link_libraries(kolourpaint KSaneWidgets6)
+endif()
 
 install(TARGETS kolourpaint ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+
+if(APPLE)
+    set_target_properties(kolourpaint PROPERTIES
+        MACOSX_BUNDLE_DISPLAY_NAME "KColourPaint"
+        MACOSX_BUNDLE_BUNDLE_NAME "KColourPaint"
+        MACOSX_BUNDLE_LONG_VERSION_STRING "KColourPaint ${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_SHORT_VERSION_STRING "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}"
+        MACOSX_BUNDLE_BUNDLE_VERSION "${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_GUI_IDENTIFIER "org.kde.kolourpaint"
+        MACOSX_BUNDLE_COPYRIGHT "2003-2024 The KColourPaint Developers")
+endif()
 
 
 ########### install files ###############
 
 install(PROGRAMS org.kde.kolourpaint.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kolourpaint.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-install(FILES kolourpaintui.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kolourpaint)
+
+if(BUILD_DOC)
+    add_subdirectory(doc)
+    kdoctools_install(po)
+endif()
+
+ki18n_install(po)
+
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
+
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-ki18n_install(po)
-if (KF5DocTools_FOUND)
- kdoctools_install(po)
-endif()

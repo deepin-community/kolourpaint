@@ -1,45 +1,20 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #ifndef kpColorCells_H
 #define kpColorCells_H
-
 
 #include <QUrl>
 
 #include "lgpl/generic/widgets/kpColorCellsBase.h"
 
-
-
 class kpColorCollection;
 
 class kpColor;
-
 
 // This widget consists of rows of 11 cells of colors.  The cells become
 // shorter as soon as there are 3 rows.  After that, a vertical scrollbar
@@ -75,50 +50,49 @@ class kpColor;
 // TODO: For now, only horizontal orientation is supported.
 class kpColorCells : public kpColorCellsBase
 {
-Q_OBJECT
+    Q_OBJECT
 
 public:
-    kpColorCells (QWidget *parent,
-                  Qt::Orientation o = Qt::Horizontal);
-    ~kpColorCells () override;
+    explicit kpColorCells(QWidget *parent, Qt::Orientation o = Qt::Horizontal);
+    ~kpColorCells() override;
 
-    static kpColorCollection DefaultColorCollection ();
+    static kpColorCollection DefaultColorCollection();
 
-    Qt::Orientation orientation () const;
-    void setOrientation (Qt::Orientation o);
+    Qt::Orientation orientation() const;
+    void setOrientation(Qt::Orientation o);
 
 protected:
-    void makeCellsMatchColorCollection ();
+    void makeCellsMatchColorCollection();
 
 public:
-    bool isModified () const;
+    bool isModified() const;
     // (this emits isModifiedChanged() if the modified state changes)
-    void setModified (bool yes);
-public slots:
+    void setModified(bool yes);
+public Q_SLOTS:
     // (this emits isModifiedChanged() if the modified state changes)
-    void setModified ();
+    void setModified();
 
 public:
     // The source URL of the kpColorCollection.  Empty for color
     // collections that did not come from files.
-    QUrl url () const;
+    QUrl url() const;
 
     // The name of the kpColorCollection.  Empty for color collections
     // managed by KDE.
-    QString name () const;
+    QString name() const;
 
-    const kpColorCollection *colorCollection () const;
+    const kpColorCollection *colorCollection() const;
 
 private:
     // Ensures there's a least one row of cells, to avoid a confusing UI.
-    void ensureHaveAtLeastOneRow ();
-public:
-    void setColorCollection (const kpColorCollection &colorCol,
-        const QUrl &url = QUrl ());
+    void ensureHaveAtLeastOneRow();
 
-    bool openColorCollection (const QUrl &url);
-    bool saveColorCollectionAs (const QUrl &url);
-    bool saveColorCollection ();
+public:
+    void setColorCollection(const kpColorCollection &colorCol, const QUrl &url = QUrl());
+
+    bool openColorCollection(const QUrl &url);
+    bool saveColorCollectionAs(const QUrl &url);
+    bool saveColorCollection();
 
     // These add and delete visual/table rows, independent of whether the number
     // of colors in the color collection is divisible by the columnCount()
@@ -135,34 +109,33 @@ public:
     // 2. deleteRow() will delete a visual row so that there will be 1 visual
     //    row (11 cells in total) remaining.  (15 - 11) colors will be deleted
     //    from the back of the color collection.
-    void appendRow ();
-    void deleteLastRow ();
+    void appendRow();
+    void deleteLastRow();
 
-signals:
-    void foregroundColorChanged (const kpColor &color);
-    void backgroundColorChanged (const kpColor &color);
+Q_SIGNALS:
+    void foregroundColorChanged(const kpColor &color);
+    void backgroundColorChanged(const kpColor &color);
 
-    void rowCountChanged (int rowCount);
+    void rowCountChanged(int rowCount);
 
-    void nameChanged (const QString &name);
-    void urlChanged (const QUrl &url);
+    void nameChanged(const QString &name);
+    void urlChanged(const QUrl &url);
 
     // Emitted when setModified() is called and the modified state changes.
     // It may be called at other times, even when the modified state did
     // not change.
-    void isModifiedChanged (bool isModified);
+    void isModifiedChanged(bool isModified);
 
 protected:
-    void contextMenuEvent (QContextMenuEvent *e) override;
+    void contextMenuEvent(QContextMenuEvent *e) override;
 
-protected slots:
-    void slotColorSelected (int cell, const QColor &color, Qt::MouseButton button);
-    void slotColorDoubleClicked (int cell, const QColor &color);
-    void slotColorChanged (int cell, const QColor &color);
+protected Q_SLOTS:
+    void slotColorSelected(int cell, const QColor &color, Qt::MouseButton button);
+    void slotColorDoubleClicked(int cell, const QColor &color);
+    void slotColorChanged(int cell, const QColor &color);
 
 private:
-    struct kpColorCellsPrivate * const d;
+    struct kpColorCellsPrivate *const d;
 };
 
-
-#endif  // kpColorCells_H
+#endif // kpColorCells_H

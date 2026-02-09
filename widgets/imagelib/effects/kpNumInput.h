@@ -1,32 +1,18 @@
 /* This file is part of the KDE libraries
- *  Copyright (c) 1997 Patrick Dowler <dowler@morgul.fsh.uvic.ca>
- *  Copyright (c) 2000 Dirk Mueller <mueller@kde.org>
- *  Copyright (c) 2002 Marc Mutz <mutz@kde.org>
+ *  SPDX-FileCopyrightText: 1997 Patrick Dowler <dowler@morgul.fsh.uvic.ca>
+ *  SPDX-FileCopyrightText: 2000 Dirk Mueller <mueller@kde.org>
+ *  SPDX-FileCopyrightText: 2002 Marc Mutz <mutz@kde.org>
  *
- *  This library is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU Library General Public
- *  License as published by the Free Software Foundation; either
- *  version 2 of the License, or (at your option) any later version.
- *
- *  This library is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- *  Library General Public License for more details.
- *
- *  You should have received a copy of the GNU Library General Public License
- *  along with this library; see the file COPYING.LIB.  If not, write to
- *  the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- *  Boston, MA 02110-1301, USA.
+ *  SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
 #ifndef kpNumInput_H
 #define kpNumInput_H
 
-#include <QWidget>
 #include <QSpinBox>
+#include <QWidget>
 
 class QSlider;
-class QSpinBox;
 
 class kpNumInputPrivate;
 
@@ -51,7 +37,7 @@ public:
     /**
      * Destructor
      */
-    ~kpNumInput();
+    ~kpNumInput() override;
 
     /**
      * Sets the text and alignment of the main description label.
@@ -95,7 +81,7 @@ public:
      *
      * @return the preferred size necessary to show the control
      */
-    QSize sizeHint() const Q_DECL_OVERRIDE;
+    QSize sizeHint() const override;
 
 protected:
     /**
@@ -180,7 +166,7 @@ public:
      *
      *
      */
-    virtual ~kpIntNumInput();
+    ~kpIntNumInput() override;
 
     /**
      * @return the current value.
@@ -243,7 +229,7 @@ public:
      */
     void setSpecialValueText(const QString &text);
 
-    void setLabel(const QString &label, Qt::Alignment a = Qt::AlignLeft | Qt::AlignTop) Q_DECL_OVERRIDE;
+    void setLabel(const QString &label, Qt::Alignment a = Qt::AlignLeft | Qt::AlignTop) override;
 
     /**
      * This method returns the minimum size necessary to display the
@@ -252,7 +238,7 @@ public:
      *
      * @return the minimum size necessary to show the control
      */
-    QSize minimumSizeHint() const Q_DECL_OVERRIDE;
+    QSize minimumSizeHint() const override;
 
 public Q_SLOTS:
     /**
@@ -284,7 +270,6 @@ Q_SIGNALS:
      */
     void valueChanged(int);
 
-
 private Q_SLOTS:
     void spinValueChanged(int);
 
@@ -295,8 +280,8 @@ protected:
      */
     QSpinBox *spinBox() const;
 
-    void doLayout() Q_DECL_OVERRIDE;
-    void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
+    void doLayout() override;
+    void resizeEvent(QResizeEvent *) override;
 
 private:
     void initWidget(int value);
@@ -362,13 +347,12 @@ public:
      * @param precision number of digits after the decimal point
      * @param parent parent QWidget
      */
-    kpDoubleNumInput(double lower, double upper, double value, QWidget *parent = nullptr, double singleStep = 0.01,
-                    int precision = 2);
+    kpDoubleNumInput(double lower, double upper, double value, QWidget *parent = nullptr, double singleStep = 0.01, int precision = 2);
 
     /**
      * destructor
      */
-    virtual ~kpDoubleNumInput();
+    ~kpDoubleNumInput() override;
 
     /**
      * @return the current value.
@@ -394,11 +378,11 @@ public:
     QString specialValueText() const;
 
     /**
-    * @param min  minimum value
-    * @param max  maximum value
-    * @param singleStep step size for the QSlider
-    * @param slider whether the slider is created or not
-    */
+     * @param min  minimum value
+     * @param max  maximum value
+     * @param singleStep step size for the QSlider
+     * @param slider whether the slider is created or not
+     */
     void setRange(double min, double max, double singleStep = 1);
 
     /**
@@ -441,8 +425,8 @@ public:
      */
     void setSpecialValueText(const QString &text);
 
-    void setLabel(const QString &label, Qt::Alignment a = Qt::AlignLeft | Qt::AlignTop) Q_DECL_OVERRIDE;
-    QSize minimumSizeHint() const Q_DECL_OVERRIDE;
+    void setLabel(const QString &label, Qt::Alignment a = Qt::AlignLeft | Qt::AlignTop) override;
+    QSize minimumSizeHint() const override;
 
 public Q_SLOTS:
     /**
@@ -471,13 +455,13 @@ private Q_SLOTS:
     void spinBoxChanged(double);
 
 protected:
-    void doLayout() Q_DECL_OVERRIDE;
-    void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
+    void doLayout() override;
+    void resizeEvent(QResizeEvent *) override;
 
     friend class kpDoubleLine;
+
 private:
-    void initWidget(double value, double lower, double upper,
-                    double singleStep, int precision);
+    void initWidget(double value, double lower, double upper, double singleStep, int precision);
     double mapSliderToSpin(int) const;
 
 private:
@@ -487,6 +471,5 @@ private:
 
     Q_DISABLE_COPY(kpDoubleNumInput)
 };
-
 
 #endif // kpNumInput_H

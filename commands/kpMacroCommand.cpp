@@ -1,33 +1,11 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
 
-
 #define DEBUG_KP_COMMAND_HISTORY 0
-
 
 #include "commands/kpMacroCommand.h"
 #include "views/manager/kpViewManager.h"
@@ -38,14 +16,14 @@
 
 //---------------------------------------------------------------------
 
-kpMacroCommand::kpMacroCommand (const QString &name, kpCommandEnvironment *environ)
-    : kpNamedCommand (name, environ)
+kpMacroCommand::kpMacroCommand(const QString &name, kpCommandEnvironment *environ)
+    : kpNamedCommand(name, environ)
 {
 }
 
 //---------------------------------------------------------------------
 
-kpMacroCommand::~kpMacroCommand ()
+kpMacroCommand::~kpMacroCommand()
 {
     qDeleteAll(m_commandList);
 }
@@ -53,7 +31,7 @@ kpMacroCommand::~kpMacroCommand ()
 //---------------------------------------------------------------------
 
 // public virtual [base kpCommand]
-kpCommandSize::SizeType kpMacroCommand::size () const
+kpCommandSize::SizeType kpMacroCommand::size() const
 {
 #if DEBUG_KP_COMMAND_HISTORY && 0
     qCDebug(kpLogCommands) << "kpMacroCommand::size()";
@@ -63,13 +41,11 @@ kpCommandSize::SizeType kpMacroCommand::size () const
 #if DEBUG_KP_COMMAND_HISTORY && 0
     qCDebug(kpLogCommands) << "\tcalculating:";
 #endif
-    foreach (kpCommand *cmd, m_commandList)
-    {
-    #if DEBUG_KP_COMMAND_HISTORY && 0
-        qCDebug(kpLogCommands) << "\t\tcurrentSize=" << s << " + "
-                   << cmd->name () << ".size=" << cmd->size ();
-    #endif
-        s += cmd->size ();
+    for (kpCommand *cmd : m_commandList) {
+#if DEBUG_KP_COMMAND_HISTORY && 0
+        qCDebug(kpLogCommands) << "\t\tcurrentSize=" << s << " + " << cmd->name() << ".size=" << cmd->size();
+#endif
+        s += cmd->size();
     }
 
 #if DEBUG_KP_COMMAND_HISTORY && 0
@@ -81,7 +57,7 @@ kpCommandSize::SizeType kpMacroCommand::size () const
 //---------------------------------------------------------------------
 
 // public virtual [base kpCommand]
-void kpMacroCommand::execute ()
+void kpMacroCommand::execute()
 {
 #if DEBUG_KP_COMMAND_HISTORY
     qCDebug(kpLogCommands) << "kpMacroCommand::execute()";
@@ -89,11 +65,10 @@ void kpMacroCommand::execute ()
 
     viewManager()->setQueueUpdates();
 
-    foreach (kpCommand *command, m_commandList)
-    {
-    #if DEBUG_KP_COMMAND_HISTORY
+    for (kpCommand *command : std::as_const(m_commandList)) {
+#if DEBUG_KP_COMMAND_HISTORY
         qCDebug(kpLogCommands) << "\texecuting " << command->name();
-    #endif
+#endif
         command->execute();
     }
 
@@ -103,7 +78,7 @@ void kpMacroCommand::execute ()
 //---------------------------------------------------------------------
 
 // public virtual [base kpCommand]
-void kpMacroCommand::unexecute ()
+void kpMacroCommand::unexecute()
 {
 #if DEBUG_KP_COMMAND_HISTORY
     qCDebug(kpLogCommands) << "kpMacroCommand::unexecute()";
@@ -111,11 +86,10 @@ void kpMacroCommand::unexecute ()
 
     viewManager()->setQueueUpdates();
 
-    for (int i = m_commandList.count() - 1; i >= 0; i--)
-    {
-    #if DEBUG_KP_COMMAND_HISTORY
+    for (int i = m_commandList.count() - 1; i >= 0; i--) {
+#if DEBUG_KP_COMMAND_HISTORY
         qCDebug(kpLogCommands) << "\tunexecuting " << m_commandList[i]->name();
-    #endif
+#endif
         m_commandList[i]->unexecute();
     }
 

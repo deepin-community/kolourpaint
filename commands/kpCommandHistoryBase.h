@@ -1,39 +1,16 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #ifndef kpCommandHistoryBase_H
 #define kpCommandHistoryBase_H
 
-
+#include <QList>
 #include <QObject>
 #include <QString>
-#include <QList>
-
 
 #include "commands/kpCommandSize.h"
 
@@ -43,7 +20,6 @@ class KActionCollection;
 class KToolBarPopupAction;
 
 class kpCommand;
-
 
 // Clone of KCommandHistory with features required by KolourPaint but which
 // could also be useful for other apps:
@@ -55,79 +31,78 @@ class kpCommand;
 // KCommandHistory, this is only "almost source compatible".
 class kpCommandHistoryBase : public QObject
 {
-Q_OBJECT
+    Q_OBJECT
 
 public:
-    kpCommandHistoryBase (bool doReadConfig, KActionCollection *ac);
-    ~kpCommandHistoryBase () override;
+    kpCommandHistoryBase(bool doReadConfig, KActionCollection *ac);
+    ~kpCommandHistoryBase() override;
 
 public:
     // (provided for compatibility with KCommandHistory)
-    int undoLimit () const;
-    void setUndoLimit (int limit);
+    int undoLimit() const;
+    void setUndoLimit(int limit);
 
+    int undoMinLimit() const;
+    void setUndoMinLimit(int limit);
 
-    int undoMinLimit () const;
-    void setUndoMinLimit (int limit);
+    int undoMaxLimit() const;
+    void setUndoMaxLimit(int limit);
 
-    int undoMaxLimit () const;
-    void setUndoMaxLimit (int limit);
-
-    kpCommandSize::SizeType undoMaxLimitSizeLimit () const;
-    void setUndoMaxLimitSizeLimit (kpCommandSize::SizeType sizeLimit);
+    kpCommandSize::SizeType undoMaxLimitSizeLimit() const;
+    void setUndoMaxLimitSizeLimit(kpCommandSize::SizeType sizeLimit);
 
 public:
     // Read and write above config
-    void readConfig ();
-    void writeConfig ();
+    void readConfig();
+    void writeConfig();
 
 public:
-    void addCommand (kpCommand *command, bool execute = true);
-    void clear ();
+    void addCommand(kpCommand *command, bool execute = true);
+    void clear();
 
-protected slots:
+protected Q_SLOTS:
     // (same as undo() & redo() except they don't call
     //  trimCommandListsUpdateActions())
-    void undoInternal ();
-    void redoInternal ();
+    void undoInternal();
+    void redoInternal();
 
-public slots:
-    virtual void undo ();
-    virtual void redo ();
+public Q_SLOTS:
+    virtual void undo();
+    virtual void redo();
 
-    virtual void undoUpToNumber (QAction *which);
-    virtual void redoUpToNumber (QAction *which);
+    virtual void undoUpToNumber(QAction *which);
+    virtual void redoUpToNumber(QAction *which);
 
 protected:
-    QString undoActionText () const;
-    QString redoActionText () const;
+    QString undoActionText() const;
+    QString redoActionText() const;
 
-    QString undoActionToolTip () const;
-    QString redoActionToolTip () const;
+    QString undoActionToolTip() const;
+    QString redoActionToolTip() const;
 
-    void trimCommandListsUpdateActions ();
+    void trimCommandListsUpdateActions();
     void trimCommandList(QList<kpCommand *> &commandList);
-    void trimCommandLists ();
-    void updateActions ();
+    void trimCommandLists();
+    void updateActions();
 
 public:
-    kpCommand *nextUndoCommand () const;
-    kpCommand *nextRedoCommand () const;
+    kpCommand *nextUndoCommand() const;
+    kpCommand *nextRedoCommand() const;
 
-    void setNextUndoCommand (kpCommand *command);
+    void setNextUndoCommand(kpCommand *command);
 
-public slots:
-    virtual void documentSaved ();
+public Q_SLOTS:
+    virtual void documentSaved();
 
-signals:
-    void documentRestored ();
+Q_SIGNALS:
+    void documentRestored();
 
 protected:
     KToolBarPopupAction *m_actionUndo, *m_actionRedo;
 
     // (Front element is the next one)
-    QList <kpCommand *> m_undoCommandList;
-    QList <kpCommand *> m_redoCommandList;
+    QList<kpCommand *> m_undoCommandList;
+    QList<kpCommand *> m_redoCommandList;
 
     int m_undoMinLimit, m_undoMaxLimit;
     kpCommandSize::SizeType m_undoMaxLimitSizeLimit;
@@ -142,5 +117,4 @@ protected:
     int m_documentRestoredPosition;
 };
 
-
-#endif  // kpCommandHistoryBase_H
+#endif // kpCommandHistoryBase_H

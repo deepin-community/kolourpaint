@@ -1,20 +1,9 @@
-# translation of kolourpaint.po to 简体中文
-# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
-#
-# iceco <rainflymoon@163.com>, 2003.
-# Funda Wang <fundawang@linux.net.cn>, 2005.
-# Lie_Ex <lilith.ex@gmail.com>, 2007.
-# Ni Hui <shuizhuyuanluo@126.com>, 2008, 2009, 2011, 2012.
-# Chao Feng <chaofeng111@gmail.com>, 2011, 2016.
-# Weng Xuetian <wengxt@gmail.com>, 2016.
-# Guo Yunhe <guoyunhebrave@gmail.com>, 2017.
-# Feng Chao <chaofeng111@qq.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-30 01:40+0000\n"
-"PO-Revision-Date: 2021-09-27 13:10\n"
+"POT-Creation-Date: 2025-01-09 00:39+0000\n"
+"PO-Revision-Date: 2024-04-22 15:59\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -25,296 +14,296 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-stable/messages/kolourpaint/kolourpaint.pot\n"
-"X-Crowdin-File-ID: 3829\n"
+"X-Crowdin-File: /kf6-stable/messages/kolourpaint/kolourpaint.pot\n"
+"X-Crowdin-File-ID: 53322\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "KDE 中国"
+msgstr "Guo Yunhe, Tyson Tan"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-china@kde.org"
+msgstr "i@guoyunhe.me, tds00@qq.com"
 
-#: commands/imagelib/effects/kpEffectBalanceCommand.cpp:40
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:112
+#: commands/imagelib/effects/kpEffectBalanceCommand.cpp:17
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:80
 #, kde-format
 msgid "Balance"
-msgstr "平衡"
+msgstr "亮度平衡调整"
 
-#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:52
+#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:28
 #, kde-format
 msgid "Soften"
 msgstr "柔化"
 
-#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:53
+#: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:30
 #, kde-format
 msgid "Sharpen"
 msgstr "锐化"
 
-#: commands/imagelib/effects/kpEffectClearCommand.cpp:58
+#: commands/imagelib/effects/kpEffectClearCommand.cpp:34
 #, kde-format
 msgid "Clear"
 msgstr "清除"
 
-#: commands/imagelib/effects/kpEffectClearCommand.cpp:60
-#: commands/imagelib/effects/kpEffectCommandBase.cpp:66
-#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:83
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:74
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:77
+#: commands/imagelib/effects/kpEffectClearCommand.cpp:36
+#: commands/imagelib/effects/kpEffectCommandBase.cpp:43
+#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:58
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:50
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:53
 #, kde-format
 msgid "Selection: %1"
-msgstr "选择范围：%1"
+msgstr "选区：%1"
 
-#: commands/imagelib/effects/kpEffectEmbossCommand.cpp:42
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:113
+#: commands/imagelib/effects/kpEffectEmbossCommand.cpp:17
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:81
 #, kde-format
 msgid "Emboss"
-msgstr "强调"
+msgstr "浮雕效果"
 
-#: commands/imagelib/effects/kpEffectFlattenCommand.cpp:43
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:114
+#: commands/imagelib/effects/kpEffectFlattenCommand.cpp:18
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:82
 #, kde-format
 msgid "Flatten"
-msgstr "平铺"
+msgstr "颜色扁平化"
 
-#: commands/imagelib/effects/kpEffectGrayscaleCommand.cpp:41
+#: commands/imagelib/effects/kpEffectGrayscaleCommand.cpp:17
 #, kde-format
 msgid "Reduce to Grayscale"
-msgstr "降为灰色"
+msgstr "色彩降为灰阶"
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:15
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:84
 #, kde-format
 msgid "Hue, Saturation, Value"
-msgstr "色调、饱和度、亮度"
+msgstr "色相、饱和度、明度调整"
 
-#: commands/imagelib/effects/kpEffectInvertCommand.cpp:41
+#: commands/imagelib/effects/kpEffectInvertCommand.cpp:17
 #, kde-format
 msgid "Invert Colors"
-msgstr "反转颜色"
+msgstr "颜色反相"
 
-#: commands/imagelib/effects/kpEffectInvertCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
+#: commands/imagelib/effects/kpEffectInvertCommand.cpp:17
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:85
 #, kde-format
 msgid "Invert"
-msgstr "反转"
+msgstr "颜色反相"
 
-#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:54
+#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:32
 #, kde-format
 msgid "Reduce to Monochrome (Dithered)"
-msgstr "减少为单色(抖动)"
+msgstr "色彩降为单色 (抖动)"
 
-#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:56
+#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:34
 #, kde-format
 msgid "Reduce to Monochrome"
-msgstr "减少为单色"
+msgstr "色彩降为单色"
 
-#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:60
+#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:38
 #, kde-format
 msgid "Reduce to 256 Color (Dithered)"
-msgstr "减少为 256 色(抖动)"
+msgstr "色彩降为 256 色 (抖动)"
 
-#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:62
+#: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:40
 #, kde-format
 msgid "Reduce to 256 Color"
-msgstr "减少为 256 色"
+msgstr "色彩降为 256 色"
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:18
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:83
 #, kde-format
 msgid "Histogram Equalizer"
-msgstr "直方图均衡器"
+msgstr "颜色均化"
 
-#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:66
+#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:43
 #, kde-format
 msgid "Flip"
-msgstr "翻转"
+msgstr "翻转 (垂直)"
 
-#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
+#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:46
 #, kde-format
 msgid "Flip horizontally and vertically"
-msgstr "水平和垂直翻转"
+msgstr "翻转 (水平/垂直)"
 
-#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:71
+#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:48
 #, kde-format
 msgid "Flip horizontally"
-msgstr "水平翻转"
+msgstr "翻转 (水平)"
 
-#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:73
+#: commands/imagelib/transforms/kpTransformFlipCommand.cpp:50
 #, kde-format
 msgid "Flip vertically"
-msgstr "垂直翻转"
+msgstr "翻转 (垂直)"
 
-#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:101
-#: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:54
+#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:69
+#: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:29
 #, kde-format
 msgid "Text: Resize Box"
-msgstr "文本：缩放框"
+msgstr "文字：更改文本框大小"
 
-#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:107
+#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:73
 #, kde-format
 msgid "Selection: Scale"
-msgstr "选择范围：缩放"
+msgstr "选区：缩放"
 
-#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:111
-#: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:55
+#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:77
+#: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:29
 #, kde-format
 msgid "Selection: Smooth Scale"
-msgstr "选择范围：平滑缩放 "
+msgstr "选区：平滑缩放 "
 
-#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:120
+#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:83
 #, kde-format
 msgid "Resize"
-msgstr "改变大小"
+msgstr "更改大小"
 
-#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:122
+#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:85
 #, kde-format
 msgid "Scale"
 msgstr "缩放"
 
-#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:124
+#: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:87
 #, kde-format
 msgid "Smooth Scale"
 msgstr "平滑缩放"
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:48
 #, kde-format
 msgid "Rotate"
 msgstr "旋转"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:51
 #, kde-format
 msgid "Skew"
-msgstr "歪斜"
+msgstr "斜切变形"
 
-#: commands/kpCommandHistoryBase.cpp:437
+#: commands/kpCommandHistoryBase.cpp:376
 #, kde-format
 msgid "&Undo: %1"
 msgstr "撤销(&U)：%1"
 
-#: commands/kpCommandHistoryBase.cpp:437
+#: commands/kpCommandHistoryBase.cpp:376
 #, kde-format
 msgid "&Undo"
 msgstr "撤销(&U)"
 
-#: commands/kpCommandHistoryBase.cpp:445
+#: commands/kpCommandHistoryBase.cpp:384
 #, kde-format
 msgid "&Redo: %1"
 msgstr "重做(&R)：%1"
 
-#: commands/kpCommandHistoryBase.cpp:445
+#: commands/kpCommandHistoryBase.cpp:384
 #, kde-format
 msgid "&Redo"
 msgstr "重做(&R)"
 
-#: commands/kpCommandHistoryBase.cpp:454
+#: commands/kpCommandHistoryBase.cpp:392
 #, kde-format
 msgid "Undo: %1"
 msgstr "撤销：%1"
 
-#: commands/kpCommandHistoryBase.cpp:454 commands/kpCommandHistoryBase.cpp:635
+#: commands/kpCommandHistoryBase.cpp:392 commands/kpCommandHistoryBase.cpp:554
 #, kde-format
 msgid "Undo"
 msgstr "撤销"
 
-#: commands/kpCommandHistoryBase.cpp:462
+#: commands/kpCommandHistoryBase.cpp:400
 #, kde-format
 msgid "Redo: %1"
 msgstr "重做：%1"
 
-#: commands/kpCommandHistoryBase.cpp:462 commands/kpCommandHistoryBase.cpp:656
+#: commands/kpCommandHistoryBase.cpp:400 commands/kpCommandHistoryBase.cpp:572
 #, kde-format
 msgid "Redo"
 msgstr "重做"
 
-#: commands/kpCommandHistoryBase.cpp:597
+#: commands/kpCommandHistoryBase.cpp:519
 #, kde-format
 msgid "%1: %2"
 msgstr "%1：%2"
 
-#: commands/kpCommandHistoryBase.cpp:608
+#: commands/kpCommandHistoryBase.cpp:529
 #, kde-format
 msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] "还有 %1 项"
 
-#: commands/tools/kpToolColorPickerCommand.cpp:59
-#: tools/kpToolColorPicker.cpp:45
+#: commands/tools/kpToolColorPickerCommand.cpp:31
+#: tools/kpToolColorPicker.cpp:23
 #, kde-format
 msgid "Color Picker"
-msgstr "颜色提取器"
+msgstr "拾色器"
 
-#: commands/tools/kpToolFloodFillCommand.cpp:77 tools/kpToolFloodFill.cpp:55
+#: commands/tools/kpToolFloodFillCommand.cpp:52 tools/kpToolFloodFill.cpp:32
 #, kde-format
 msgid "Flood Fill"
 msgstr "填充"
 
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:89
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:61
 #, kde-format
 msgctxt "@title:window"
 msgid "More Image Effects (Selection)"
-msgstr "更多图像效果(选中范围)"
+msgstr "更多图像效果 (选区)"
 
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:92
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:63
 #, kde-format
 msgctxt "@title:window"
 msgid "More Image Effects"
 msgstr "更多图像效果"
 
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:106
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:74
 #, kde-format
 msgid "&Effect:"
 msgstr "效果(&E)："
 
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:118
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:86
 #, kde-format
 msgid "Reduce Colors"
-msgstr "减少颜色"
+msgstr "降低色彩位深"
 
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:119
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:87
 #, kde-format
 msgid "Soften & Sharpen"
 msgstr "柔化和锐化"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:121
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:89
 #, kde-format
 msgctxt "@title:window"
 msgid "Document Properties"
-msgstr "文档属性"
+msgstr "图像属性"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:141
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:107
 #, kde-format
 msgid "Dots &Per Inch (DPI)"
-msgstr "每英寸点(DPI)(&P)"
+msgstr "图像分辨率 (DPI) (&P)"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:148
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:159
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:114
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:124
 #, kde-format
 msgid "Unspecified"
 msgstr "未指定"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:151
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:116
 #, kde-format
 msgctxt "Horizontal DPI 'x' Vertical DPI"
 msgid " x "
 msgstr " x "
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:164
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:215
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:128
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:175
 #, kde-format
 msgid "Horizontal:"
 msgstr "水平："
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:167
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:217
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:131
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:177
 #, kde-format
 msgid "Vertical:"
 msgstr "垂直："
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:175
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:137
 #, kde-format
 msgid ""
 "<qt><p><b>Dots Per Inch</b> (DPI) specifies the number of pixels of the "
@@ -329,20 +318,20 @@ msgid ""
 "the format you save in does not support them, they will not be saved.</p></"
 "qt>"
 msgstr ""
-"<qt><p><b>每英寸点(DPI)</b>定义了图像每英寸(2.54厘米)间包含的可打印像素数量。"
-"</p><p>图像的 DPI 越高，可打印的图像就越小。注意根据您的打印机不同，大于 300 "
-"或 600 DPI 的图像可能会让打印机处理高质量输出时不适应。</p><p>如果您想打印和"
-"屏幕显示大小一样的图像，请将图像 DPI 设为和您屏幕所设的一样。</p><p>如果两者"
-"中任一 DPI <b>未指定</b>，图像会以和您屏幕一致的 DPI 值来打印。</p><p>不是所"
-"有图像格式都支持 DPI 值。如果您保存的格式不支持这些，此值不会被保存。</p></"
-"qt>"
+"<qt><p><b>图像分辨率 (每英寸点数，DPI)</b>指定了在每英寸 (2.54厘米) 的长度上"
+"要打印的像素数量。</p><p>图像的 DPI 越高，打印出来的实际大小就越小。根据打印"
+"机的具体规格，将 DPI 设置为高于 300 或者 600 时将影响打印品质。</p><p>要想打"
+"印出和屏幕显示大小一致的图像，请将图像的 DPI 设为与屏幕相同的值。</p><p>如果"
+"水平和垂直 DPI 中的任意一个<b>未指定</b>，图像将使用屏幕的 DPI 值来打印。</"
+"p><p>不是所有的图像格式都支持设置 DPI 值。如果您保存的图像格式不支持 DPI 值，"
+"它们将不会被保存。</p></qt>"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:205
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:165
 #, kde-format
 msgid "O&ffset"
-msgstr "偏移量(&F)："
+msgstr "图像偏移值(&F)："
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:225
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:183
 #, kde-format
 msgid ""
 "<qt><p>The <b>Offset</b> is the relative position where this image should be "
@@ -350,32 +339,32 @@ msgid ""
 "<b>Offset</b> feature. If the format you save in does not support it, the "
 "values specified here will not be saved.</p></qt>"
 msgstr ""
-"<qt><p><b>偏移量</b>是此图像与其他图像间的相对位置。</p><p>不是所有图像格式都"
-"支持<b>偏移量</b>特性，如果您保存的格式不支持它，指定的值不会被保存。</p></"
-"qt>"
+"<qt><p><b>偏移值 (offset)</b>是图像在与其他图像一起排版时，相对于其他图像的位"
+"移程度。</p><p>不是所有的图像格式都支持<b>偏移值</b>特性，如果您保存的格式不"
+"支持它，您在此指定的偏移值不会被保存。</p></qt>"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:241
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:196
 #, kde-format
 msgid "&Text Fields"
-msgstr "文字段(&T)"
+msgstr "文本字段(&T)"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:253
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:205
 #, kde-format
 msgid "&Add Row"
 msgstr "添加行(&A)"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:258
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:208
 #, kde-format
 msgid "&Delete Row"
 msgstr "删除行(&D)"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:263
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:69
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:211
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:44
 #, kde-format
 msgid "&Reset"
 msgstr "重置(&R)"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:282
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:226
 #, kde-format
 msgid ""
 "<qt><p><b>Text Fields</b> provide extra information about the image. This is "
@@ -385,104 +374,106 @@ msgid ""
 "unlikely.</p><p>Not all image formats support <b>Text Fields</b>. If the "
 "format you save in does not support them, they will not be saved.</p></qt>"
 msgstr ""
-"<qt><p><b>文字段</b>可提供关于此图像的附加信息。这大致是个可让您自由写入任何"
-"文字的注释区域。</p><p>然而它有自己的格式规范，以使该字段成为原则上能被计算机"
-"解析的数据 - 不过很遗憾您不能修改这特定格式。</p><p>不是全部图像格式都支持<b>"
-"文字段</b>。如果您保存的格式不支持它，这些数据不会被保存。</p></qt>"
+"<qt><p><b>文本字段</b>用于提供与此图像有关的额外信息，您可以在此填写任意文字"
+"用作图像的注释。</p><p>要注意的是，某些图像格式会在特定的字段记录一些供程序解"
+"读的信息，您不应更改这些信息。</p><p>不是所有图像类型都支持<b>文本字段</b>。"
+"如果您保存的图像格式不支持文本字段，它们将不会被保存。</p></qt>"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:372
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:307
 #, kde-format
 msgid "Key"
-msgstr "键"
+msgstr "键名"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:372
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:307
 #, kde-format
 msgid "Value"
 msgstr "值"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:466
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:381
 #, kde-format
 msgid "The text value \"%1\" on line %2 requires a key."
-msgstr "第 %2 行上的文字值 %1 需要一个键。"
+msgstr "第 %2 行的文本字段值 %1 需要指定键名。"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:493
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:403
 #, kde-format
 msgid ""
 "All text keys must be unique. The text key \"%1\" on lines %2 and %3 are "
 "identical."
-msgstr "所有文字键必须是唯一的。但第 %2 和第 %3 行上的文字键“%1”相同。"
+msgstr ""
+"每一条文本字段的键名必须是唯一的。但第 %2 和第 %3 行上的文本字段的键名“%1”相"
+"同。"
 
-#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:746
+#: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:639
 #, kde-format
 msgctxt "@title:window"
 msgid "Invalid Text Fields"
-msgstr "无效的文字段"
+msgstr "无效的文本字段"
 
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:139
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:283
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:98
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:237
 #, kde-format
 msgid "Dimensions"
 msgstr "尺寸"
 
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:141
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:290
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:100
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:244
 #, kde-format
 msgid "Original:"
-msgstr "原始："
+msgstr "原始大小："
 
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:145
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:253
-#: mainWindow/kpMainWindow_StatusBar.cpp:92
-#: mainWindow/kpMainWindow_StatusBar.cpp:236
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:103
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:200
+#: mainWindow/kpMainWindow_StatusBar.cpp:69
+#: mainWindow/kpMainWindow_StatusBar.cpp:179
 #, kde-format
 msgid "%1 x %2"
 msgstr "%1 x %2"
 
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:172
-#: dialogs/kpColorSimilarityDialog.cpp:59
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:127
+#: dialogs/kpColorSimilarityDialog.cpp:36
 #, kde-format
 msgid "Preview"
 msgstr "预览"
 
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:179
-#: dialogs/kpColorSimilarityDialog.cpp:64
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:133
+#: dialogs/kpColorSimilarityDialog.cpp:41
 #, kde-format
 msgid "&Update"
 msgstr "更新(&U)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:92
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:66
 #, kde-format
 msgctxt "@title:window"
 msgid "Resize / Scale"
-msgstr "改变大小/缩放"
+msgstr "更改大小 / 缩放"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:161
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:132
 #, kde-format
 msgid "Ac&t on:"
 msgstr "作用于(&T)："
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:167
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:137
 #, kde-format
 msgid "Entire Image"
-msgstr "整个图像"
+msgstr "整张图像"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:170
-#: layers/selections/image/kpAbstractImageSelection.cpp:204
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:139
+#: layers/selections/image/kpAbstractImageSelection.cpp:168
 #, kde-format
 msgid "Selection"
-msgstr "选择范围"
+msgstr "选区"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:173
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:142
 #, kde-format
 msgid "Text Box"
 msgstr "文本框"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:222
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:186
 #, kde-format
 msgid "Operation"
 msgstr "操作"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:224
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:188
 #, kde-format
 msgid ""
 "<qt><ul><li><b>Resize</b>: The size of the picture will be increased by "
@@ -493,67 +484,66 @@ msgid ""
 "as <i>Scale</i> except that it blends neighboring pixels to produce a "
 "smoother looking picture.</li></ul></qt>"
 msgstr ""
-"<qt><ul><li><b>改变大小</b>：程序会以往图片各个方向创建新区域(用背景色填充)的"
-"方式增加其尺寸，或以从各个方向剪切一定区域的方式减小尺寸。</li><li><b>缩放</"
-"b>：图片会以复制像素的方式扩大，或以丢弃像素的方式缩小。</li><li><b>平滑缩放"
-"</b>：和<i>缩放</i>类似，区别在于它会混合邻近像素以产生看上去更平滑的图片。</"
-"li></ul></qt>"
+"<qt><ul><li><b>更改大小</b>：程序将向右、向下扩大图像的尺寸(新增部分以背景色"
+"填充)，或者从右/下往左/上减小图像的尺寸。</li><li><b>缩放</b>：图像将被整体放"
+"大或者缩小。</li><li><b>平滑缩放</b>：和<i>缩放</i>类似，但在缩放时进行平滑处"
+"理。</li></ul></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:245
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:207
 #, kde-format
 msgid "&Resize"
-msgstr "改变大小(&R)"
+msgstr "更改大小(&R)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:250
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:210
 #, kde-format
 msgid "&Scale"
 msgstr "缩放(&S)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:255
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:213
 #, kde-format
 msgid "S&mooth Scale"
 msgstr "平滑缩放(&M)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:285
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:239
 #, kde-format
 msgid "Width:"
 msgstr "宽度："
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:287
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:241
 #, kde-format
 msgid "Height:"
 msgstr "高度："
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:294
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:302
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:314
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:248
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:256
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:268
 #, kde-format
 msgid "x"
 msgstr "x"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:299
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:253
 #, kde-format
 msgid "&New:"
-msgstr "新建(&N)："
+msgstr "新大小(&N)："
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:306
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:260
 #, kde-format
 msgid "&Percent:"
-msgstr "百分比(&P)："
+msgstr "增减比例(&P)："
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:312
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:321
-#: dialogs/kpColorSimilarityDialog.cpp:82
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:266
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:275
+#: dialogs/kpColorSimilarityDialog.cpp:53
 #, kde-format
 msgid "%"
 msgstr "%"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:323
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:277
 #, kde-format
 msgid "Keep &aspect ratio"
 msgstr "保持宽高比(&A)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:726
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:638
 #, kde-format
 msgid ""
 "<qt><p>Resizing the text box to %1x%2 may take a substantial amount of "
@@ -561,67 +551,67 @@ msgid ""
 "resource problems.</p><p>Are you sure you want to resize the text box?</p></"
 "qt>"
 msgstr ""
-"<qt><p>缩放文本框为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响应"
-"能力，并导致其他程序出现资源分配问题。</p><p>您确认要缩放文本框吗？</p></qt>"
+"<qt><p>更改文本框大小为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应"
+"能力，并导致其他程序出现资源分配问题。</p><p>您确定要更改此文本框的大小吗？</"
+"p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:734
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:646
 #, kde-format
 msgctxt "@title:window"
 msgid "Resize Text Box?"
-msgstr "缩放文本框？"
+msgstr "更改文本框大小？"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:735
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:647
 #, kde-format
 msgid "R&esize Text Box"
-msgstr "缩放文本框(&E)"
+msgstr "更改文本框大小(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:740
-#: mainWindow/kpMainWindow_Tools.cpp:654
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:650
+#: mainWindow/kpMainWindow_Tools.cpp:561
 #, kde-format
 msgid ""
 "<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
 "This can reduce system responsiveness and cause other application resource "
 "problems.</p><p>Are you sure you want to resize the image?</p></qt>"
 msgstr ""
-"<qt><p>更改图像大小为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响"
-"应能力，并导致其他程序出现资源分配问题。</p><p>您确认要更改图像大小吗？</p></"
-"qt>"
+"<qt><p>更改图像大小为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能"
+"力，并导致其他程序出现资源分配问题。</p><p>您确定要更改图像大小吗？</p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:748
-#: mainWindow/kpMainWindow_Tools.cpp:664
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:658
+#: mainWindow/kpMainWindow_Tools.cpp:571
 #, kde-format
 msgctxt "@title:window"
 msgid "Resize Image?"
 msgstr "更改图像大小？"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:749
-#: mainWindow/kpMainWindow_Tools.cpp:665
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:659
+#: mainWindow/kpMainWindow_Tools.cpp:572
 #, kde-format
 msgid "R&esize Image"
 msgstr "更改图像大小(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:758
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:667
 #, kde-format
 msgid ""
 "<qt><p>Scaling the image to %1x%2 may take a substantial amount of memory. "
 "This can reduce system responsiveness and cause other application resource "
 "problems.</p><p>Are you sure you want to scale the image?</p></qt>"
 msgstr ""
-"<qt><p>缩放图像为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响应能"
-"力，并导致其他程序出现资源分配问题。</p><p>您确认要缩放此图像吗？</p></qt>"
+"<qt><p>缩放图像为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能力，"
+"并导致其他程序出现资源分配问题。</p><p>您确定要缩放此图像吗？</p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:766
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:675
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Image?"
 msgstr "缩放图像？"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:767
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:676
 #, kde-format
 msgid "Scal&e Image"
 msgstr "缩放图像(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:772
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:679
 #, kde-format
 msgid ""
 "<qt><p>Scaling the selection to %1x%2 may take a substantial amount of "
@@ -629,21 +619,21 @@ msgid ""
 "resource problems.</p><p>Are you sure you want to scale the selection?</p></"
 "qt>"
 msgstr ""
-"<qt><p>缩放选区为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响应能"
-"力，并导致其他程序出现资源分配问题。</p><p>您确认要缩放此选区吗？</p></qt>"
+"<qt><p>缩放选区为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能力，"
+"并导致其他程序出现资源分配问题。</p><p>您确定要缩放此选区吗？</p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:780
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:687
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Selection?"
 msgstr "缩放选区？"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:781
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:688
 #, kde-format
 msgid "Scal&e Selection"
 msgstr "缩放选区(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:790
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:696
 #, kde-format
 msgid ""
 "<qt><p>Smooth Scaling the image to %1x%2 may take a substantial amount of "
@@ -651,22 +641,22 @@ msgid ""
 "resource problems.</p><p>Are you sure you want to smooth scale the image?</"
 "p></qt>"
 msgstr ""
-"<qt><p>平滑缩放图像为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响"
-"应能力，并导致其他程序出现资源分配问题。</p><p>您确认要平滑缩放此图像吗？</"
-"p></qt>"
+"<qt><p>平滑缩放图像为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能"
+"力，并导致其他程序出现资源分配问题。</p><p>您确定要平滑缩放此图像吗？</p></"
+"qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:798
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:704
 #, kde-format
 msgctxt "@title:window"
 msgid "Smooth Scale Image?"
 msgstr "平滑缩放图像？"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:799
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:705
 #, kde-format
 msgid "Smooth Scal&e Image"
 msgstr "平滑缩放图像(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:804
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:708
 #, kde-format
 msgid ""
 "<qt><p>Smooth Scaling the selection to %1x%2 may take a substantial amount "
@@ -674,87 +664,87 @@ msgid ""
 "resource problems.</p><p>Are you sure you want to smooth scale the selection?"
 "</p></qt>"
 msgstr ""
-"<qt><p>平滑缩放选区为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响"
-"应能力，并导致其他程序出现资源分配问题。</p><p>您确认要平滑缩放此选区吗？</"
-"p></qt>"
+"<qt><p>平滑缩放选区为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能"
+"力，并导致其他程序出现资源分配问题。</p><p>您确定要平滑缩放此选区吗？</p></"
+"qt>"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:812
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:716
 #, kde-format
 msgctxt "@title:window"
 msgid "Smooth Scale Selection?"
 msgstr "平滑缩放选区？"
 
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:813
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:717
 #, kde-format
 msgid "Smooth Scal&e Selection"
 msgstr "平滑缩放选区(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:66
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:40
 #, kde-format
 msgctxt "@title:window"
 msgid "Rotate Selection"
-msgstr "旋转选中范围"
+msgstr "旋转选区"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:66
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:40
 #, kde-format
 msgctxt "@title:window"
 msgid "Rotate Image"
 msgstr "旋转图像"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:67
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:41
 #, kde-format
 msgid "After rotate:"
 msgstr "旋转后："
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:97
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:68
 #, kde-format
 msgid "Direction"
 msgstr "方向"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:108
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:94
 #, kde-format
 msgid "Cou&nterclockwise"
 msgstr "逆时针(&N)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:109
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:95
 #, kde-format
 msgid "C&lockwise"
 msgstr "顺时针(&L)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:133
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:100
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:114
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:66
 #, kde-format
 msgid "Angle"
 msgstr "角度"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:137
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:117
 #, kde-format
 msgid "90 &degrees"
 msgstr "90 度(&D)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:138
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:118
 #, kde-format
 msgid "180 d&egrees"
 msgstr "180 度(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:139
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:119
 #, kde-format
 msgid "270 de&grees"
 msgstr "270 度(&G)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:141
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:121
 #, kde-format
 msgid "C&ustom:"
 msgstr "自定义(&U)："
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:146
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:113
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:125
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:126
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:78
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:89
 #, kde-format
 msgid "degrees"
-msgstr "度数"
+msgstr "度"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:277
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:230
 #, kde-format
 msgid ""
 "<qt><p>Rotating the selection to %1x%2 may take a substantial amount of "
@@ -762,70 +752,69 @@ msgid ""
 "resource problems.</p><p>Are you sure you want to rotate the selection?</p></"
 "qt>"
 msgstr ""
-"<qt><p>旋转选中范围为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响"
-"应能力，并导致其他程序出现资源分配问题。</p><p>您确认要旋转选中范围吗？</p></"
-"qt>"
+"<qt><p>旋转选区为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能力，"
+"并导致其他程序出现资源分配问题。</p><p>您确定要旋转选区吗？</p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:285
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:238
 #, kde-format
 msgctxt "@title:window"
 msgid "Rotate Selection?"
-msgstr "旋转选中范围？"
+msgstr "旋转选区？"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:286
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:239
 #, kde-format
 msgid "Rotat&e Selection"
-msgstr "旋转选中范围(&E)"
+msgstr "旋转选区(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:292
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:243
 #, kde-format
 msgid ""
 "<qt><p>Rotating the image to %1x%2 may take a substantial amount of memory. "
 "This can reduce system responsiveness and cause other application resource "
 "problems.</p><p>Are you sure you want to rotate the image?</p></qt>"
 msgstr ""
-"<qt><p>旋转图像为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响应能"
-"力，并导致其他程序出现资源分配问题。</p><p>您确认要旋转图像吗？</p></qt>"
+"<qt><p>旋转图像为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应能力，"
+"并导致其他程序出现资源分配问题。</p><p>您确定要旋转图像吗？</p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:300
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:251
 #, kde-format
 msgctxt "@title:window"
 msgid "Rotate Image?"
 msgstr "旋转图像？"
 
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:301
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:252
 #, kde-format
 msgid "Rotat&e Image"
 msgstr "旋转图像(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:67
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Skew Selection"
-msgstr "扭曲选中范围"
+msgstr "斜切变形选区"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:67
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Skew Image"
-msgstr "扭曲图像"
+msgstr "斜切变形图像"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:68
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:38
 #, kde-format
 msgid "After skew:"
-msgstr "扭曲后："
+msgstr "斜切变形后："
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:107
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:72
 #, kde-format
 msgid "&Horizontal:"
 msgstr "水平(&H)："
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:119
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:83
 #, kde-format
 msgid "&Vertical:"
 msgstr "垂直(&V)："
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:254
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:199
 #, kde-format
 msgid ""
 "<qt><p>Skewing the selection to %1x%2 may take a substantial amount of "
@@ -833,95 +822,96 @@ msgid ""
 "resource problems.</p><p>Are you sure you want to skew the selection?</p></"
 "qt>"
 msgstr ""
-"<qt><p>扭曲选中范围为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响"
-"应能力，并导致其他程序出现资源分配问题。</p><p>您确认要扭曲选中范围吗？</p></"
-"qt>"
+"<qt><p>斜切变形选区为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应速"
+"度，并导致其他程序出现资源分配问题。</p><p>您确定要对选区进行斜切变形吗？</"
+"p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:262
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:207
 #, kde-format
 msgctxt "@title:window"
 msgid "Skew Selection?"
-msgstr "扭曲选中范围？"
+msgstr "斜切变形选区？"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:263
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:208
 #, kde-format
 msgid "Sk&ew Selection"
-msgstr "扭曲选中范围(&E)"
+msgstr "斜切变形选区(&E)"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:269
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:212
 #, kde-format
 msgid ""
 "<qt><p>Skewing the image to %1x%2 may take a substantial amount of memory. "
 "This can reduce system responsiveness and cause other application resource "
 "problems.</p><p>Are you sure you want to skew the image?</p></qt>"
 msgstr ""
-"<qt><p>扭曲图像为 %1x%2 的操作会耗费大量物理内存，期间可能会降低系统的响应能"
-"力，并导致其他程序出现资源分配问题。</p><p>您确认要扭曲图像吗？</p></qt>"
+"<qt><p>斜切变形图像为 %1x%2 的操作将消耗大量内存，期间可能会降低系统的响应速"
+"度，并导致其他程序出现资源分配问题。</p><p>您确定要对图像进行斜切变形吗？</"
+"p></qt>"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:277
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:220
 #, kde-format
 msgctxt "@title:window"
 msgid "Skew Image?"
-msgstr "扭曲图像？"
+msgstr "斜切变形图像？"
 
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:278
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:221
 #, kde-format
 msgid "Sk&ew Image"
-msgstr "扭曲图像(&E)"
+msgstr "斜切变形图像(&E)"
 
-#: dialogs/kpColorSimilarityDialog.cpp:47
+#: dialogs/kpColorSimilarityDialog.cpp:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Color Similarity"
-msgstr "色彩相似性"
+msgstr "颜色相似阈值"
 
-#: dialogs/kpColorSimilarityDialog.cpp:76
+#: dialogs/kpColorSimilarityDialog.cpp:49
 #, kde-format
 msgid "&RGB Color Cube Distance"
 msgstr "&RGB 颜色立方体距离"
 
-#: dialogs/kpColorSimilarityDialog.cpp:83
+#: dialogs/kpColorSimilarityDialog.cpp:54
 #, kde-format
 msgid "Exact Match"
-msgstr "精确匹配"
+msgstr "完全一致"
 
-#: dialogs/kpColorSimilarityDialog.cpp:88
+#: dialogs/kpColorSimilarityDialog.cpp:58
 #, kde-format
 msgid "<a href=\"dummy_to_make_link_clickable\">What is Color Similarity?</a>"
-msgstr "<a href=\"dummy_to_make_link_clickable\">什么是色彩相似性？</a>"
+msgstr "<a href=\"dummy_to_make_link_clickable\">什么是颜色相似阈值？</a>"
 
-#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:61
+#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:34
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Preview"
-msgstr "保存预览"
+msgstr "保存图像预览"
 
-#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:129
+#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:88
 #, kde-format
 msgid "1 byte (approx. %2%)"
 msgid_plural "%1 bytes (approx. %2%)"
-msgstr[0] "%1 字节(大约 %2%)"
+msgstr[0] "%1 字节 (大约 %2%)"
 
-#: document/kpDocument_Open.cpp:114
+#: document/kpDocument_Open.cpp:87
 #, kde-format
 msgid "Could not open \"%1\"."
-msgstr "不能打开“%1”。"
+msgstr "无法打开“%1”。"
 
-#: document/kpDocument_Open.cpp:150
+#: document/kpDocument_Open.cpp:121
 #, kde-format
 msgid ""
 "Could not open \"%1\" - unsupported image format.\n"
 "The file may be corrupt."
 msgstr ""
-"不能打开“%1” - 未被支持的图像格式。\n"
-"文件也许损坏了。"
+"无法打开“%1” - 不支持的图像格式。\n"
+"文件可能已经损坏。"
 
-#: document/kpDocument_Save.cpp:82
+#: document/kpDocument_Save.cpp:47
 #, kde-format
 msgid "Could not save image - insufficient information."
-msgstr "不能保存图像 - 没有足够的信息。"
+msgstr "无法保存图像 - 没有足够的信息。"
 
-#: document/kpDocument_Save.cpp:83
+#: document/kpDocument_Save.cpp:48
 #, kde-format
 msgid ""
 "URL: %1\n"
@@ -930,248 +920,260 @@ msgstr ""
 "URL：%1\n"
 "MIME 类型：%2"
 
-#: document/kpDocument_Save.cpp:87
+#: document/kpDocument_Save.cpp:51
 #, kde-format
 msgid "<empty>"
 msgstr "<空>"
 
-#: document/kpDocument_Save.cpp:89
+#: document/kpDocument_Save.cpp:52
 #, kde-format
 msgctxt "@title:window"
 msgid "Internal Error"
 msgstr "内部错误"
 
-#: document/kpDocument_Save.cpp:124
+#: document/kpDocument_Save.cpp:80
 #, kde-format
 msgid ""
 "<qt><p>The <b>%1</b> format may not be able to preserve all of the image's "
 "color information.</p><p>Are you sure you want to save in this format?</p></"
 "qt>"
 msgstr ""
-"<qt><p><b>%1</b> 格式无法保留此图像的所有颜色信息。</p><p>您确认要以这种格式"
+"<qt><p><b>%1</b> 格式无法保留此图像的所有颜色信息。</p><p>您确定要以这种格式"
 "保存图像吗？</p></qt>"
 
-#: document/kpDocument_Save.cpp:131
+#: document/kpDocument_Save.cpp:87
 #, kde-format
 msgctxt "@title:window"
 msgid "Lossy File Format"
 msgstr "有损文件格式"
 
-#: document/kpDocument_Save.cpp:140
+#: document/kpDocument_Save.cpp:93
 #, kde-format
 msgid ""
 "<qt><p>Saving the image at the low color depth of %1-bit may result in the "
 "loss of color information. Any transparency might also be removed.</p><p>Are "
 "you sure you want to save at this color depth?</p></qt>"
 msgstr ""
-"<qt><p>以 %1 位低色深保存图像会导致色彩信息的丢失，所有透明数据都会被去除。</"
-"p><p>您确认要以此色深保存图像吗？</p></qt>"
+"<qt><p>以 %1 位的低色深保存图像将导致颜色信息的丢失，所有透明度信息将被丢弃。"
+"</p><p>您确定要以此色深保存图像吗？</p></qt>"
 
-#: document/kpDocument_Save.cpp:150
+#: document/kpDocument_Save.cpp:103
 #, kde-format
 msgctxt "@title:window"
 msgid "Low Color Depth"
 msgstr "低色深"
 
-#: document/kpDocument_Save.cpp:275
+#: document/kpDocument_Save.cpp:212
 #, kde-format
 msgid "Could not save image - unable to create temporary file."
-msgstr "不能保存图像 - 无法创建临时文件。"
+msgstr "无法保存图像 - 无法创建临时文件。"
 
-#: document/kpDocument_Save.cpp:283
+#: document/kpDocument_Save.cpp:219
 #, kde-format
 msgid "Could not save as \"%1\": %2"
-msgstr "无法另存为 \"%1\": %2"
+msgstr "无法保存为“%1”：%2"
 
-#: document/kpDocument_Save.cpp:355 document/kpDocument_Save.cpp:398
+#: document/kpDocument_Save.cpp:277 document/kpDocument_Save.cpp:312
 #, kde-format
 msgid "Error saving image"
-msgstr "保存图像出错"
+msgstr "保存图像时发生错误"
 
-#: document/kpDocument_Save.cpp:433
+#: document/kpDocument_Save.cpp:341
 #, kde-format
 msgid "Could not save image - failed to upload."
-msgstr "不能保存图像 - 上传失败。"
+msgstr "无法保存图像 - 上传失败。"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:384
+#: imagelib/transforms/kpTransformAutoCrop.cpp:334
 #, kde-format
 msgid "Remove Internal B&order"
-msgstr "删除内部边框(&O)"
+msgstr "移除内部边框(&O)"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:387
+#: imagelib/transforms/kpTransformAutoCrop.cpp:337
 #, kde-format
 msgid "Remove Internal Border"
-msgstr "删除内部边框"
+msgstr "移除内部边框"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:391
+#: imagelib/transforms/kpTransformAutoCrop.cpp:341
 #, kde-format
 msgid "Autocr&op"
 msgstr "自动裁剪(&O)"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:393
+#: imagelib/transforms/kpTransformAutoCrop.cpp:343
 #, kde-format
 msgid "Autocrop"
 msgstr "自动裁剪"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:623
+#: imagelib/transforms/kpTransformAutoCrop.cpp:518
 #, kde-format
 msgid ""
 "KolourPaint cannot remove the selection's internal border as it could not be "
 "located."
-msgstr "KolourPaint 无法删除选中范围的内部边框，因为找不到这样的边框。"
+msgstr "KolourPaint 无法移除选区的内部边框，因为找不到内部边框。"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:625
+#: imagelib/transforms/kpTransformAutoCrop.cpp:520
 #, kde-format
 msgctxt "@title:window"
 msgid "Cannot Remove Internal Border"
-msgstr "无法删除内部边框"
+msgstr "无法移除内部边框"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:631
+#: imagelib/transforms/kpTransformAutoCrop.cpp:524
 #, kde-format
 msgid ""
 "KolourPaint cannot automatically crop the image as its border could not be "
 "located."
-msgstr "KolourPaint 无法裁减图像，因为无法定位其边框。"
+msgstr "KolourPaint 无法裁剪图像，因为无法定位其边框。"
 
-#: imagelib/transforms/kpTransformAutoCrop.cpp:633
+#: imagelib/transforms/kpTransformAutoCrop.cpp:526
 #, kde-format
 msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "无法自动裁剪"
 
-#: imagelib/transforms/kpTransformCrop.cpp:69
-#: imagelib/transforms/kpTransformCrop.cpp:72
+#: imagelib/transforms/kpTransformCrop.cpp:43
+#: imagelib/transforms/kpTransformCrop.cpp:45
 #, kde-format
 msgid "Set as Image"
-msgstr "设为图像"
+msgstr "裁剪图像到选区大小"
 
-#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:251
-#: mainWindow/kpMainWindow_Edit.cpp:365 mainWindow/kpMainWindow_Image.cpp:320
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:74
+#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:201
+#: mainWindow/kpMainWindow_Edit.cpp:312 mainWindow/kpMainWindow_Image.cpp:282
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:52
 #, kde-format
 msgid "Selection: Create"
-msgstr "选中范围：创建"
+msgstr "选区：创建"
 
-#: kolourpaint.cpp:51
+#: kolourpaint.cpp:30
 #, kde-format
 msgid "KolourPaint"
 msgstr "KolourPaint"
 
-#: kolourpaint.cpp:53
+#: kolourpaint.cpp:32
 #, kde-format
 msgid "Paint Program by KDE"
-msgstr "KDE 的绘画程序"
+msgstr "KDE 社区开发的简易绘画程序"
 
-#: kolourpaint.cpp:67
+#: kolourpaint.cpp:46
 #, kde-format
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
 
-#: kolourpaint.cpp:67
+#: kolourpaint.cpp:46
 #, kde-format
 msgid "Project Founder"
 msgstr "项目创立者"
 
-#: kolourpaint.cpp:69
+#: kolourpaint.cpp:48
 #, kde-format
 msgid "Thurston Dang"
 msgstr "Thurston Dang"
 
-#: kolourpaint.cpp:69
+#: kolourpaint.cpp:48
 #, kde-format
 msgid "Chief Investigator"
-msgstr "首席检阅者"
+msgstr "首席调查员"
 
-#: kolourpaint.cpp:72
+#: kolourpaint.cpp:50
 #, kde-format
 msgid "Martin Koller"
 msgstr "Martin Koller"
 
-#: kolourpaint.cpp:72
+#: kolourpaint.cpp:50
 #, kde-format
 msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr "扫描支持，透明通道支持，当前维护者"
+msgstr "扫描支持、透明度通道支持、当前维护者"
 
-#: kolourpaint.cpp:75
+#: kolourpaint.cpp:52
 #, kde-format
 msgid "Kristof Borrey"
 msgstr "Kristof Borrey"
 
-#: kolourpaint.cpp:75 kolourpaint.cpp:78 kolourpaint.cpp:79
+#: kolourpaint.cpp:52 kolourpaint.cpp:55 kolourpaint.cpp:56
 #, kde-format
 msgid "Icons"
 msgstr "图标"
 
-#: kolourpaint.cpp:76
+#: kolourpaint.cpp:53
 #, kde-format
 msgid "Tasuku Suzuki"
 msgstr "Tasuku Suzuki"
 
-#: kolourpaint.cpp:76 kolourpaint.cpp:77
+#: kolourpaint.cpp:53 kolourpaint.cpp:54
 #, kde-format
 msgid "InputMethod Support"
 msgstr "输入法支持"
 
-#: kolourpaint.cpp:77
+#: kolourpaint.cpp:54
 #, kde-format
 msgid "Kazuki Ohta"
 msgstr "Kazuki Ohta"
 
-#: kolourpaint.cpp:78
+#: kolourpaint.cpp:55
 #, kde-format
 msgid "Nuno Pinheiro"
 msgstr "Nuno Pinheiro"
 
-#: kolourpaint.cpp:79
+#: kolourpaint.cpp:56
 #, kde-format
 msgid "Danny Allen"
 msgstr "Danny Allen"
 
-#: kolourpaint.cpp:80
+#: kolourpaint.cpp:57
 #, kde-format
 msgid "Mike Gashler"
 msgstr "Mike Gashler"
 
-#: kolourpaint.cpp:80
+#: kolourpaint.cpp:57
 #, kde-format
 msgid "Image Effects"
-msgstr "贡献了图像效果"
+msgstr "图像效果"
 
-#: kolourpaint.cpp:82
+#: kolourpaint.cpp:59
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: kolourpaint.cpp:82
+#: kolourpaint.cpp:59
 #, kde-format
 msgid "KDE 4 Porting"
 msgstr "KDE 4 移植"
 
-#: kolourpaint.cpp:83
+#: kolourpaint.cpp:60
 #, kde-format
 msgid "Christoph Feck"
 msgstr "Christoph Feck"
 
-#: kolourpaint.cpp:83
+#: kolourpaint.cpp:60
 #, kde-format
 msgid "KF 5 Porting"
 msgstr "KF5 移植"
 
-#: kolourpaint.cpp:85
+#: kolourpaint.cpp:62
 #, kde-format
 msgid ""
 "Thanks to the many others who have helped to make this program possible."
-msgstr "感谢许许多多帮助这个程序进步的人。"
+msgstr ""
+"除了主要开发人员外，还有众多其他贡献者为 KolourPaint 的开发提供了帮助，让它从"
+"构想成为了现实。我们对此表示衷心的感谢。"
 
-#: kolourpaint.cpp:90
+#: kolourpaint.cpp:68
 #, kde-format
 msgid "Image files to open, optionally"
-msgstr "要打开的图像文件，可选"
+msgstr "要打开的图像文件，可选项"
 
-#: kolourpaint.cpp:93
+#: kolourpaint.cpp:71
 #, kde-format
 msgid "List all readable image MIME types"
-msgstr "列出所有可读图像的 MIME 类型"
+msgstr "列出所有支持读取的图像 MIME 类型"
+
+#: kolourpaint.cpp:72
+#, kde-format
+msgid "Start with new image using given size"
+msgstr "启动时创建给定大小的新图像"
+
+#: kolourpaint.cpp:72
+#, kde-format
+msgid "[width]x[height]"
+msgstr "[宽度]x[长度]"
 
 #. i18n: ectx: Menu (view)
 #: kolourpaintui.rc:36
@@ -1189,7 +1191,7 @@ msgstr "图像(&I)"
 #: kolourpaintui.rc:99
 #, kde-format
 msgid "&Colors"
-msgstr "颜色(&C)"
+msgstr "色板(&C)"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kolourpaintui.rc:147
@@ -1207,7 +1209,7 @@ msgstr "文字工具栏"
 #: kolourpaintui.rc:172
 #, kde-format
 msgid "Selection Tool RMB Menu"
-msgstr "选择工具右键菜单"
+msgstr "选区工具右键菜单"
 
 #. i18n: ectx: Menu (edit)
 #: kolourpaintui.rc:174
@@ -1215,473 +1217,492 @@ msgstr "选择工具右键菜单"
 msgid "&Edit"
 msgstr "编辑(&E)"
 
-#: kpThumbnail.cpp:129
+#: kpThumbnail.cpp:94
 #, kde-format
 msgctxt "@title:window"
 msgid "Thumbnail"
-msgstr "缩略图"
+msgstr "总览图"
 
-#: kpViewScrollableContainer.cpp:157 kpViewScrollableContainer.cpp:865
-#: kpViewScrollableContainer.cpp:869 kpViewScrollableContainer.cpp:873
+#: kpViewScrollableContainer.cpp:132 kpViewScrollableContainer.cpp:763
+#: kpViewScrollableContainer.cpp:765 kpViewScrollableContainer.cpp:767
 #, kde-format
 msgid "Left drag the handle to resize the image."
-msgstr "用左键拖曳句柄可缩放图像。"
+msgstr "左键拖动控制点，即可更改图像大小。"
 
-#: kpViewScrollableContainer.cpp:196
+#: kpViewScrollableContainer.cpp:171
 #, kde-format
 msgid "Resize Image: Let go of all the mouse buttons."
-msgstr "更改图像大小：松开所有鼠标键。"
+msgstr "更改图像大小：请松开所有鼠标键。"
 
-#: kpViewScrollableContainer.cpp:228
+#: kpViewScrollableContainer.cpp:199
 #, kde-format
 msgid "Resize Image: Right click to cancel."
-msgstr "缩放图像：右击可取消。"
+msgstr "更改图像大小：右键点击，即可取消操作。"
 
-#: layers/selections/text/kpTextSelection.cpp:136
-#: tools/selection/text/kpToolText.cpp:55
+#: layers/selections/text/kpTextSelection.cpp:106
+#: tools/selection/text/kpToolText.cpp:34
 #, kde-format
 msgid "Text"
 msgstr "文字"
 
-#: lgpl/generic/kpColorCollection.cpp:121
+#: lgpl/generic/kpColorCollection.cpp:109
 #, kde-format
 msgid "Could not open color palette \"%1\"."
-msgstr "不能打开调色板“%1”。"
+msgstr "无法打开色板“%1”。"
 
-#: lgpl/generic/kpColorCollection.cpp:154
+#: lgpl/generic/kpColorCollection.cpp:138
 #, kde-format
 msgid ""
 "Could not open color palette \"%1\" - unsupported format.\n"
 "The file may be corrupt."
 msgstr ""
-"不能打开调色板“%1” - 不支持的格式。\n"
-"文件也许损坏了。"
+"无法打开色板“%1” - 不支持的格式。\n"
+"文件可能已经损坏。"
 
-#: lgpl/generic/kpColorCollection.cpp:214
+#: lgpl/generic/kpColorCollection.cpp:192
 #, kde-format
 msgid "Could not open KDE color palette \"%1\"."
-msgstr "不能打开 KDE 调色板“%1”。"
+msgstr "无法打开预设色板“%1”。"
 
-#: lgpl/generic/kpColorCollection.cpp:264
+#: lgpl/generic/kpColorCollection.cpp:236
 #, kde-format
 msgid "Could not save color palette as \"%1\"."
-msgstr "不能另存调色板为“%1”。"
+msgstr "无法将色板另存为“%1”。"
 
-#: lgpl/generic/kpUrlFormatter.cpp:41 lgpl/generic/kpUrlFormatter.cpp:54
-#: widgets/toolbars/kpColorToolBar.cpp:283
+#: lgpl/generic/kpUrlFormatter.cpp:19 lgpl/generic/kpUrlFormatter.cpp:31
+#: widgets/toolbars/kpColorToolBar.cpp:268
 #, kde-format
 msgid "Untitled"
 msgstr "无标题"
 
-#: mainWindow/kpMainWindow_Colors.cpp:61
+#: mainWindow/kpMainWindow_Colors.cpp:39
 #, kde-format
 msgid "Use KolourPaint Defaults"
-msgstr "使用程序默认"
+msgstr "加载默认色板"
 
-#: mainWindow/kpMainWindow_Colors.cpp:66
+#: mainWindow/kpMainWindow_Colors.cpp:43
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "Use KDE's"
-msgstr "使用 KDE 的"
+msgstr "加载预设色板"
 
-#: mainWindow/kpMainWindow_Colors.cpp:78
+#: mainWindow/kpMainWindow_Colors.cpp:53
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "&Open..."
-msgstr "打开(&O)..."
+msgstr "打开色板(&O)..."
 
-#: mainWindow/kpMainWindow_Colors.cpp:82
+#: mainWindow/kpMainWindow_Colors.cpp:57
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "Reloa&d"
-msgstr "重新加载(&D)"
+msgstr "重新加载色板(&D)"
 
-#: mainWindow/kpMainWindow_Colors.cpp:87
+#: mainWindow/kpMainWindow_Colors.cpp:61
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "&Save"
-msgstr "保存(&S)"
+msgstr "保存色板(&S)"
 
-#: mainWindow/kpMainWindow_Colors.cpp:92
+#: mainWindow/kpMainWindow_Colors.cpp:65
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "Save &As..."
-msgstr "另存为(&A)..."
+msgstr "另存色板为(&A)..."
 
-#: mainWindow/kpMainWindow_Colors.cpp:97
+#: mainWindow/kpMainWindow_Colors.cpp:69
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "Add Row"
-msgstr "添加一行"
+msgstr "色板：添加一行颜色"
 
-#: mainWindow/kpMainWindow_Colors.cpp:102
+#: mainWindow/kpMainWindow_Colors.cpp:73
 #, kde-format
 msgctxt "@item:inmenu colors"
 msgid "Delete Last Row"
-msgstr "删除最后一行"
+msgstr "色板：删除底部一行颜色"
 
-#: mainWindow/kpMainWindow_Colors.cpp:115
+#: mainWindow/kpMainWindow_Colors.cpp:84
 #, kde-format
 msgid "Color Box"
-msgstr "色彩框"
+msgstr "色块"
 
-#: mainWindow/kpMainWindow_Colors.cpp:200
+#: mainWindow/kpMainWindow_Colors.cpp:162
 #, kde-format
 msgid ""
 "The color palette \"%1\" has been modified.\n"
 "Do you want to save it?"
 msgstr ""
-"调色板“%1”已经修改。\n"
-"您想保存它吗？"
+"色板“%1”已被修改。\n"
+"您想要保存修改吗？"
 
-#: mainWindow/kpMainWindow_Colors.cpp:212
+#: mainWindow/kpMainWindow_Colors.cpp:172
 #, kde-format
 msgid ""
 "The KDE color palette \"%1\" has been modified.\n"
 "Do you want to save it to a file?"
 msgstr ""
-"KDE 调色板“%1”已经修改。\n"
-"您想保存它为文件吗？"
+"预设色板“%1”已被修改。\n"
+"您想要将它保存为文件吗？"
 
-#: mainWindow/kpMainWindow_Colors.cpp:221
+#: mainWindow/kpMainWindow_Colors.cpp:180
 #, kde-format
 msgid ""
 "The default color palette has been modified.\n"
 "Do you want to save it to a file?"
 msgstr ""
-"默认调色板已经修改。\n"
-"您想保存它为文件吗？"
+"默认色板已被修改。\n"
+"您想要将它保存为文件吗？"
 
-#: mainWindow/kpMainWindow_Colors.cpp:340
+#: mainWindow/kpMainWindow_Colors.cpp:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Open Color Palette"
-msgstr "打开调色板"
+msgstr "打开色板"
 
-#: mainWindow/kpMainWindow_Colors.cpp:369
+#: mainWindow/kpMainWindow_Colors.cpp:319
 #, kde-format
 msgid ""
 "The color palette \"%1\" has been modified.\n"
 "Reloading will lose all changes since you last saved it.\n"
 "Are you sure?"
 msgstr ""
-"调色板“%1”已经修改。\n"
-"重新加载将使从上次保存开始的修改丢失。\n"
-"您确定吗？"
+"色板“%1”已被修改。\n"
+"重新加载将丢失所有修改过的颜色。\n"
+"您确定要重新加载色板吗？"
 
-#: mainWindow/kpMainWindow_Colors.cpp:374
-#: mainWindow/kpMainWindow_Colors.cpp:387
-#: mainWindow/kpMainWindow_Colors.cpp:396 mainWindow/kpMainWindow_File.cpp:1077
-#: mainWindow/kpMainWindow_File.cpp:1087
+#: mainWindow/kpMainWindow_Colors.cpp:324
+#: mainWindow/kpMainWindow_Colors.cpp:334
+#: mainWindow/kpMainWindow_Colors.cpp:341 mainWindow/kpMainWindow_File.cpp:968
+#: mainWindow/kpMainWindow_File.cpp:976
 #, kde-format
 msgid "&Reload"
 msgstr "重新加载(&R)"
 
-#: mainWindow/kpMainWindow_Colors.cpp:382
+#: mainWindow/kpMainWindow_Colors.cpp:329
 #, kde-format
 msgid ""
 "The KDE color palette \"%1\" has been modified.\n"
 "Reloading will lose all changes.\n"
 "Are you sure?"
 msgstr ""
-"KDE 调色板“%1”已经修改。\n"
-"重新加载将丢失所有修改。\n"
-"您确定吗？"
+"预设色板“%1”已被修改。\n"
+"重新加载将丢失所有修改过的颜色。\n"
+"您确定要重新加载色板吗？"
 
-#: mainWindow/kpMainWindow_Colors.cpp:392
+#: mainWindow/kpMainWindow_Colors.cpp:337
 #, kde-format
 msgid ""
 "The default color palette has been modified.\n"
 "Reloading will lose all changes.\n"
 "Are you sure?"
 msgstr ""
-"默认调色板已经修改。\n"
-"重新加载将丢失所有修改。\n"
-"您确定吗？"
+"默认色板已被修改。\n"
+"重新加载将丢失所有修改过的颜色。\n"
+"您确定要重新加载色板吗？"
 
-#: mainWindow/kpMainWindow_Colors.cpp:453
+#: mainWindow/kpMainWindow_Colors.cpp:390
 #, kde-format
 msgid "Save Color Palette As"
-msgstr "调色板另存为"
+msgstr "另存色板为"
 
-#: mainWindow/kpMainWindow_Edit.cpp:96
+#: mainWindow/kpMainWindow_Edit.cpp:72
 #, kde-format
 msgid "Paste in &New Window"
-msgstr "在新窗口中粘贴(&N)"
+msgstr "粘贴到新窗口(&N)"
 
-#: mainWindow/kpMainWindow_Edit.cpp:103
+#: mainWindow/kpMainWindow_Edit.cpp:78
 #, kde-format
 msgid "&Delete Selection"
-msgstr "删除选中范围(&D)"
+msgstr "删除选区内容(&D)"
 
-#: mainWindow/kpMainWindow_Edit.cpp:111
+#: mainWindow/kpMainWindow_Edit.cpp:85
 #, kde-format
 msgid "C&opy to File..."
-msgstr "复制到文件(&O)..."
+msgstr "复制为文件(&O)..."
 
-#: mainWindow/kpMainWindow_Edit.cpp:115
+#: mainWindow/kpMainWindow_Edit.cpp:89
 #, kde-format
 msgid "Paste &From File..."
-msgstr "从文件粘贴(&F)..."
+msgstr "粘贴文件内容(&F)..."
 
-#: mainWindow/kpMainWindow_Edit.cpp:364 mainWindow/kpMainWindow_Edit.cpp:438
-#: mainWindow/kpMainWindow_Image.cpp:323 tools/selection/text/kpToolText.cpp:89
+#: mainWindow/kpMainWindow_Edit.cpp:312 mainWindow/kpMainWindow_Edit.cpp:368
+#: mainWindow/kpMainWindow_Image.cpp:284 tools/selection/text/kpToolText.cpp:60
 #, kde-format
 msgid "Text: Create Box"
-msgstr "文字：创建框"
+msgstr "文字：创建文本框"
 
-#: mainWindow/kpMainWindow_Edit.cpp:444
+#: mainWindow/kpMainWindow_Edit.cpp:372
 #, kde-format
 msgid "Text: Paste"
 msgstr "文字：粘贴"
 
-#: mainWindow/kpMainWindow_Edit.cpp:610
+#: mainWindow/kpMainWindow_Edit.cpp:500
 #, kde-format
 msgid ""
 "<qt>KolourPaint cannot paste the contents of the clipboard as it has an "
 "unknown format.</qt>"
-msgstr "<qt>KolourPaint 无法粘贴剪贴板内容，未知格式。</qt>"
+msgstr "<qt>KolourPaint 无法粘贴剪贴板内容，因为它是一种未知格式。</qt>"
 
-#: mainWindow/kpMainWindow_Edit.cpp:612
+#: mainWindow/kpMainWindow_Edit.cpp:502
 #, kde-format
 msgid "Cannot Paste"
 msgstr "无法粘贴"
 
-#: mainWindow/kpMainWindow_Edit.cpp:691
+#: mainWindow/kpMainWindow_Edit.cpp:576
 #, kde-format
 msgid "Text: Delete Box"
-msgstr "文字：删除框"
+msgstr "文字：删除文本框"
 
 #. i18n ("Text: Delete")
-#: mainWindow/kpMainWindow_Edit.cpp:692
+#: mainWindow/kpMainWindow_Edit.cpp:578
 #, kde-format
 msgid "Selection: Delete"
-msgstr "选择范围：删除"
+msgstr "选区：删除内容"
 
-#: mainWindow/kpMainWindow_Edit.cpp:766
+#: mainWindow/kpMainWindow_Edit.cpp:642
 #, kde-format
 msgid "Text: Finish"
 msgstr "文字：完成"
 
-#: mainWindow/kpMainWindow_Edit.cpp:767
+#: mainWindow/kpMainWindow_Edit.cpp:642
 #, kde-format
 msgid "Selection: Deselect"
-msgstr "选中范围：取消选中"
+msgstr "选区：取消选择"
 
-#: mainWindow/kpMainWindow_Edit.cpp:851
+#: mainWindow/kpMainWindow_Edit.cpp:713
 #, kde-format
 msgctxt "@title:window"
 msgid "Copy to File"
-msgstr "复制到文件"
+msgstr "复制为文件"
 
-#: mainWindow/kpMainWindow_Edit.cpp:898
+#: mainWindow/kpMainWindow_Edit.cpp:751
 #, kde-format
 msgctxt "@title:window"
 msgid "Paste From File"
-msgstr "从文件粘贴"
+msgstr "粘贴文件内容"
 
-#: mainWindow/kpMainWindow_File.cpp:105
+#: mainWindow/kpMainWindow_File.cpp:84
 #, kde-format
 msgid "E&xport..."
 msgstr "导出(&X)..."
 
-#: mainWindow/kpMainWindow_File.cpp:110
+#: mainWindow/kpMainWindow_File.cpp:86
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export to another file"
+msgstr "导出为新文件"
+
+#: mainWindow/kpMainWindow_File.cpp:88
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"This saves the document with a different name, similar to <interface>Save "
+"As</interface>, but the current document is not changed.<nl/>This way you "
+"can keep the last-used save folder independent from the folder of the "
+"current document."
+msgstr ""
+"这将把文件以另一个文件名保存，类似于<interface>另存为</interface>，不同之处在"
+"于导出后当前图像不会切换成导出后的图像。<nl/>导出的位置和当前图像的位置是分别"
+"记忆的，方便区分管理。"
+
+#: mainWindow/kpMainWindow_File.cpp:94
 #, kde-format
 msgid "Scan..."
-msgstr "扫描..."
+msgstr "扫描图像..."
 
-#: mainWindow/kpMainWindow_File.cpp:119
+#: mainWindow/kpMainWindow_File.cpp:103
 #, kde-format
 msgid "Acquire Screenshot"
-msgstr "获取抓图"
+msgstr "截取画面"
 
-#: mainWindow/kpMainWindow_File.cpp:123
+#: mainWindow/kpMainWindow_File.cpp:107
 #, kde-format
 msgid "Properties"
-msgstr "属性"
+msgstr "图像属性"
 
-#: mainWindow/kpMainWindow_File.cpp:129
+#: mainWindow/kpMainWindow_File.cpp:113
 #, kde-format
 msgid "Reloa&d"
 msgstr "重新加载(&D)"
 
-#: mainWindow/kpMainWindow_File.cpp:459
+#: mainWindow/kpMainWindow_File.cpp:412
 #, kde-format
 msgid "All Supported Files (%1)"
 msgstr "所有支持的文件 (%1)"
 
-#: mainWindow/kpMainWindow_File.cpp:484
+#: mainWindow/kpMainWindow_File.cpp:437
 #, kde-format
 msgctxt "@title:window"
 msgid "Open Image"
 msgstr "打开图像"
 
-#: mainWindow/kpMainWindow_File.cpp:547
+#: mainWindow/kpMainWindow_File.cpp:496
 #, kde-format
 msgid "Failed to open scanning dialog."
-msgstr "无法打开扫描对话框。"
+msgstr "打开扫描对话框失败。"
 
-#: mainWindow/kpMainWindow_File.cpp:548
+#: mainWindow/kpMainWindow_File.cpp:496
 #, kde-format
 msgctxt "@title:window"
 msgid "Scanning Failed"
 msgstr "扫描失败"
 
-#: mainWindow/kpMainWindow_File.cpp:665
+#: mainWindow/kpMainWindow_File.cpp:606
 #, kde-format
 msgid "Snapshot Delay"
-msgstr "抓图延时"
+msgstr "截图延迟时间"
 
-#: mainWindow/kpMainWindow_File.cpp:668
+#: mainWindow/kpMainWindow_File.cpp:609
 #, kde-format
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] " 秒"
+msgid "%v second"
+msgid_plural "%v seconds"
+msgstr[0] "%v 秒"
 
-#: mainWindow/kpMainWindow_File.cpp:669
+#: mainWindow/kpMainWindow_File.cpp:610
 #, kde-format
 msgid "No delay"
-msgstr "无延时"
+msgstr "无延迟"
 
-#: mainWindow/kpMainWindow_File.cpp:671
+#: mainWindow/kpMainWindow_File.cpp:612
 #, kde-format
 msgid "Hide Main Window"
 msgstr "隐藏主窗口"
 
-#: mainWindow/kpMainWindow_File.cpp:725
+#: mainWindow/kpMainWindow_File.cpp:663
 #, kde-format
 msgid "Document Properties"
-msgstr "文档属性"
+msgstr "图像属性"
 
-#: mainWindow/kpMainWindow_File.cpp:960
+#: mainWindow/kpMainWindow_File.cpp:867
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Image As"
 msgstr "图像另存为"
 
-#: mainWindow/kpMainWindow_File.cpp:1008
+#: mainWindow/kpMainWindow_File.cpp:910
 #, kde-format
 msgctxt "@title:window"
 msgid "Export"
 msgstr "导出"
 
-#: mainWindow/kpMainWindow_File.cpp:1072
+#: mainWindow/kpMainWindow_File.cpp:963
 #, kde-format
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Reloading will lose all changes since you last saved it.\n"
 "Are you sure?"
 msgstr ""
-"文档“%1”已经修改。\n"
-"重新加载将使从上次保存开始的修改丢失。\n"
-"您确定吗？"
+"图像“%1”已经修改。\n"
+"重新加载将使在上次保存之后的修改丢失。\n"
+"您确定要重新加载吗？"
 
-#: mainWindow/kpMainWindow_File.cpp:1082
+#: mainWindow/kpMainWindow_File.cpp:971
 #, kde-format
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Reloading will lose all changes.\n"
 "Are you sure?"
 msgstr ""
-"文档“%1”已经修改。\n"
-"重新加载将使从上次保存开始的修改丢失。\n"
-"您确定吗？"
+"图像“%1”已经修改。\n"
+"重新加载将丢失打开后的所有修改。\n"
+"您确定要重新加载吗？"
 
-#: mainWindow/kpMainWindow_File.cpp:1322
+#: mainWindow/kpMainWindow_File.cpp:1178
 #, kde-format
 msgctxt "@title:window"
 msgid "Print Image"
 msgstr "打印图像"
 
-#: mainWindow/kpMainWindow_File.cpp:1399
+#: mainWindow/kpMainWindow_File.cpp:1251
 #, kde-format
 msgid ""
 "You must save this image before sending it.\n"
 "Do you want to save it?"
 msgstr ""
-"您必须在发送之前保存它。\n"
-"您想保存它吗？"
+"您必须在发送之前保存此图像。\n"
+"您想要保存它吗？"
 
-#: mainWindow/kpMainWindow_File.cpp:1441
+#: mainWindow/kpMainWindow_File.cpp:1286
 #, kde-format
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Do you want to save it?"
 msgstr ""
-"文档“%1”已经修改。\n"
-"您想保存它吗？"
+"图像“%1”已经修改。\n"
+"您想要保存它吗？"
 
-#: mainWindow/kpMainWindow_Image.cpp:117
+#: mainWindow/kpMainWindow_Image.cpp:94
 #, kde-format
 msgid "R&esize / Scale..."
-msgstr "改变大小/缩放(&E)..."
+msgstr "更改大小/缩放(&E)..."
 
-#: mainWindow/kpMainWindow_Image.cpp:123
+#: mainWindow/kpMainWindow_Image.cpp:100
 #, kde-format
 msgid "Se&t as Image (Crop)"
-msgstr "设定为图像(裁剪)(&T)"
+msgstr "裁剪图像到选区大小 (&T)"
 
-#: mainWindow/kpMainWindow_Image.cpp:133
+#: mainWindow/kpMainWindow_Image.cpp:110
 #, kde-format
 msgid "&Flip (upside down)"
-msgstr "翻转(上下)(&F)"
+msgstr "翻转 (垂直) (&F)"
 
-#: mainWindow/kpMainWindow_Image.cpp:138
+#: mainWindow/kpMainWindow_Image.cpp:115
 #, kde-format
 msgid "Mirror (horizontally)"
-msgstr "镜像(水平)"
+msgstr "翻转 (水平)"
 
-#: mainWindow/kpMainWindow_Image.cpp:143
+#: mainWindow/kpMainWindow_Image.cpp:120
 #, kde-format
 msgid "&Rotate..."
 msgstr "旋转(&R)..."
 
-#: mainWindow/kpMainWindow_Image.cpp:149
+#: mainWindow/kpMainWindow_Image.cpp:126
 #, kde-format
 msgid "Rotate &Left"
-msgstr "向左旋转(&L)"
+msgstr "旋转 (向左) (&L)"
 
-#: mainWindow/kpMainWindow_Image.cpp:155
+#: mainWindow/kpMainWindow_Image.cpp:132
 #, kde-format
 msgid "Rotate Righ&t"
-msgstr "向右旋转(&T)"
+msgstr "旋转 (向右) (&T)"
 
-#: mainWindow/kpMainWindow_Image.cpp:161
+#: mainWindow/kpMainWindow_Image.cpp:138
 #, kde-format
 msgid "S&kew..."
-msgstr "扭曲(&K)..."
+msgstr "斜切变形(&K)..."
 
-#: mainWindow/kpMainWindow_Image.cpp:166
+#: mainWindow/kpMainWindow_Image.cpp:143
 #, kde-format
 msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr "降为单色(抖动)(&N)"
+msgstr "色彩降为单色 (抖动) (&N)"
 
-#: mainWindow/kpMainWindow_Image.cpp:171
+#: mainWindow/kpMainWindow_Image.cpp:147
 #, kde-format
 msgid "Reduce to &Grayscale"
-msgstr "降为灰色(&G)"
+msgstr "色彩降为灰阶(&G)"
 
-#: mainWindow/kpMainWindow_Image.cpp:175
+#: mainWindow/kpMainWindow_Image.cpp:151
 #, kde-format
 msgid "&Invert Colors"
-msgstr "反转颜色(&I)"
+msgstr "颜色反相(&I)"
 
-#: mainWindow/kpMainWindow_Image.cpp:180
+#: mainWindow/kpMainWindow_Image.cpp:156
 #, kde-format
 msgid "C&lear"
 msgstr "清除(&L)"
 
-#: mainWindow/kpMainWindow_Image.cpp:185
+#: mainWindow/kpMainWindow_Image.cpp:161
 #, kde-format
 msgid "Make Confidential"
-msgstr "标记为机密"
+msgstr "模糊处理"
 
-#: mainWindow/kpMainWindow_Image.cpp:189
+#: mainWindow/kpMainWindow_Image.cpp:165
 #, kde-format
 msgid "&More Effects..."
 msgstr "更多效果(&M)..."
 
-#: mainWindow/kpMainWindow_Image.cpp:230
+#: mainWindow/kpMainWindow_Image.cpp:205
 #, kde-format
 msgctxt ""
 "Image/Selection Menu caption - make sure the translation has the same accel "
@@ -1689,596 +1710,593 @@ msgctxt ""
 msgid "&Image"
 msgstr "图像(&I)"
 
-#: mainWindow/kpMainWindow_Image.cpp:234
+#: mainWindow/kpMainWindow_Image.cpp:209
 #, kde-format
 msgctxt ""
 "Image/Selection Menu caption - make sure that translation has the same accel "
 "as the &Image translation"
 msgid "Select&ion"
-msgstr "选择范围(&I)"
+msgstr "选区(&I)"
 
-#: mainWindow/kpMainWindow_Settings.cpp:67
+#: mainWindow/kpMainWindow_Settings.cpp:41
 #, kde-format
 msgid "Show &Path"
 msgstr "显示路径(&P)"
 
-#: mainWindow/kpMainWindow_Settings.cpp:72
+#: mainWindow/kpMainWindow_Settings.cpp:46
 #, kde-format
 msgid "Draw Anti-Aliased"
-msgstr "绘制抗锯齿绘图"
+msgstr "绘制时使用抗锯齿平滑"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#: mainWindow/kpMainWindow_StatusBar.cpp:121
 #, kde-format
 msgid "%1,%2"
 msgstr "%1，%2"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:162
+#: mainWindow/kpMainWindow_StatusBar.cpp:123
 #, kde-format
 msgid "%1,%2 - %3,%4"
 msgstr "%1，%2 - %3，%4"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:205
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:112
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#: mainWindow/kpMainWindow_StatusBar.cpp:155
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:76
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:66
 #, kde-format
 msgid "%1x%2"
 msgstr "%1x%2"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:264
+#: mainWindow/kpMainWindow_StatusBar.cpp:200
 #, kde-format
 msgid "%1bpp"
-msgstr "%1bpp"
+msgstr "%1 位色"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:290
-#: mainWindow/kpMainWindow_View_Zoom.cpp:88
+#: mainWindow/kpMainWindow_StatusBar.cpp:221
+#: mainWindow/kpMainWindow_View_Zoom.cpp:67
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: mainWindow/kpMainWindow_Text.cpp:57
+#: mainWindow/kpMainWindow_Text.cpp:34
 #, kde-format
 msgid "Font Family"
-msgstr "字体族"
+msgstr "字体"
 
-#: mainWindow/kpMainWindow_Text.cpp:67
+#: mainWindow/kpMainWindow_Text.cpp:38
 #, kde-format
 msgid "Font Size"
 msgstr "字体大小"
 
-#: mainWindow/kpMainWindow_Text.cpp:78
+#: mainWindow/kpMainWindow_Text.cpp:43
 #, kde-format
 msgid "Bold"
 msgstr "粗体"
 
-#: mainWindow/kpMainWindow_Text.cpp:84
+#: mainWindow/kpMainWindow_Text.cpp:48
 #, kde-format
 msgid "Italic"
 msgstr "斜体"
 
-#: mainWindow/kpMainWindow_Text.cpp:90
+#: mainWindow/kpMainWindow_Text.cpp:53
 #, kde-format
 msgid "Underline"
 msgstr "下划线"
 
-#: mainWindow/kpMainWindow_Text.cpp:96
+#: mainWindow/kpMainWindow_Text.cpp:58
 #, kde-format
 msgid "Strike Through"
 msgstr "删除线"
 
-#: mainWindow/kpMainWindow_Tools.cpp:135
+#: mainWindow/kpMainWindow_Tools.cpp:111
 #, kde-format
 msgid "Previous Tool Option (Group #1)"
-msgstr "上个工具选项(组 #1)"
+msgstr "上一个工具选项 (分组 #1)"
 
-#: mainWindow/kpMainWindow_Tools.cpp:141
+#: mainWindow/kpMainWindow_Tools.cpp:116
 #, kde-format
 msgid "Next Tool Option (Group #1)"
-msgstr "下个工具选项(组 #1)"
+msgstr "下一个工具选项 (分组 #1)"
 
-#: mainWindow/kpMainWindow_Tools.cpp:147
+#: mainWindow/kpMainWindow_Tools.cpp:121
 #, kde-format
 msgid "Previous Tool Option (Group #2)"
-msgstr "上个工具选项(组 #2)"
+msgstr "上一个工具选项 (分组 #2)"
 
-#: mainWindow/kpMainWindow_Tools.cpp:153
+#: mainWindow/kpMainWindow_Tools.cpp:126
 #, kde-format
 msgid "Next Tool Option (Group #2)"
-msgstr "下个工具选项(组 #2)"
+msgstr "下一个工具选项 (分组 #2)"
 
-#: mainWindow/kpMainWindow_Tools.cpp:165
+#: mainWindow/kpMainWindow_Tools.cpp:136
 #, kde-format
 msgid "&Draw Opaque"
-msgstr "绘制实色(&D)"
+msgstr "选区背景不透明(&D)"
 
-#: mainWindow/kpMainWindow_Tools.cpp:170
+#: mainWindow/kpMainWindow_Tools.cpp:140
 #, kde-format
 msgid "Draw With Color Similarity..."
-msgstr "绘制相似颜色"
+msgstr "设置颜色近似阈值..."
 
-#: mainWindow/kpMainWindow_Tools.cpp:181
+#: mainWindow/kpMainWindow_Tools.cpp:150
 #, kde-format
 msgid "Tool Box"
-msgstr "工具框"
+msgstr "工具箱"
 
-#: mainWindow/kpMainWindow_View.cpp:65
+#: mainWindow/kpMainWindow_View.cpp:41
 #, kde-format
 msgid "Show &Grid"
 msgstr "显示网格(&G)"
 
-#: mainWindow/kpMainWindow_View_Thumbnail.cpp:63
+#: mainWindow/kpMainWindow_View_Thumbnail.cpp:40
 #, kde-format
 msgid "Show T&humbnail"
-msgstr "显示缩略图(&H)"
+msgstr "显示总览图(&H)"
 
-#: mainWindow/kpMainWindow_View_Thumbnail.cpp:74
+#: mainWindow/kpMainWindow_View_Thumbnail.cpp:50
 #, kde-format
 msgid "Zoo&med Thumbnail Mode"
-msgstr "缩放的缩略图模式(&M)"
+msgstr "总览图缩放显示(&M)"
 
-#: mainWindow/kpMainWindow_View_Thumbnail.cpp:84
+#: mainWindow/kpMainWindow_View_Thumbnail.cpp:59
 #, kde-format
 msgid "Enable Thumbnail &Rectangle"
-msgstr "启用缩略图矩形(&R)"
+msgstr "启用总览图矩形(&R)"
 
-#: mainWindow/kpMainWindow_View_Zoom.cpp:110
+#: mainWindow/kpMainWindow_View_Zoom.cpp:86
 #, kde-format
 msgid "&Zoom"
 msgstr "缩放(&Z)"
 
-#: scan/sanedialog.cpp:41
+#: scan/sanedialog.cpp:27
 #, kde-format
 msgctxt "@title:window"
 msgid "Acquire Image"
-msgstr "获取图像"
+msgstr "扫描图像"
 
-#: scan/sanedialog.cpp:73
+#: scan/sanedialog.cpp:57
 #, kde-format
 msgid "Opening the selected scanner failed."
-msgstr "无法打开所选扫描仪。"
+msgstr "打开所选扫描仪失败。"
 
-#: tools/flow/kpToolBrush.cpp:35
+#: tools/flow/kpToolBrush.cpp:15
 #, kde-format
 msgid "Brush"
-msgstr "刷子"
+msgstr "画笔"
 
-#: tools/flow/kpToolBrush.cpp:36
+#: tools/flow/kpToolBrush.cpp:15
 #, kde-format
 msgid "Draw using brushes of different shapes and sizes"
-msgstr "使用不同形状和大小的刷子画图"
+msgstr "使用各种形状和大小的笔刷进行绘制"
 
-#: tools/flow/kpToolBrush.cpp:47 tools/flow/kpToolPen.cpp:57
+#: tools/flow/kpToolBrush.cpp:24 tools/flow/kpToolPen.cpp:33
 #, kde-format
 msgid "Click to draw dots or drag to draw strokes."
-msgstr "单击可画点，拖曳可画线。"
+msgstr "点击左键 (前景色) 或者右键 (背景色) 可画点，拖动可画线。"
 
-#: tools/flow/kpToolColorEraser.cpp:49 tools/flow/kpToolColorEraser.cpp:78
+#: tools/flow/kpToolColorEraser.cpp:28 tools/flow/kpToolColorEraser.cpp:57
 #, kde-format
 msgid "Color Eraser"
-msgstr "颜色橡皮擦"
+msgstr "彩色橡皮擦"
 
-#: tools/flow/kpToolColorEraser.cpp:50
+#: tools/flow/kpToolColorEraser.cpp:29
 #, kde-format
 msgid "Replaces pixels of the foreground color with the background color"
-msgstr "替换前景色图像素为背景色"
+msgstr "将图像的前景色替换为背景色"
 
-#: tools/flow/kpToolColorEraser.cpp:115
+#: tools/flow/kpToolColorEraser.cpp:93
 #, kde-format
 msgid "Click or drag to erase pixels of the foreground color."
-msgstr "单击或拖曳可擦除前景色的像素。"
+msgstr "单击或者拖动，即可擦除前景色的像素。"
 
-#: tools/flow/kpToolEraser.cpp:42
+#: tools/flow/kpToolEraser.cpp:21
 #, kde-format
 msgid "Eraser"
 msgstr "橡皮擦"
 
-#: tools/flow/kpToolEraser.cpp:43
+#: tools/flow/kpToolEraser.cpp:21
 #, kde-format
 msgid "Lets you rub out mistakes"
-msgstr "让您擦除错处"
+msgstr "用于擦除画错的内容"
 
-#: tools/flow/kpToolEraser.cpp:70
+#: tools/flow/kpToolEraser.cpp:42
 #, kde-format
 msgid "Click or drag to erase."
-msgstr "单击或拖曳即可擦除。"
+msgstr "点击或者拖动，即可擦除图像内容。"
 
-#: tools/flow/kpToolFlowBase.cpp:304 tools/kpToolColorPicker.cpp:108
-#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:207
-#: tools/polygonal/kpToolPolygonalBase.cpp:435
-#: tools/rectangular/kpToolRectangularBase.cpp:351
-#: tools/selection/kpAbstractSelectionTool.cpp:261
-#: tools/selection/kpAbstractSelectionTool.cpp:528
+#: tools/flow/kpToolFlowBase.cpp:252 tools/kpToolColorPicker.cpp:78
+#: tools/kpToolFloodFill.cpp:119 tools/kpToolZoom.cpp:176
+#: tools/polygonal/kpToolPolygonalBase.cpp:367
+#: tools/rectangular/kpToolRectangularBase.cpp:290
+#: tools/selection/kpAbstractSelectionTool.cpp:228
+#: tools/selection/kpAbstractSelectionTool.cpp:462
 #, kde-format
 msgid "Let go of all the mouse buttons."
-msgstr "松开所有鼠标键。"
+msgstr "请松开所有鼠标键。"
 
-#: tools/flow/kpToolPen.cpp:46
+#: tools/flow/kpToolPen.cpp:24
 #, kde-format
 msgid "Pen"
-msgstr "画笔"
+msgstr "钢笔"
 
-#: tools/flow/kpToolPen.cpp:46
+#: tools/flow/kpToolPen.cpp:24
 #, kde-format
 msgid "Draws dots and freehand strokes"
-msgstr "绘制点和徒手笔划"
+msgstr "手绘小点和细线"
 
-#: tools/flow/kpToolSpraycan.cpp:56
+#: tools/flow/kpToolSpraycan.cpp:35
 #, kde-format
 msgid "Spraycan"
-msgstr "喷雾罐"
+msgstr "喷罐"
 
-#: tools/flow/kpToolSpraycan.cpp:56
+#: tools/flow/kpToolSpraycan.cpp:35
 #, kde-format
 msgid "Sprays graffiti"
-msgstr "喷雾涂写"
+msgstr "绘制喷雾涂鸦"
 
-#: tools/flow/kpToolSpraycan.cpp:71
+#: tools/flow/kpToolSpraycan.cpp:48
 #, kde-format
 msgid "Click or drag to spray graffiti."
-msgstr "单击或拖曳可实行喷雾涂写。"
+msgstr "单击或者拖动，即可在画面上喷雾。"
 
-#: tools/kpTool.cpp:140
-#, kde-format
-msgctxt "<Tool Name> (<Single Accel Key>)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: tools/kpTool_UserNotifications.cpp:42
+#: tools/kpTool_UserNotifications.cpp:22
 #, kde-format
 msgid "Right click to cancel."
 msgstr "右键单击可取消。"
 
-#: tools/kpTool_UserNotifications.cpp:45
+#: tools/kpTool_UserNotifications.cpp:25
 #, kde-format
 msgid "Left click to cancel."
 msgstr "左键单击可取消。"
 
-#: tools/kpTool_UserNotifications.cpp:75
+#: tools/kpTool_UserNotifications.cpp:54
 #, kde-format
 msgid "%1: "
 msgstr "%1："
 
-#: tools/kpToolColorPicker.cpp:45
+#: tools/kpToolColorPicker.cpp:23
 #, kde-format
 msgid "Lets you select a color from the image"
-msgstr "让您从图像中选取一种颜色"
+msgstr "从图像中拾取一种颜色"
 
-#: tools/kpToolColorPicker.cpp:68
+#: tools/kpToolColorPicker.cpp:42
 #, kde-format
 msgid "Click to select a color."
-msgstr "单击可选择颜色。"
+msgstr "点击即可拾取颜色。"
 
-#: tools/kpToolFloodFill.cpp:55
+#: tools/kpToolFloodFill.cpp:32
 #, kde-format
 msgid "Fills regions in the image"
-msgstr "填充图像里的区域"
+msgstr "填充图像中的整片区域"
 
-#: tools/kpToolFloodFill.cpp:75
+#: tools/kpToolFloodFill.cpp:50
 #, kde-format
 msgid "Click to fill a region."
-msgstr "单击可填充区域。"
+msgstr "点击即可填充相连的整片区域。"
 
-#: tools/kpToolZoom.cpp:74
+#: tools/kpToolZoom.cpp:51
 #, kde-format
 msgid "Zoom"
 msgstr "缩放"
 
-#: tools/kpToolZoom.cpp:74
+#: tools/kpToolZoom.cpp:51
 #, kde-format
 msgid "Zooms in and out of the image"
-msgstr "缩放图像"
+msgstr "放大或者缩小显示图像"
 
-#: tools/kpToolZoom.cpp:118
-#, kde-format
-msgid "Click to zoom in/out or left drag to zoom into a specific area."
-msgstr "单击开始图像缩放，或用左键拖曳决定特定区域。"
+#: tools/kpToolZoom.cpp:92
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Click to zoom in. Right-click to zoom out. Drag to zoom into a specific area."
+msgstr "左键点击放大画面，右键点击缩小画面，左键拖动可放大到选定的区域。"
 
-#: tools/polygonal/kpToolCurve.cpp:103
+#: tools/polygonal/kpToolCurve.cpp:74
 #, kde-format
 msgid "Curve"
 msgstr "曲线"
 
-#: tools/polygonal/kpToolCurve.cpp:104
+#: tools/polygonal/kpToolCurve.cpp:74
 #, kde-format
 msgid "Draws curves"
 msgstr "绘制曲线"
 
-#: tools/polygonal/kpToolCurve.cpp:118
+#: tools/polygonal/kpToolCurve.cpp:83
 #, kde-format
 msgid "Drag out the start and end points."
-msgstr "拖曳可画出起点和终点。"
+msgstr ""
+"第一步：按住左键 (前景色) 或者右键 (背景色) 拖动，拉出曲线的起点和终点。"
 
-#: tools/polygonal/kpToolCurve.cpp:157
+#: tools/polygonal/kpToolCurve.cpp:116
 #, kde-format
 msgid "Left drag to set the first control point or right click to finish."
-msgstr "用左键拖曳设定第一个控制点，或单击右键完成操作。"
+msgstr "第二步：左键拖动以指定第一个控制点，或者点击右键结束绘制。"
 
-#: tools/polygonal/kpToolCurve.cpp:162
+#: tools/polygonal/kpToolCurve.cpp:118
 #, kde-format
 msgid "Right drag to set the first control point or left click to finish."
-msgstr "用右键拖曳设定第一个控制点，或单击左键完成操作。"
+msgstr "第二步：按住右键拖动，即可指定第一个控制点。也可以点击左键结束绘制。"
 
-#: tools/polygonal/kpToolCurve.cpp:172
+#: tools/polygonal/kpToolCurve.cpp:126
 #, kde-format
 msgid "Left drag to set the last control point or right click to finish."
-msgstr "用左键拖曳设定最后一个控制点，或单击右键完成操作。"
+msgstr "最后一步：按住左键拖动，即可指定第二个控制点。也可以点击右键结束绘制。"
 
-#: tools/polygonal/kpToolCurve.cpp:177
+#: tools/polygonal/kpToolCurve.cpp:128
 #, kde-format
 msgid "Right drag to set the last control point or left click to finish."
-msgstr "用右键拖曳设定最后一个控制点，或单击左键完成操作。"
+msgstr "最后一步：按住右键拖动，即可指定第二个控制点。也可以点击左键结束绘制。"
 
-#: tools/polygonal/kpToolLine.cpp:41
+#: tools/polygonal/kpToolLine.cpp:18
 #, kde-format
 msgid "Line"
 msgstr "直线"
 
-#: tools/polygonal/kpToolLine.cpp:42
+#: tools/polygonal/kpToolLine.cpp:18
 #, kde-format
 msgid "Draws lines"
 msgstr "绘制直线"
 
-#: tools/polygonal/kpToolLine.cpp:55
-#: tools/rectangular/kpToolRectangularBase.cpp:119
+#: tools/polygonal/kpToolLine.cpp:27
+#: tools/rectangular/kpToolRectangularBase.cpp:94
 #, kde-format
 msgid "Drag to draw."
-msgstr "拖曳可绘画。"
+msgstr "拖动即可进行绘制。"
 
-#: tools/polygonal/kpToolPolygon.cpp:93
+#: tools/polygonal/kpToolPolygon.cpp:63
 #, kde-format
 msgid "Polygon"
 msgstr "多边形"
 
-#: tools/polygonal/kpToolPolygon.cpp:94
+#: tools/polygonal/kpToolPolygon.cpp:63
 #, kde-format
 msgid "Draws polygons"
 msgstr "绘制多边形"
 
-#: tools/polygonal/kpToolPolygon.cpp:112 tools/polygonal/kpToolPolyline.cpp:60
+#: tools/polygonal/kpToolPolygon.cpp:76 tools/polygonal/kpToolPolyline.cpp:32
 #, kde-format
 msgid "Drag to draw the first line."
-msgstr "拖曳可画出第一条线。"
+msgstr "按住左键 (前景色) 或者右键 (背景色) 拖动，即可画出第一条线。"
 
-#: tools/polygonal/kpToolPolygon.cpp:182 tools/polygonal/kpToolPolyline.cpp:117
+#: tools/polygonal/kpToolPolygon.cpp:137 tools/polygonal/kpToolPolyline.cpp:81
 #, kde-format
 msgid "Left drag another line or right click to finish."
-msgstr "用左键拖曳另一条线，或单击右键完成操作。"
+msgstr "按住左键再拖出下一段线。也可以点击右键结束绘制。"
 
-#: tools/polygonal/kpToolPolygon.cpp:186 tools/polygonal/kpToolPolyline.cpp:121
+#: tools/polygonal/kpToolPolygon.cpp:139 tools/polygonal/kpToolPolyline.cpp:83
 #, kde-format
 msgid "Right drag another line or left click to finish."
-msgstr "用右键拖曳另一条线，或单击左键完成操作。"
+msgstr "按住右键再拖出下一段线。也可以点击左键结束绘制。"
 
-#: tools/polygonal/kpToolPolyline.cpp:46
+#: tools/polygonal/kpToolPolyline.cpp:23
 #, kde-format
 msgid "Connected Lines"
-msgstr "连接线"
+msgstr "折线"
 
-#: tools/polygonal/kpToolPolyline.cpp:47
+#: tools/polygonal/kpToolPolyline.cpp:23
 #, kde-format
 msgid "Draws connected lines"
-msgstr "绘制连接线"
+msgstr "绘制首尾相连的直线"
 
-#: tools/rectangular/kpToolEllipse.cpp:42
+#: tools/rectangular/kpToolEllipse.cpp:21
 #, kde-format
 msgid "Ellipse"
 msgstr "椭圆"
 
-#: tools/rectangular/kpToolEllipse.cpp:43
+#: tools/rectangular/kpToolEllipse.cpp:22
 #, kde-format
 msgid "Draws ellipses and circles"
-msgstr "绘制椭圆和圆形"
+msgstr "绘制椭圆形和圆形"
 
-#: tools/rectangular/kpToolRectangle.cpp:43
+#: tools/rectangular/kpToolRectangle.cpp:22
 #, kde-format
 msgid "Rectangle"
 msgstr "矩形"
 
-#: tools/rectangular/kpToolRectangle.cpp:44
+#: tools/rectangular/kpToolRectangle.cpp:23
 #, kde-format
 msgid "Draws rectangles and squares"
 msgstr "绘制矩形和正方形"
 
-#: tools/rectangular/kpToolRoundedRectangle.cpp:42
+#: tools/rectangular/kpToolRoundedRectangle.cpp:22
 #, kde-format
 msgid "Rounded Rectangle"
-msgstr "圆润矩形"
+msgstr "圆角矩形"
 
-#: tools/rectangular/kpToolRoundedRectangle.cpp:43
+#: tools/rectangular/kpToolRoundedRectangle.cpp:23
 #, kde-format
 msgid "Draws rectangles and squares with rounded corners"
-msgstr "以圆角绘制矩形和正方形"
+msgstr "绘制带有圆角的矩形和正方形"
 
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:83
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:61
 #, kde-format
 msgid "Left drag to create selection."
-msgstr "用左键拖曳可创建选中范围。"
+msgstr "左键拖动，即可建立选区。"
 
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:91
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:69
 #, kde-format
 msgid "Left drag to move selection."
-msgstr "用左键拖曳可移动选中范围。"
+msgstr "左键拖动，即可移动选区。"
 
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:99
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:77
 #, kde-format
 msgid "Left drag to scale selection."
-msgstr "用左键拖曳可缩放选中范围。"
+msgstr "左键拖动，即可缩放选区。"
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:162
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:129
 #, kde-format
 msgid "Selection: Opaque"
-msgstr "选中范围：实色"
+msgstr "选区：背景不透明"
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:163
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:129
 #, kde-format
 msgid "Selection: Transparent"
-msgstr "选中范围：透明"
+msgstr "选区：背景透明"
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:184
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:148
 #, kde-format
 msgid "Selection: Transparency Color"
-msgstr "选中范围：透明色"
+msgstr "选区：透明度颜色"
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:205
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:167
 #, kde-format
 msgid "Selection: Transparency Color Similarity"
-msgstr "选中范围：透明相似色"
+msgstr "选区：透明度颜色近似阈值"
 
-#: tools/selection/image/kpToolEllipticalSelection.cpp:42
+#: tools/selection/image/kpToolEllipticalSelection.cpp:20
 #, kde-format
 msgid "Selection (Elliptical)"
-msgstr "选择 (椭圆的)"
+msgstr "选区 (椭圆轮廓)"
 
-#: tools/selection/image/kpToolEllipticalSelection.cpp:43
+#: tools/selection/image/kpToolEllipticalSelection.cpp:21
 #, kde-format
 msgid "Makes an elliptical or circular selection"
-msgstr "生成椭圆或圆形选区"
+msgstr "建立椭圆或圆形轮廓的选区"
 
-#: tools/selection/image/kpToolFreeFormSelection.cpp:45
+#: tools/selection/image/kpToolFreeFormSelection.cpp:22
 #, kde-format
 msgid "Selection (Free-Form)"
-msgstr "选择(自由形式)"
+msgstr "选区 (自由绘制轮廓)"
 
-#: tools/selection/image/kpToolFreeFormSelection.cpp:46
+#: tools/selection/image/kpToolFreeFormSelection.cpp:23
 #, kde-format
 msgid "Makes a free-form selection"
-msgstr "制作自由选区"
+msgstr "建立自由轮廓的选区"
 
-#: tools/selection/image/kpToolRectSelection.cpp:40
+#: tools/selection/image/kpToolRectSelection.cpp:19
 #, kde-format
 msgid "Selection (Rectangular)"
-msgstr "选择(矩形的)"
+msgstr "选区 (矩形轮廓)"
 
-#: tools/selection/image/kpToolRectSelection.cpp:41
+#: tools/selection/image/kpToolRectSelection.cpp:20
 #, kde-format
 msgid "Makes a rectangular selection"
-msgstr "制作矩形选区"
+msgstr "建立矩形轮廓的选区"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:324
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:279
 #, kde-format
 msgid "Selection: Move"
-msgstr "选中范围：移动"
+msgstr "选区：移动"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:347
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:301
 #, kde-format
 msgid "%1: Smear"
 msgstr "%1：涂抹"
 
-#: tools/selection/text/kpToolText.cpp:55
+#: tools/selection/text/kpToolText.cpp:34
 #, kde-format
 msgid "Writes text"
-msgstr "写入文字"
+msgstr "插入文字"
 
-#: tools/selection/text/kpToolText_Commands.cpp:69
+#: tools/selection/text/kpToolText_Commands.cpp:46
 #, kde-format
 msgid "Text: Backspace"
 msgstr "文字：退格"
 
-#: tools/selection/text/kpToolText_Commands.cpp:86
+#: tools/selection/text/kpToolText_Commands.cpp:63
 #, kde-format
 msgid "Text: Delete"
 msgstr "文字：删除"
 
-#: tools/selection/text/kpToolText_Commands.cpp:103
+#: tools/selection/text/kpToolText_Commands.cpp:80
 #, kde-format
 msgid "Text: New Line"
 msgstr "文字：新行"
 
-#: tools/selection/text/kpToolText_Commands.cpp:120
+#: tools/selection/text/kpToolText_Commands.cpp:97
 #, kde-format
 msgid "Text: Write"
 msgstr "文字：写入"
 
-#: tools/selection/text/kpToolText_Create.cpp:48
+#: tools/selection/text/kpToolText_Create.cpp:26
 #, kde-format
 msgid "Left drag to create text box."
-msgstr "用左键拖曳可创建文本框。"
+msgstr "左键拖动，即可创建文本框。"
 
-#: tools/selection/text/kpToolText_Move.cpp:42
+#: tools/selection/text/kpToolText_Move.cpp:20
 #, kde-format
 msgid "Left drag to move text box."
-msgstr "左键拖曳以移动文本框。"
+msgstr "左键拖动，即可移动文本框。"
 
-#: tools/selection/text/kpToolText_Move.cpp:61
+#: tools/selection/text/kpToolText_Move.cpp:37
 #, kde-format
 msgid "Text: Move Box"
-msgstr "文字：移动框"
+msgstr "文字：移动文本框"
 
-#: tools/selection/text/kpToolText_ResizeScale.cpp:42
+#: tools/selection/text/kpToolText_ResizeScale.cpp:20
 #, kde-format
 msgid "Left drag to resize text box."
-msgstr "左键拖曳以改变文本框大小"
+msgstr "左键拖动，即可更改文本框大小"
 
-#: tools/selection/text/kpToolText_SelectText.cpp:57
+#: tools/selection/text/kpToolText_SelectText.cpp:34
 #, kde-format
 msgid "Left click to change cursor position."
-msgstr "左键单击以更改光标位置。"
+msgstr "左键点击，即可更改光标位置。"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:113
+#: tools/selection/text/kpToolText_TextStyle.cpp:80
 #, kde-format
 msgid "Text: Opaque Background"
-msgstr "文字：实色背景"
+msgstr "文字：文本框背景不透明"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:114
+#: tools/selection/text/kpToolText_TextStyle.cpp:80
 #, kde-format
 msgid "Text: Transparent Background"
-msgstr "文字：透明背景"
+msgstr "文字：文本框背景透明"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:137
+#: tools/selection/text/kpToolText_TextStyle.cpp:100
 #, kde-format
 msgid "Text: Swap Colors"
-msgstr "文字：交换颜色"
+msgstr "文字：对调前景/背景色"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:158
+#: tools/selection/text/kpToolText_TextStyle.cpp:119
 #, kde-format
 msgid "Text: Foreground Color"
 msgstr "文字：前景色"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:179
+#: tools/selection/text/kpToolText_TextStyle.cpp:138
 #, kde-format
 msgid "Text: Background Color"
 msgstr "文字：背景色"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:215
+#: tools/selection/text/kpToolText_TextStyle.cpp:167
 #, kde-format
 msgid "Text: Font"
 msgstr "文字：字体"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:242
+#: tools/selection/text/kpToolText_TextStyle.cpp:189
 #, kde-format
 msgid "Text: Font Size"
 msgstr "文字：字体大小"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:265
+#: tools/selection/text/kpToolText_TextStyle.cpp:209
 #, kde-format
 msgid "Text: Bold"
 msgstr "文字：粗体"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:287
+#: tools/selection/text/kpToolText_TextStyle.cpp:229
 #, kde-format
 msgid "Text: Italic"
 msgstr "文字：斜体"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:309
+#: tools/selection/text/kpToolText_TextStyle.cpp:249
 #, kde-format
 msgid "Text: Underline"
 msgstr "文字：下划线"
 
-#: tools/selection/text/kpToolText_TextStyle.cpp:331
+#: tools/selection/text/kpToolText_TextStyle.cpp:269
 #, kde-format
 msgid "Text: Strike Through"
 msgstr "文字：删除线"
 
-#: views/kpUnzoomedThumbnailView.cpp:86
+#: views/kpUnzoomedThumbnailView.cpp:56
 #, kde-format
 msgid "Unzoomed Mode - Thumbnail"
-msgstr "无缩放的缩略图模式"
+msgstr "总览图 - 无缩放"
 
-#: views/kpZoomedThumbnailView.cpp:65
+#: views/kpZoomedThumbnailView.cpp:38
 #, kde-format
 msgid "%1% - Thumbnail"
-msgstr "%1% - 缩略图"
+msgstr "%1% - 总览图"
 
-#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:70
+#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:42
 #, kde-format
 msgid ""
 "<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
@@ -2303,22 +2321,21 @@ msgid ""
 "similar (e.g. if <b>Flood Fill</b> is changing too many pixels), you should "
 "decrease this setting.</p><p>To configure it, click on the cube.</p></qt>"
 msgstr ""
-"<qt><p><b>色彩相似度</b>是不同像素的色彩所应达到的<i>相似</i>程度，以使得操作"
-"能够认为是相同的。</p><p>如果您不是将其设定为<b>精确匹配</b>，通过一种用其他"
-"绘图程序的“魔棒”特性的可比较方法，您能够对颤动的图形和照片工作得更有效率。</"
-"p><p>本特性将应用于：</p><ul><li><b>选中范围</b>：在<b>透明</b>模式中，选中范"
-"围中任何与背景颜色<i>相似</i>的颜色将会变成透明。</li><li><b>填充</b>：对于带"
-"有<i>相似</i> - 但不完全相同的 - 颜色像素的区域，增强设置很可能会填充更多的像"
-"素。</li><li><b>颜色橡皮擦</b>：任何与前景颜色<i>相似</i>的颜色将会以背景颜色"
-"替换。</li><li><b>自动裁剪</b>和<b>删除内部边框</b>：对于带有<i>相似</i> - 但"
-"不完全相同的 - 颜色像素的边框，增强设置很可能会裁剪整个边框。</li></ul><p>增"
-"强设置指的是操作使用一种增大过的颜色范围以足够<i>相似</i>来得到相同程度。因"
-"此，如果上述操作没有影响到那些您认为足够相似像素，您应该增加设置。</p><p>然"
-"而，如果它们造成了过多的效果并更改了那些您认为颜色不相似的像素(例如，如果<b>"
-"填充</b>更改了过多的像素)，您应该减少此设置。</p><p>要进行配置，可在立方体上"
-"点击。</p></qt>"
+"<qt><p><b>颜色相似阈值</b>指的是两种颜色必须要<i>相似</i>到何种程度，才能让程"
+"序认为它们是同一种颜色。</p><p>设置为<b>完全一致</b>之外的值时，程序将使用类"
+"似于其他软件中的“魔棒”工具的容差来处理颜色，这在处理包含平滑颜色过渡的图像时"
+"更加方便。</p><p>此特性对以下功能有效：</p><ul><li><b>选区</b>：在<b>透明</b>"
+"模式中，选区中与背景色<i>相似</i>的颜色将会变成透明。</li><li><b>填充</b>：对"
+"于颜色<i>相似</i>，但又不完全相同的区域而言，提高颜色相似阈值将填充更多的像"
+"素。</li><li><b>彩色橡皮擦</b>：任何与前景色<i>相似</i>的颜色将被替换为背景"
+"色。</li><li><b>自动裁剪</b>和<b>删除内部边框</b>：对于颜色<i>相似</i>，但又"
+"不完全相同的边框，提高颜色相似阈值将更有可能裁剪到整个边框。</li></ul><p>提高"
+"颜色相似阈值意味着让程序将范围更宽的<i>相似</i>颜色视作同一种颜色。因此，如果"
+"您在进行前述操作时没能改变足够多的颜色，您可以提高此值。</p><p>而如果您在进行"
+"前述操作时改变了太多颜色 (例如<b>填充</b>工具改变了太大范围的颜色)，您可以降"
+"低此值。</p><p>如需调整此值，请点击颜色立方体。</p></qt>"
 
-#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:120
+#: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:93
 #, kde-format
 msgid ""
 "<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
@@ -2343,186 +2360,186 @@ msgid ""
 "similar (e.g. if <b>Flood Fill</b> is changing too many pixels), you should "
 "decrease this setting.</p></qt>"
 msgstr ""
-"<qt><p><b>色彩相似度</b>是不同像素的色彩所应达到的<i>相似</i>程度，以使得操作"
-"能够认为是相同的。</p><p>如果您不是将其设定为<b>精确匹配</b>，通过一种用其他"
-"绘图程序的“魔棒”特性的可比较方法，您能够对颤动的图形和照片工作得更有效率。</"
-"p><p>本特性将应用于：</p><ul><li><b>选中范围</b>：在<b>透明</b>模式中，选中范"
-"围中任何与背景颜色<i>相似</i>的颜色将会变成透明。</li><li><b>填充</b>：对于带"
-"有<i>相似</i> - 但不完全相同的 - 颜色像素的区域，增强设置很可能会填充更多的像"
-"素。</li><li><b>颜色橡皮擦</b>：任何与前景颜色<i>相似</i>的颜色将会以背景颜色"
-"替换。</li><li><b>自动裁剪</b>和<b>删除内部边框</b>：对于带有<i>相似</i> - 但"
-"不完全相同的 - 颜色像素的边框，增强设置很可能会裁剪整个边框。</li></ul><p>增"
-"强设置指的是操作使用一种增大过的颜色范围以足够<i>相似</i>来得到相同程度。因"
-"此，如果上述操作没有影响到那些您认为足够相似像素，您应该增加设置。</p><p>然"
-"而，如果它们造成了过多的效果并更改了那些您认为颜色不相似的像素(例如，如果<b>"
-"填充</b>更改了过多的像素)，您应该减少此设置。</p></qt>"
+"<qt><p><b>颜色相似阈值</b>指的是两种颜色必须要<i>相似</i>到何种程度，才能让程"
+"序认为它们是同一种颜色。</p><p>设置为<b>完全一致</b>之外的值时，程序将使用类"
+"似于其他软件中的“魔棒”工具的容差来处理颜色，这在处理包含平滑颜色过渡的图像时"
+"更加方便。</p><p>此特性对以下功能有效：</p><ul><li><b>选区</b>：在<b>透明</b>"
+"模式中，选区中与背景色<i>相似</i>的颜色将会变成透明。</li><li><b>填充</b>：对"
+"于颜色<i>相似</i>，但又不完全相同的区域而言，提高颜色相似阈值将填充更多的像"
+"素。</li><li><b>彩色橡皮擦</b>：任何与前景色<i>相似</i>的颜色将被替换为背景"
+"色。</li><li><b>自动裁剪</b>和<b>删除内部边框</b>：对于颜色<i>相似</i>，但又"
+"不完全相同的边框，提高颜色相似阈值将更有可能裁剪到整个边框。</li></ul><p>提高"
+"颜色相似阈值意味着让程序将范围更宽的<i>相似</i>颜色视作同一种颜色。因此，如果"
+"您在进行前述操作时没能改变足够多的颜色，您可以提高此值。</p><p>而如果您在进行"
+"前述操作时改变了太多颜色 (例如<b>填充</b>工具改变了太大范围的颜色)，您可以降"
+"低此值。</p></qt>"
 
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:231
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:199
 #, kde-format
 msgid "<p>Color Similarity: %1%</p><p align=\"center\">Click to configure.</p>"
-msgstr "<p>色彩相似度：%1%</p><p align=\"center\">点此配置。</p>"
+msgstr "<p>颜色相似阈值：%1%</p><p align=\"center\">点击调整。</p>"
 
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:238
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:204
 #, kde-format
 msgid ""
 "<p>Color Similarity: Exact Match</p><p align=\"center\">Click to configure.</"
 "p>"
-msgstr "<p>色彩相似度：精确匹配</p><p align=\"center\">点此配置。</p>"
+msgstr "<p>颜色相似阈值：完全一致</p><p align=\"center\">点击调整。</p>"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:61
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:36
 #, kde-format
 msgid "&Brightness:"
 msgstr "亮度(&B)："
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:64
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:39
 #, kde-format
 msgid "Re&set"
 msgstr "重置(&S)"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:66
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:41
 #, kde-format
 msgid "Co&ntrast:"
 msgstr "对比度(&N)："
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:71
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:46
 #, kde-format
 msgid "&Gamma:"
 msgstr "伽玛值(&G)："
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:80
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:55
 #, kde-format
 msgid "Rese&t"
 msgstr "重置(&T)"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:87
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:60
 #, kde-format
 msgid "C&hannels:"
 msgstr "通道(&H)："
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:89
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:62
 #, kde-format
 msgid "All"
 msgstr "全部"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:90
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:63
 #, kde-format
 msgid "Red"
 msgstr "红"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:91
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:64
 #, kde-format
 msgid "Green"
 msgstr "绿"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:92
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:65
 #, kde-format
 msgid "Blue"
 msgstr "蓝"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:95
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:67
 #, kde-format
 msgid "Reset &All Values"
-msgstr "重置全部值(&A)"
+msgstr "重置所有值(&A)"
 
-#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:162
+#: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:120
 #, kde-format
 msgid "Settings"
 msgstr "设置"
 
-#: widgets/imagelib/effects/kpEffectBlurSharpenWidget.cpp:52
-#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:56
+#: widgets/imagelib/effects/kpEffectBlurSharpenWidget.cpp:27
+#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:34
 #, kde-format
 msgid "&Amount:"
-msgstr "总量(&A)："
+msgstr "效果强度(&A)："
 
-#: widgets/imagelib/effects/kpEffectEmbossWidget.cpp:51
-#: widgets/imagelib/effects/kpEffectFlattenWidget.cpp:72
+#: widgets/imagelib/effects/kpEffectEmbossWidget.cpp:27
+#: widgets/imagelib/effects/kpEffectFlattenWidget.cpp:46
 #, kde-format
 msgid "E&nable"
 msgstr "启用(&N)"
 
-#: widgets/imagelib/effects/kpEffectFlattenWidget.cpp:131
+#: widgets/imagelib/effects/kpEffectFlattenWidget.cpp:98
 #, kde-format
 msgid "Colors"
 msgstr "颜色"
 
-#: widgets/imagelib/effects/kpEffectHSVWidget.cpp:47
+#: widgets/imagelib/effects/kpEffectHSVWidget.cpp:25
 #, kde-format
 msgid "&Hue:"
 msgstr "色相(&H)："
 
-#: widgets/imagelib/effects/kpEffectHSVWidget.cpp:48
+#: widgets/imagelib/effects/kpEffectHSVWidget.cpp:26
 #, kde-format
 msgid "&Saturation:"
 msgstr "饱和度(&S)："
 
-#: widgets/imagelib/effects/kpEffectHSVWidget.cpp:49
+#: widgets/imagelib/effects/kpEffectHSVWidget.cpp:27
 #, kde-format
 msgctxt "The V of HSV"
 msgid "&Value:"
-msgstr "亮度(&V)："
+msgstr "明度(&V)："
 
-#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:60
+#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:34
 #, kde-format
 msgid "&Red"
 msgstr "红(&R)"
 
-#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:61
+#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:35
 #, kde-format
 msgid "&Green"
 msgstr "绿(&G)"
 
-#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:62
+#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:36
 #, kde-format
 msgid "&Blue"
 msgstr "蓝(&B)"
 
-#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:67
+#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:41
 #, kde-format
 msgid "&All"
 msgstr "全部(&A)"
 
-#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:144
+#: widgets/imagelib/effects/kpEffectInvertWidget.cpp:105
 #, kde-format
 msgid "Channels"
 msgstr "通道"
 
-#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:58
+#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:31
 #, kde-format
 msgid "&Monochrome"
 msgstr "单色(&M)"
 
-#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:61
+#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:33
 #, kde-format
 msgid "Mo&nochrome (dithered)"
-msgstr "单色(抖动)(&N)"
+msgstr "单色 (抖动) (&N)"
 
-#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:63
+#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:35
 #, kde-format
 msgid "256 co&lor"
 msgstr "256 色(&L)"
 
-#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:65
+#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:37
 #, kde-format
 msgid "256 colo&r (dithered)"
-msgstr "256 色(抖动)(&R)"
+msgstr "256 色 (抖动) (&R)"
 
-#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:67
+#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:39
 #, kde-format
 msgid "24-&bit color"
-msgstr "24 位色(&B)"
+msgstr "24 位彩色(&B)"
 
-#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:147
+#: widgets/imagelib/effects/kpEffectReduceColorsWidget.cpp:107
 #, kde-format
 msgid "Reduce To"
-msgstr "减少为"
+msgstr "色彩位深降为"
 
-#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:54
+#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:32
 #, kde-format
 msgid "&Granularity:"
-msgstr "粒度(&G)"
+msgstr "粒度(&G)："
 
-#: widgets/kpColorCells.cpp:196
+#: widgets/kpColorCells.cpp:153
 #, kde-format
 msgid ""
 "<qt><p>To select the foreground color that tools use to draw, left-click on "
@@ -2533,136 +2550,161 @@ msgid ""
 "destination cell's color will be overwritten, instead of being swapped with "
 "the color of the source cell.</p></qt>"
 msgstr ""
-"<qt><p>要选择绘图工具所用的前景色，请用左键点击一个填充过的颜色格。要选择背景"
-"色，则请改用右键点击。</p><p>要更改颜色格本身，双击它即可。</p><p>您可以通过"
-"拖放操作用任何其他颜色替换格子内的颜色。同时，您若按住 <b>Ctrl</b> 键，目标格"
-"内的颜色会被覆盖，而非原本的替换。</p></qt>"
+"<qt><p>要选择绘图工具所用的前景色，请用左键点击色板中的一个有颜色的色块。要选"
+"择背景色，则改用右键点击。</p><p>要更改色块本身的颜色，请双击色块，即可打开拾"
+"色器对话框。</p><p>您还可以通过拖放色块来与其他颜色的色块交换位置。如果在拖动"
+"色块时按住 <b>Ctrl</b> 键，目标色块的颜色将被来源色块覆盖。</p></qt>"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:89
+#: widgets/kpDocumentSaveOptionsWidget.cpp:61
 #, kde-format
 msgid "Convert &to:"
-msgstr "转换到(&T)："
+msgstr "转换为(&T)："
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:94
+#: widgets/kpDocumentSaveOptionsWidget.cpp:66
 #, kde-format
 msgid "Quali&ty:"
-msgstr "质量(&T)："
+msgstr "画质(&T)："
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:102
+#: widgets/kpDocumentSaveOptionsWidget.cpp:74
 #, kde-format
 msgid "&Preview"
 msgstr "预览(&P)"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:227
+#: widgets/kpDocumentSaveOptionsWidget.cpp:171
 #, kde-format
 msgid "Monochrome"
 msgstr "单色"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+#: widgets/kpDocumentSaveOptionsWidget.cpp:172
 #, kde-format
 msgid "Monochrome (Dithered)"
-msgstr "单色(抖动)"
+msgstr "单色 (抖动)"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:232
+#: widgets/kpDocumentSaveOptionsWidget.cpp:175
 #, kde-format
 msgid "256 Color"
 msgstr "256 色"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+#: widgets/kpDocumentSaveOptionsWidget.cpp:176
 #, kde-format
 msgid "256 Color (Dithered)"
-msgstr "256 色(抖动)"
+msgstr "256 色 (抖动) "
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:238
+#: widgets/kpDocumentSaveOptionsWidget.cpp:180
 #, kde-format
 msgid "24-bit Color"
-msgstr "24 位色"
+msgstr "24 位彩色"
 
-#: widgets/kpPrintDialogPage.cpp:58
+#: widgets/kpPrintDialogPage.cpp:33
 #, kde-format
 msgctxt "@title:tab"
 msgid "I&mage Position"
 msgstr "图像位置(&M)"
 
-#: widgets/kpPrintDialogPage.cpp:60
+#: widgets/kpPrintDialogPage.cpp:35
 #, kde-format
 msgid "&Center of the page"
-msgstr "页面中间(&C)"
+msgstr "页面正中间(&C)"
 
-#: widgets/kpPrintDialogPage.cpp:62
+#: widgets/kpPrintDialogPage.cpp:36
 #, kde-format
 msgid "Top-&left of the page"
-msgstr "页面左顶端(&L)"
+msgstr "页面左上角(&L)"
 
-#: widgets/kpTransparentColorCell.cpp:53
-#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:44
+#: widgets/kpTransparentColorCell.cpp:30
+#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:22
 #, kde-format
 msgid "Transparent"
-msgstr "透明"
+msgstr "选区背景透明"
 
-#: widgets/toolbars/kpColorToolBar.cpp:278
+#: widgets/toolbars/kpColorToolBar.cpp:87
+#, kde-format
+msgctxt "@action:inmenu Panels"
+msgid "Unlock Panels"
+msgstr "解锁面板"
+
+#: widgets/toolbars/kpColorToolBar.cpp:89
+#, kde-format
+msgctxt "@action:inmenu Panels"
+msgid "Lock Panels"
+msgstr "锁定面板"
+
+#: widgets/toolbars/kpColorToolBar.cpp:92
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"This switches between having panels <emphasis>locked</emphasis> or "
+"<emphasis>unlocked</emphasis>.<nl/>Unlocked panels can be dragged to the "
+"other side of the window and have a close button.<nl/>Locked panels are "
+"embedded more cleanly."
+msgstr ""
+"切换面板的<emphasis>锁定</emphasis>/<emphasis>解锁</emphasis>状态。<nl/>解锁"
+"的面板可以拖放到窗口的另一侧，并且显示关闭按钮。<nl/>锁定的面板的嵌入效果更加"
+"干净。"
+
+#: widgets/toolbars/kpColorToolBar.cpp:263
 #, kde-format
 msgid "KolourPaint Defaults"
-msgstr "KolourPaint 默认"
+msgstr "默认颜色"
 
-#: widgets/toolbars/kpColorToolBar.cpp:293
+#: widgets/toolbars/kpColorToolBar.cpp:274
 #, kde-format
 msgctxt "Colors: name_or_url_of_color_palette"
 msgid "Colors: %1"
-msgstr "颜色：%1"
+msgstr "色板：%1"
 
-#: widgets/toolbars/kpColorToolBar.cpp:300
+#: widgets/toolbars/kpColorToolBar.cpp:276
 #, kde-format
 msgctxt "Colors: name_or_url_of_color_palette [modified]"
 msgid "Colors: %1 [modified]"
-msgstr "颜色：%1 [已修改]"
+msgstr "色板：%1 [已修改]"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:199
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:148
 #, kde-format
 msgid "1x1"
 msgstr "1x1"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:208
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:156
 #, kde-format
 msgid "Circle"
 msgstr "圆形"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:211
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:159
 #, kde-format
 msgid "Square"
 msgstr "方形"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:215
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:163
 #, kde-format
 msgid "Slash"
 msgstr "斜杠"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:219
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:167
 #, kde-format
 msgid "Backslash"
 msgstr "反斜杠"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:227
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:175
 #, kde-format
 msgid "%1x%2 %3"
 msgstr "%1x%2 %3"
 
-#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:118
+#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:87
 #, kde-format
 msgid "No Fill"
-msgstr "没有填充"
+msgstr "不填充"
 
-#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:121
+#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:90
 #, kde-format
 msgid "Fill with Background Color"
-msgstr "以背景色填充"
+msgstr "填充背景色"
 
-#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:124
+#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:93
 #, kde-format
 msgid "Fill with Foreground Color"
-msgstr "以前景色填充"
+msgstr "填充前景色"
 
-#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:42
+#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:20
 #, kde-format
 msgid "Opaque"
-msgstr "实色"
+msgstr "选区背景不透明"

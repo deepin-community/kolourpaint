@@ -1,81 +1,57 @@
 
 /*
-   Copyright (c) 2003-2007 Clarence Dang <dang@kde.org>
-   All rights reserved.
+   SPDX-FileCopyrightText: 2003-2007 Clarence Dang <dang@kde.org>
 
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   SPDX-License-Identifier: BSD-2-Clause
 */
-
 
 #define DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM 0
 
-
 #include "kpColorSimilarityToolBarItem.h"
 
-#include <QTimer>
 #include <QPixmap>
+#include <QTimer>
 
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
 
-#include "imagelib/kpColor.h"
 #include "dialogs/kpColorSimilarityDialog.h"
+#include "imagelib/kpColor.h"
 #include "kpColorSimilarityCubeRenderer.h"
 #include "kpDefs.h"
 
 //---------------------------------------------------------------------
 
-kpColorSimilarityToolBarItem::kpColorSimilarityToolBarItem (QWidget *parent)
-    : QToolButton (parent),
-      kpColorSimilarityHolder (),
+kpColorSimilarityToolBarItem::kpColorSimilarityToolBarItem(QWidget *parent)
+    : QToolButton(parent)
+    , kpColorSimilarityHolder()
+    ,
 
-      m_oldColorSimilarity (0),
-      m_processedColorSimilarity (kpColor::Exact),
-      m_flashTimer (new QTimer (this)),
-      m_flashHighlight (0),
-      m_suppressingFlashCounter (0)
+    m_oldColorSimilarity(0)
+    , m_processedColorSimilarity(kpColor::Exact)
+    , m_flashTimer(new QTimer(this))
+    , m_flashHighlight(0)
+    , m_suppressingFlashCounter(0)
 {
-    setAutoRaise (true);
-    setFixedSize (52, 52);
+    setAutoRaise(true);
+    setFixedSize(52, 52);
 
-    setWhatsThis (WhatsThisWithClickInstructions ());
+    setWhatsThis(WhatsThisWithClickInstructions());
 
-    connect (this, &kpColorSimilarityToolBarItem::clicked,
-             this, &kpColorSimilarityToolBarItem::openDialog);
+    connect(this, &kpColorSimilarityToolBarItem::clicked, this, &kpColorSimilarityToolBarItem::openDialog);
 
-    KConfigGroup cfg (KSharedConfig::openConfig (), kpSettingsGroupGeneral);
-    setColorSimilarityInternal (cfg.readEntry (kpSettingColorSimilarity, 0.0),
-        false/*don't write config*/);
+    KConfigGroup cfg(KSharedConfig::openConfig(), QStringLiteral(kpSettingsGroupGeneral));
+    setColorSimilarityInternal(cfg.readEntry(kpSettingColorSimilarity, 0.0), false /*don't write config*/);
 
-    m_flashTimer->setInterval (100/*ms*/);
-    connect (m_flashTimer, &QTimer::timeout,
-             this, &kpColorSimilarityToolBarItem::slotFlashTimerTimeout);
+    m_flashTimer->setInterval(100 /*ms*/);
+    connect(m_flashTimer, &QTimer::timeout, this, &kpColorSimilarityToolBarItem::slotFlashTimerTimeout);
 }
 
 //---------------------------------------------------------------------
 
 // public
-int kpColorSimilarityToolBarItem::processedColorSimilarity () const
+int kpColorSimilarityToolBarItem::processedColorSimilarity() const
 {
     return m_processedColorSimilarity;
 }
@@ -83,46 +59,43 @@ int kpColorSimilarityToolBarItem::processedColorSimilarity () const
 //---------------------------------------------------------------------
 
 // private
-void kpColorSimilarityToolBarItem::setColorSimilarityInternal (double similarity,
-        bool writeConfig)
+void kpColorSimilarityToolBarItem::setColorSimilarityInternal(double similarity, bool writeConfig)
 {
 #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
     qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::setColorSimilarityInternal("
-              << "similarity=" << similarity << ",writeConfig=" << writeConfig
-              << ")";
+                          << "similarity=" << similarity << ",writeConfig=" << writeConfig << ")";
 #endif
 
-    m_oldColorSimilarity = colorSimilarity ();
+    m_oldColorSimilarity = colorSimilarity();
 
-    kpColorSimilarityHolder::setColorSimilarity (similarity);
-    m_processedColorSimilarity = kpColor::processSimilarity (colorSimilarity ());
+    kpColorSimilarityHolder::setColorSimilarity(similarity);
+    m_processedColorSimilarity = kpColor::processSimilarity(colorSimilarity());
 
-    updateIcon ();
-    updateToolTip ();
+    updateIcon();
+    updateToolTip();
 
-    if (writeConfig)
-    {
-        KConfigGroup cfg (KSharedConfig::openConfig (), kpSettingsGroupGeneral);
-        cfg.writeEntry (kpSettingColorSimilarity, colorSimilarity ());
-        cfg.sync ();
+    if (writeConfig) {
+        KConfigGroup cfg(KSharedConfig::openConfig(), QStringLiteral(kpSettingsGroupGeneral));
+        cfg.writeEntry(kpSettingColorSimilarity, colorSimilarity());
+        cfg.sync();
     }
 
-    emit colorSimilarityChanged (colorSimilarity (), m_processedColorSimilarity);
+    Q_EMIT colorSimilarityChanged(colorSimilarity(), m_processedColorSimilarity);
 }
 
 //---------------------------------------------------------------------
 
 // public virtual [base kopColorSimilarityHolder]
-void kpColorSimilarityToolBarItem::setColorSimilarity (double similarity)
+void kpColorSimilarityToolBarItem::setColorSimilarity(double similarity)
 {
     // (this calls the base setColorSimilarity() as required by base)
-    setColorSimilarityInternal (similarity, true/*write config*/);
+    setColorSimilarityInternal(similarity, true /*write config*/);
 }
 
 //---------------------------------------------------------------------
 
 // public
-double kpColorSimilarityToolBarItem::oldColorSimilarity () const
+double kpColorSimilarityToolBarItem::oldColorSimilarity() const
 {
     return m_oldColorSimilarity;
 }
@@ -130,24 +103,23 @@ double kpColorSimilarityToolBarItem::oldColorSimilarity () const
 //---------------------------------------------------------------------
 
 // public
-void kpColorSimilarityToolBarItem::openDialog ()
+void kpColorSimilarityToolBarItem::openDialog()
 {
-    kpColorSimilarityDialog dialog (this);
-    dialog.setColorSimilarity (colorSimilarity ());
-    if (dialog.exec ())
-    {
-        setColorSimilarity (dialog.colorSimilarity ());
+    kpColorSimilarityDialog dialog(this);
+    dialog.setColorSimilarity(colorSimilarity());
+    if (dialog.exec()) {
+        setColorSimilarity(dialog.colorSimilarity());
     }
 }
 
 //---------------------------------------------------------------------
 
 // private slot:
-void kpColorSimilarityToolBarItem::slotFlashTimerTimeout ()
+void kpColorSimilarityToolBarItem::slotFlashTimerTimeout()
 {
 #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
     qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::slotFlashTimerTimeout()"
-              << " highlight=" << m_flashHighlight << endl;
+                          << " highlight=" << m_flashHighlight << endl;
 #endif
     int newHigh = m_flashHighlight - 20;
     if (newHigh < 0) {
@@ -156,45 +128,42 @@ void kpColorSimilarityToolBarItem::slotFlashTimerTimeout ()
 
     m_flashHighlight = newHigh;
 
-    updateIcon ();
+    updateIcon();
 
     if (newHigh == 0) {
-        m_flashTimer->stop ();
+        m_flashTimer->stop();
     }
 }
 
 //---------------------------------------------------------------------
 
 // public
-void kpColorSimilarityToolBarItem::flash ()
+void kpColorSimilarityToolBarItem::flash()
 {
 #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
     qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::flash()";
 #endif
-    if (isSuppressingFlash ()) {
+    if (isSuppressingFlash()) {
         return;
     }
 
-    if (m_flashHighlight == 255)
-    {
-    #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
+    if (m_flashHighlight == 255) {
+#if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
         qCDebug(kpLogWidgets) << "\tNOP";
-    #endif
-    }
-    else
-    {
+#endif
+    } else {
         m_flashHighlight = 255;
 
-        updateIcon ();
+        updateIcon();
     }
 
-    m_flashTimer->start ();
+    m_flashTimer->start();
 }
 
 //---------------------------------------------------------------------
 
 // public
-bool kpColorSimilarityToolBarItem::isSuppressingFlash () const
+bool kpColorSimilarityToolBarItem::isSuppressingFlash() const
 {
     return (m_suppressingFlashCounter > 0);
 }
@@ -202,7 +171,7 @@ bool kpColorSimilarityToolBarItem::isSuppressingFlash () const
 //---------------------------------------------------------------------
 
 // public
-void kpColorSimilarityToolBarItem::suppressFlash ()
+void kpColorSimilarityToolBarItem::suppressFlash()
 {
     m_suppressingFlashCounter++;
 }
@@ -210,33 +179,30 @@ void kpColorSimilarityToolBarItem::suppressFlash ()
 //---------------------------------------------------------------------
 
 // public
-void kpColorSimilarityToolBarItem::unsupressFlash ()
+void kpColorSimilarityToolBarItem::unsupressFlash()
 {
     m_suppressingFlashCounter--;
-    Q_ASSERT (m_suppressingFlashCounter >= 0);
+    Q_ASSERT(m_suppressingFlashCounter >= 0);
 }
 
 //---------------------------------------------------------------------
 
 // private
-void kpColorSimilarityToolBarItem::updateToolTip ()
+void kpColorSimilarityToolBarItem::updateToolTip()
 {
 #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
     qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::updateToolTip()";
 #endif
 
-    if (colorSimilarity () > 0)
-    {
-        setToolTip (
-            i18n ("<p>Color Similarity: %1%</p>"
-                  "<p align=\"center\">Click to configure.</p>",
-                qRound (colorSimilarity () * 100)));
-    }
-    else
-    {
-        setToolTip (
-            i18n ("<p>Color Similarity: Exact Match</p>"
-                  "<p align=\"center\">Click to configure.</p>"));
+    if (colorSimilarity() > 0) {
+        setToolTip(
+            i18n("<p>Color Similarity: %1%</p>"
+                 "<p align=\"center\">Click to configure.</p>",
+                 qRound(colorSimilarity() * 100)));
+    } else {
+        setToolTip(
+            i18n("<p>Color Similarity: Exact Match</p>"
+                 "<p align=\"center\">Click to configure.</p>"));
     }
 }
 
@@ -249,20 +215,17 @@ void kpColorSimilarityToolBarItem::updateToolTip ()
 //            2. resizeEvent() when it's first shown()
 //
 //        We could get rid of the first and save a few milliseconds.
-void kpColorSimilarityToolBarItem::updateIcon ()
+void kpColorSimilarityToolBarItem::updateIcon()
 {
-    const int side = width () * 6 / 8;
+    const int side = width() * 6 / 8;
 #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
-    qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::updateIcon() width=" << width ()
-              << " side=" << side;
+    qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::updateIcon() width=" << width() << " side=" << side;
 #endif
 
     QPixmap icon(side, side);
     icon.fill(Qt::transparent);
 
-    kpColorSimilarityCubeRenderer::Paint (&icon,
-        0/*x*/, 0/*y*/, side,
-        colorSimilarity (), m_flashHighlight);
+    kpColorSimilarityCubeRenderer::Paint(&icon, 0 /*x*/, 0 /*y*/, side, colorSimilarity(), m_flashHighlight);
 
     setIconSize(QSize(side, side));
     setIcon(icon);
@@ -271,16 +234,16 @@ void kpColorSimilarityToolBarItem::updateIcon ()
 //---------------------------------------------------------------------
 
 // private virtual [base QWidget]
-void kpColorSimilarityToolBarItem::resizeEvent (QResizeEvent *e)
+void kpColorSimilarityToolBarItem::resizeEvent(QResizeEvent *e)
 {
 #if DEBUG_KP_COLOR_SIMILARITY_TOOL_BAR_ITEM
-    qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::resizeEvent() size=" << size ()
-              << " oldSize=" << e->oldSize ();
+    qCDebug(kpLogWidgets) << "kpColorSimilarityToolBarItem::resizeEvent() size=" << size() << " oldSize=" << e->oldSize();
 #endif
-    QToolButton::resizeEvent (e);
+    QToolButton::resizeEvent(e);
 
-    updateIcon ();
+    updateIcon();
 }
 
 //---------------------------------------------------------------------
 
+#include "moc_kpColorSimilarityToolBarItem.cpp"
