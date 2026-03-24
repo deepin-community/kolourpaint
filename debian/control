@@ -17,7 +17,6 @@ Build-Depends: debhelper-compat (= 13),
                libkf6textwidgets-dev (>= 6.5.0~),
                libkf6widgetsaddons-dev (>= 6.5.0~),
                libkf6xmlgui-dev (>= 6.5.0~),
-               libksane-dev (>= 24.02~),
                pkgconf,
                qt6-base-dev (>= 6.6.0~),
 Standards-Version: 4.7.2

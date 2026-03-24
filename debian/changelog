@@ -1,3 +1,9 @@
+kolourpaint (4:25.04.0-1deepin1) unstable; urgency=medium
+
+  * remove libksane dependency since deepin currently dont have it
+
+ -- Wang Zichong <wangzichong@deepin.com>  Tue, 24 Mar 2026 12:00:30 +0800
+
 kolourpaint (4:25.04.0-1) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
